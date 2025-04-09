@@ -3,7 +3,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- Create games table
 CREATE TABLE games (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    id TEXT PRIMARY KEY,
     name TEXT NOT NULL UNIQUE,
     description TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -13,7 +13,7 @@ CREATE TABLE games (
 -- Create characters table
 CREATE TABLE characters (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    game_id UUID REFERENCES games(id) ON DELETE CASCADE,
+    game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     name TEXT NOT NULL,
     element TEXT, -- 게임에 따라 NULL 가능
     weapon_type TEXT, -- 게임에 따라 NULL 가능
@@ -26,8 +26,8 @@ CREATE TABLE characters (
 
 -- Create equipment_types table
 CREATE TABLE equipment_types (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    game_id UUID REFERENCES games(id) ON DELETE CASCADE,
+    id TEXT PRIMARY KEY,
+    game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     name TEXT NOT NULL, -- 무기, 방어구, 장신구 등
     created_at TIMESTAMPTZ DEFAULT NOW(),
     UNIQUE(game_id, name)
@@ -37,7 +37,7 @@ CREATE TABLE equipment_types (
 CREATE TABLE character_equipment (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
-    equipment_type_id UUID REFERENCES equipment_types(id) ON DELETE CASCADE,
+    equipment_type_id TEXT REFERENCES equipment_types(id) ON DELETE CASCADE,
     equipment_name TEXT NOT NULL,
     priority INTEGER NOT NULL CHECK (priority BETWEEN 1 AND 5),
     created_at TIMESTAMPTZ DEFAULT NOW()
@@ -56,8 +56,8 @@ CREATE TABLE character_skills (
 
 -- Create artifact_sets table
 CREATE TABLE artifact_sets (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    game_id UUID REFERENCES games(id) ON DELETE CASCADE,
+    id TEXT PRIMARY KEY,
+    game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     set_name TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT NOW(),
     UNIQUE(game_id, set_name)
@@ -67,15 +67,15 @@ CREATE TABLE artifact_sets (
 CREATE TABLE character_artifact_sets (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
-    artifact_set_id UUID REFERENCES artifact_sets(id) ON DELETE CASCADE,
+    artifact_set_id TEXT REFERENCES artifact_sets(id) ON DELETE CASCADE,
     priority INTEGER NOT NULL CHECK (priority BETWEEN 1 AND 3),
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- Create stat_types table
 CREATE TABLE stat_types (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    game_id UUID REFERENCES games(id) ON DELETE CASCADE,
+    id TEXT PRIMARY KEY,
+    game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     name TEXT NOT NULL, -- HP, 공격력, 방어력 등
     created_at TIMESTAMPTZ DEFAULT NOW(),
     UNIQUE(game_id, name)
@@ -85,7 +85,7 @@ CREATE TABLE stat_types (
 CREATE TABLE character_stats (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
-    stat_type_id UUID REFERENCES stat_types(id) ON DELETE CASCADE,
+    stat_type_id TEXT REFERENCES stat_types(id) ON DELETE CASCADE,
     stat_type TEXT NOT NULL CHECK (stat_type IN ('준종결', '종결')),
     value NUMERIC NOT NULL,
     created_at TIMESTAMPTZ DEFAULT NOW()
@@ -104,8 +104,8 @@ CREATE TABLE team_compositions (
 
 -- Create game_specific_attributes table
 CREATE TABLE game_specific_attributes (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    game_id UUID REFERENCES games(id) ON DELETE CASCADE,
+    id TEXT PRIMARY KEY,
+    game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     attribute_name TEXT NOT NULL, -- 게임별 특수 속성 (원신: 원소, 블루아카이브: 학원 등)
     created_at TIMESTAMPTZ DEFAULT NOW(),
     UNIQUE(game_id, attribute_name)
@@ -115,7 +115,7 @@ CREATE TABLE game_specific_attributes (
 CREATE TABLE character_game_attributes (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
-    attribute_id UUID REFERENCES game_specific_attributes(id) ON DELETE CASCADE,
+    attribute_id TEXT REFERENCES game_specific_attributes(id) ON DELETE CASCADE,
     value TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
