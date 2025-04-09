@@ -38,7 +38,7 @@ type Stat = {
 
 type TeamComposition = Tables<"team_compositions">;
 
-export default function CharacterPage() {
+export default function GenshinCharacterPage() {
   const params = useParams();
   const characterId = params.characterId as string;
   const [character, setCharacter] = useState<Character | null>(null);

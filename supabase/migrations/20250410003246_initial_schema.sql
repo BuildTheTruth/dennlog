@@ -12,7 +12,7 @@ CREATE TABLE games (
 
 -- Create characters table
 CREATE TABLE characters (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    id TEXT PRIMARY KEY,
     game_id TEXT REFERENCES games(id) ON DELETE CASCADE,
     name TEXT NOT NULL,
     element TEXT, -- 게임에 따라 NULL 가능
@@ -36,7 +36,7 @@ CREATE TABLE equipment_types (
 -- Create character_equipment table
 CREATE TABLE character_equipment (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     equipment_type_id TEXT REFERENCES equipment_types(id) ON DELETE CASCADE,
     equipment_name TEXT NOT NULL,
     priority INTEGER NOT NULL CHECK (priority BETWEEN 1 AND 5),
@@ -46,7 +46,7 @@ CREATE TABLE character_equipment (
 -- Create character_skills table
 CREATE TABLE character_skills (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     skill_name TEXT NOT NULL,
     skill_type TEXT NOT NULL, -- 기본공격, 스킬, 궁극기 등
     priority INTEGER NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE artifact_sets (
 -- Create character_artifact_sets table
 CREATE TABLE character_artifact_sets (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     artifact_set_id TEXT REFERENCES artifact_sets(id) ON DELETE CASCADE,
     priority INTEGER NOT NULL CHECK (priority BETWEEN 1 AND 3),
     created_at TIMESTAMPTZ DEFAULT NOW()
@@ -84,7 +84,7 @@ CREATE TABLE stat_types (
 -- Create character_stats table
 CREATE TABLE character_stats (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     stat_type_id TEXT REFERENCES stat_types(id) ON DELETE CASCADE,
     stat_type TEXT NOT NULL CHECK (stat_type IN ('준종결', '종결')),
     value NUMERIC NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE character_stats (
 -- Create team_compositions table
 CREATE TABLE team_compositions (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     team_name TEXT NOT NULL,
     team_members TEXT[] NOT NULL,
     priority INTEGER NOT NULL CHECK (priority BETWEEN 1 AND 3),
@@ -114,7 +114,7 @@ CREATE TABLE game_specific_attributes (
 -- Create character_game_attributes table
 CREATE TABLE character_game_attributes (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    character_id UUID REFERENCES characters(id) ON DELETE CASCADE,
+    character_id TEXT REFERENCES characters(id) ON DELETE CASCADE,
     attribute_id TEXT REFERENCES game_specific_attributes(id) ON DELETE CASCADE,
     value TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT NOW()
