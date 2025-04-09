@@ -13,12 +13,12 @@ import { Button } from "@/components/ui/button";
 // 원신 캐릭터 데이터 (예시)
 const characters = [
   {
-    id: "venti",
-    name: "벤티",
-    element: "바람",
+    id: "yae-miko",
+    name: "야에 미코",
+    element: "번개",
     rarity: 5,
-    weapon: "활",
-    image: "/images/genshin/venti.jpg",
+    weapon: "법구",
+    image: "/images/genshin/yae-miko.jpg",
   },
   {
     id: "zhongli",

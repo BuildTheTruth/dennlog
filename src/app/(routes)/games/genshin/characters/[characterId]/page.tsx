@@ -171,162 +171,171 @@ export default function GenshinCharacterPage() {
       </div>
 
       <Tabs defaultValue="equipment" className="w-full">
-        <TabsList className="grid grid-cols-5 mb-8">
-          <TabsTrigger value="equipment">무기</TabsTrigger>
-          <TabsTrigger value="skills">스킬</TabsTrigger>
-          <TabsTrigger value="artifacts">성유물</TabsTrigger>
-          <TabsTrigger value="stats">스탯</TabsTrigger>
-          <TabsTrigger value="teams">팀 구성</TabsTrigger>
-        </TabsList>
+        <div className="w-full">
+          <TabsList className="grid grid-cols-5 mb-8 w-full">
+            <TabsTrigger value="equipment">무기</TabsTrigger>
+            <TabsTrigger value="skills">스킬</TabsTrigger>
+            <TabsTrigger value="artifacts">성유물</TabsTrigger>
+            <TabsTrigger value="stats">스탯</TabsTrigger>
+            <TabsTrigger value="teams">팀 구성</TabsTrigger>
+          </TabsList>
 
-        <TabsContent value="equipment">
-          <Card>
-            <CardHeader>
-              <CardTitle>추천 무기</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {equipment.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-between"
-                  >
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">{index + 1}순위</Badge>
-                      <span>{item.equipment_name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="skills">
-          <Card>
-            <CardHeader>
-              <CardTitle>스킬 우선순위</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <Badge variant="secondary">{index + 1}순위</Badge>
-                        <span>
-                          {skill.skill_name} ({skill.skill_type})
-                        </span>
-                      </div>
-                      <Badge variant="outline">
-                        레벨 {skill.recommended_level}
-                      </Badge>
-                    </div>
-                    <Progress
-                      value={((skills.length - index) / skills.length) * 100}
-                    />
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="artifacts">
-          <Card>
-            <CardHeader>
-              <CardTitle>추천 성유물 세트</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {artifactSets.map((set, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-between"
-                  >
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">{index + 1}순위</Badge>
-                      <span>{set.set_name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="stats">
-          <Card>
-            <CardHeader>
-              <CardTitle>추천 스탯</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">준종결 스탯</h3>
-                  <div className="space-y-2">
-                    {stats.준종결.map((stat, index) => (
+          <div className="w-full">
+            <TabsContent value="equipment" className="min-h-[300px] w-full">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>추천 무기</CardTitle>
+                </CardHeader>
+                <CardContent className="w-full">
+                  <div className="space-y-4 w-full">
+                    {equipment.map((item, index) => (
                       <div
                         key={index}
-                        className="flex items-center justify-between"
+                        className="flex items-center justify-between w-full"
                       >
-                        <span>{stat.stat_type}</span>
-                        <span>{stat.value}</span>
+                        <div className="flex items-center gap-2">
+                          <Badge variant="secondary">{index + 1}순위</Badge>
+                          <span>{item.equipment_name}</span>
+                        </div>
                       </div>
                     ))}
                   </div>
-                </div>
-                <Separator />
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">종결 스탯</h3>
-                  <div className="space-y-2">
-                    {stats.종결.map((stat, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center justify-between"
-                      >
-                        <span>{stat.stat_type}</span>
-                        <span>{stat.value}</span>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="skills" className="min-h-[300px] w-full">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>스킬 우선순위</CardTitle>
+                </CardHeader>
+                <CardContent className="w-full">
+                  <div className="space-y-4 w-full">
+                    {skills.map((skill, index) => (
+                      <div key={index} className="space-y-2 w-full">
+                        <div className="flex items-center justify-between w-full">
+                          <div className="flex items-center gap-2">
+                            <Badge variant="secondary">{index + 1}순위</Badge>
+                            <span>
+                              {skill.skill_name} ({skill.skill_type})
+                            </span>
+                          </div>
+                          <Badge variant="outline">
+                            레벨 {skill.recommended_level}
+                          </Badge>
+                        </div>
+                        <Progress
+                          value={
+                            ((skills.length - index) / skills.length) * 100
+                          }
+                          className="w-full"
+                        />
                       </div>
                     ))}
                   </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
+                </CardContent>
+              </Card>
+            </TabsContent>
 
-        <TabsContent value="teams">
-          <Card>
-            <CardHeader>
-              <CardTitle>추천 팀 구성</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                {teamCompositions.map((team, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">{index + 1}순위</Badge>
-                      <h3 className="text-lg font-semibold">
-                        {team.team_name}
+            <TabsContent value="artifacts" className="min-h-[300px] w-full">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>추천 성유물 세트</CardTitle>
+                </CardHeader>
+                <CardContent className="w-full">
+                  <div className="space-y-4 w-full">
+                    {artifactSets.map((set, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center justify-between w-full"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Badge variant="secondary">{index + 1}순위</Badge>
+                          <span>{set.set_name}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="stats" className="min-h-[300px] w-full">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>추천 스탯</CardTitle>
+                </CardHeader>
+                <CardContent className="w-full">
+                  <div className="space-y-6 w-full">
+                    <div className="w-full">
+                      <h3 className="text-lg font-semibold mb-4">
+                        준종결 스탯
                       </h3>
+                      <div className="space-y-2 w-full">
+                        {stats.준종결.map((stat, index) => (
+                          <div
+                            key={index}
+                            className="flex items-center justify-between w-full"
+                          >
+                            <span>{stat.stat_type}</span>
+                            <span>{stat.value}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      {team.team_members.map((member, memberIndex) => (
-                        <Badge key={memberIndex} variant="outline">
-                          {member}
-                        </Badge>
-                      ))}
+                    <Separator className="w-full" />
+                    <div className="w-full">
+                      <h3 className="text-lg font-semibold mb-4">종결 스탯</h3>
+                      <div className="space-y-2 w-full">
+                        {stats.종결.map((stat, index) => (
+                          <div
+                            key={index}
+                            className="flex items-center justify-between w-full"
+                          >
+                            <span>{stat.stat_type}</span>
+                            <span>{stat.value}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      {team.description}
-                    </p>
                   </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="teams" className="min-h-[300px] w-full">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>추천 팀 구성</CardTitle>
+                </CardHeader>
+                <CardContent className="w-full">
+                  <div className="space-y-6 w-full">
+                    {teamCompositions.map((team, index) => (
+                      <div key={index} className="space-y-2 w-full">
+                        <div className="flex items-center gap-2">
+                          <Badge variant="secondary">{index + 1}순위</Badge>
+                          <h3 className="text-lg font-semibold">
+                            {team.team_name}
+                          </h3>
+                        </div>
+                        <div className="flex flex-wrap gap-2 w-full">
+                          {team.team_members.map((member, memberIndex) => (
+                            <Badge key={memberIndex} variant="outline">
+                              {member}
+                            </Badge>
+                          ))}
+                        </div>
+                        <p className="text-sm text-muted-foreground w-full">
+                          {team.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </div>
+        </div>
       </Tabs>
     </div>
   );
