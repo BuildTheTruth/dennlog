@@ -31,7 +31,7 @@ export function Header() {
               href={item.href}
               className={cn(
                 "transition-colors hover:text-foreground/80",
-                pathname === item.href
+                pathname.startsWith(item.href)
                   ? "text-foreground font-semibold"
                   : "text-foreground/60"
               )}

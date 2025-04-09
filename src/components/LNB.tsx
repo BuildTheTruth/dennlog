@@ -23,7 +23,7 @@ export function LNB({ items }: LNBProps) {
             <Link
               href={item.href}
               className={`block p-2 rounded-lg transition-colors ${
-                pathname === item.href
+                pathname.startsWith(item.href)
                   ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200"
                   : "hover:bg-gray-100 dark:hover:bg-gray-800"
               }`}
