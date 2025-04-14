@@ -1,0 +1,584 @@
+{
+  "Aether": {
+    "kr": "아이테르",
+    "en": "Aether",
+    "jp": "アイテル",
+    "cn": "空"
+  },
+  "Albedo": {
+    "kr": "알베도",
+    "en": "Albedo",
+    "jp": "アルベ도",
+    "cn": "阿贝多"
+  },
+  "Alhaitham": {
+    "kr": "알하이탐",
+    "en": "Alhaitham",
+    "jp": "アルハイタム",
+    "cn": "艾尔海森"
+  },
+  "Aloy": {
+    "kr": "에일로이",
+    "en": "Aloy",
+    "jp": "アロイ",
+    "cn": "埃洛伊"
+  },
+  "Amber": {
+    "kr": "엠버",
+    "en": "Amber",
+    "jp": "アンバー",
+    "cn": "安柏"
+  },
+  "Arataki Itto": {
+    "kr": "아라타키 이토",
+    "en": "Arataki Itto",
+    "jp": "アラタキ イットォ",
+    "cn": "荒泷一斗"
+  },
+  "Arlecchino": {
+    "kr": "아를레키노",
+    "en": "Arlecchino",
+    "jp": "アルレッキーノ",
+    "cn": "阿蕾奇诺"
+  },
+  "Baizhu": {
+    "kr": "백출",
+    "en": "Baizhu",
+    "jp": "バイジュ",
+    "cn": "白术"
+  },
+  "Barbara": {
+    "kr": "바바라",
+    "en": "Barbara",
+    "jp": "バルバラ",
+    "cn": "芭芭拉"
+  },
+  "Beidou": {
+    "kr": "북두",
+    "en": "Beidou",
+    "jp": "ベイドゥ",
+    "cn": "北斗"
+  },
+  "Bennett": {
+    "kr": "베넷",
+    "en": "Bennett",
+    "jp": "ベネット",
+    "cn": "班尼特"
+  },
+  "Candace": {
+    "kr": "캔디스",
+    "en": "Candace",
+    "jp": "キャンデス",
+    "cn": "坎蒂丝"
+  },
+  "Charlotte": {
+    "kr": "샤를로트",
+    "en": "Charlotte",
+    "jp": "シャルロット",
+    "cn": "夏洛蒂"
+  },
+  "Chasca": {
+    "kr": "차스카",
+    "en": "Chasca",
+    "jp": "チャスカ",
+    "cn": "夏沃蕾"
+  },
+  "Chevreuse": {
+    "kr": "슈브르즈",
+    "en": "Chevreuse",
+    "jp": "シュヴェルーズ",
+    "cn": "夏沃蕾"
+  },
+  "Chiori": {
+    "kr": "치오리",
+    "en": "Chiori",
+    "jp": "チオリ",
+    "cn": "千织"
+  },
+  "Chongyun": {
+    "kr": "중운",
+    "en": "Chongyun",
+    "jp": "チョンユン",
+    "cn": "重云"
+  },
+  "Citlali": {
+    "kr": "시틀라리",
+    "en": "Citlali",
+    "jp": "シテルラリ",
+    "cn": "茜特菈莉"
+  },
+  "Clorinde": {
+    "kr": "클로린드",
+    "en": "Clorinde",
+    "jp": "クロリンド",
+    "cn": "克洛琳德"
+  },
+  "Collei": {
+    "kr": "콜레이",
+    "en": "Collei",
+    "jp": "コレイ",
+    "cn": "柯莱"
+  },
+  "Cyno": {
+    "kr": "사이노",
+    "en": "Cyno",
+    "jp": "シノ",
+    "cn": "赛诺"
+  },
+  "Dehya": {
+    "kr": "데히야",
+    "en": "Dehya",
+    "jp": "デヒャ",
+    "cn": "迪希雅"
+  },
+  "Diluc": {
+    "kr": "다이루크",
+    "en": "Diluc",
+    "jp": "ディルック",
+    "cn": "迪卢克"
+  },
+  "Diona": {
+    "kr": "디오나",
+    "en": "Diona",
+    "jp": "ディオナ",
+    "cn": "迪奥娜"
+  },
+  "Dori": {
+    "kr": "도리",
+    "en": "Dori",
+    "jp": "ドリ",
+    "cn": "多莉"
+  },
+  "Emilie": {
+    "kr": "에밀리",
+    "en": "Emilie",
+    "jp": "エミリー",
+    "cn": "艾梅莉埃"
+  },
+  "Eula": {
+    "kr": "유라",
+    "en": "Eula",
+    "jp": "エウルア",
+    "cn": "优菈"
+  },
+  "Faruzan": {
+    "kr": "파루잔",
+    "en": "Faruzan",
+    "jp": "ファルズーン",
+    "cn": "珐露珊"
+  },
+  "Fischl": {
+    "kr": "피슬",
+    "en": "Fischl",
+    "jp": "フィッシュル",
+    "cn": "菲谢尔"
+  },
+  "Freminet": {
+    "kr": "프리미네",
+    "en": "Freminet",
+    "jp": "フレミネット",
+    "cn": "菲米尼"
+  },
+  "Furina": {
+    "kr": "푸리나",
+    "en": "Furina",
+    "jp": "フリーナ",
+    "cn": "芙宁娜"
+  },
+  "Gaming": {
+    "kr": "가명",
+    "en": "Gaming",
+    "jp": "ゲーミング",
+    "cn": "嘉明"
+  },
+  "Ganyu": {
+    "kr": "감우",
+    "en": "Ganyu",
+    "jp": "ガニュ",
+    "cn": "甘雨"
+  },
+  "Gorou": {
+    "kr": "고로",
+    "en": "Gorou",
+    "jp": "ゴロウ",
+    "cn": "五郎"
+  },
+  "Hu Tao": {
+    "kr": "호두",
+    "en": "Hu Tao",
+    "jp": "ホウタ",
+    "cn": "胡桃"
+  },
+  "Iansan": {
+    "kr": "얀사",
+    "en": "Iansan",
+    "jp": "イアンサン",
+    "cn": "伊安珊"
+  },
+  "Jean": {
+    "kr": "진",
+    "en": "Jean",
+    "jp": "ジャン",
+    "cn": "琴"
+  },
+  "Kachina": {
+    "kr": "카치나",
+    "en": "Kachina",
+    "jp": "カチナ",
+    "cn": "卡齐娜"
+  },
+  "Kaedehara Kazuha": {
+    "kr": "카에데하라 카즈하",
+    "en": "Kaedehara Kazuha",
+    "jp": "カエデハラ カズハ",
+    "cn": "枫原万叶"
+  },
+  "Kaeya": {
+    "kr": "케이아",
+    "en": "Kaeya",
+    "jp": "ケイア",
+    "cn": "凯亚"
+  },
+  "Kamisato Ayaka": {
+    "kr": "카미사토 아아캬",
+    "en": "Kamisato Ayaka",
+    "jp": "カミサト アイカ",
+    "cn": "神里绫华"
+  },
+  "Kamisato Ayato": {
+    "kr": "카미사토 아야토",
+    "en": "Kamisato Ayato",
+    "jp": "カミサト アヤト",
+    "cn": "神里绫人"
+  },
+  "Kaveh": {
+    "kr": "카베",
+    "en": "Kaveh",
+    "jp": "カベー",
+    "cn": "卡维"
+  },
+  "Keqing": {
+    "kr": "각청",
+    "en": "Keqing",
+    "jp": "ケーキング",
+    "cn": "刻晴"
+  },
+  "Kinich": {
+    "kr": "키니치",
+    "en": "Kinich",
+    "jp": "キニッチ",
+    "cn": "基尼奇"
+  },
+  "Kirara": {
+    "kr": "키라라",
+    "en": "Kirara",
+    "jp": "キララ",
+    "cn": "绮良良"
+  },
+  "Klee": {
+    "kr": "클레",
+    "en": "Klee",
+    "jp": "クレー",
+    "cn": "可莉"
+  },
+  "Kujou Sara": {
+    "kr": "쿠죠 사라",
+    "en": "Kujou Sara",
+    "jp": "クジョウ サラ",
+    "cn": "九条裟罗"
+  },
+  "Kuki Shinobu": {
+    "kr": "쿠키 시노부",
+    "en": "Kuki Shinobu",
+    "jp": "クキ シノブ",
+    "cn": "久岐忍"
+  },
+  "Lan Yan": {
+    "kr": "남연",
+    "en": "Lan Yan",
+    "jp": "ラン ヤン",
+    "cn": "蓝砚"
+  },
+  "Layla": {
+    "kr": "레일라",
+    "en": "Layla",
+    "jp": "レイラ",
+    "cn": "莱依拉"
+  },
+  "Lisa": {
+    "kr": "리사",
+    "en": "Lisa",
+    "jp": "リサ",
+    "cn": "丽莎"
+  },
+  "Lumine": {
+    "kr": "루미네",
+    "en": "Lumine",
+    "jp": "ルミネ",
+    "cn": "荧"
+  },
+  "Lynette": {
+    "kr": "리넷",
+    "en": "Lynette",
+    "jp": "リネット",
+    "cn": "琳妮特"
+  },
+  "Lyney": {
+    "kr": "리니",
+    "en": "Lyney",
+    "jp": "リネイ",
+    "cn": "林尼"
+  },
+  "Mavuika": {
+    "kr": "마비카",
+    "en": "Mavuika",
+    "jp": "マヴィカ",
+    "cn": "玛薇卡"
+  },
+  "Mika": {
+    "kr": "미카",
+    "en": "Mika",
+    "jp": "ミカ",
+    "cn": "米卡"
+  },
+  "Mona": {
+    "kr": "모나",
+    "en": "Mona",
+    "jp": "モナ",
+    "cn": "莫娜"
+  },
+  "Nahida": {
+    "kr": "나히다",
+    "en": "Nahida",
+    "jp": "ナヒダ",
+    "cn": "纳西妲"
+  },
+  "Navia": {
+    "kr": "나비아",
+    "en": "Navia",
+    "jp": "ナビア",
+    "cn": "娜维娅"
+  },
+  "Neuvillette": {
+    "kr": "느비에트",
+    "en": "Neuvillette",
+    "jp": "ヌーヴィエット",
+    "cn": "那维莱特"
+  },
+  "Nilou": {
+    "kr": "닐루",
+    "en": "Nilou",
+    "jp": "ニルゥ",
+    "cn": "妮露"
+  },
+  "Ningguang": {
+    "kr": "응광",
+    "en": "Ningguang",
+    "jp": "ニングクォン",
+    "cn": "凝光"
+  },
+  "Noelle": {
+    "kr": "노엘",
+    "en": "Noelle",
+    "jp": "ノエル",
+    "cn": "诺艾尔"
+  },
+  "Ororon": {
+    "kr": "올로룬",
+    "en": "Ororon",
+    "jp": "オロロン",
+    "cn": "欧洛伦"
+  },
+  "Qiqi": {
+    "kr": "치치",
+    "en": "Qiqi",
+    "jp": "チチ",
+    "cn": "七七"
+  },
+  "Raiden Shogun": {
+    "kr": "라이덴 쇼군",
+    "en": "Raiden Shogun",
+    "jp": "ライデン ショーグン",
+    "cn": "雷电将军"
+  },
+  "Razor": {
+    "kr": "레이저",
+    "en": "Razor",
+    "jp": "レイザー",
+    "cn": "雷泽"
+  },
+  "Rosaria": {
+    "kr": "로자리아",
+    "en": "Rosaria",
+    "jp": "ロザリア",
+    "cn": "罗莎莉亚"
+  },
+  "Sangonomiya Kokomi": {
+    "kr": "산고노미야 코코미",
+    "en": "Sangonomiya Kokomi",
+    "jp": "サンゴノミヤ ココミ",
+    "cn": "珊瑚宫心海"
+  },
+  "Sayu": {
+    "kr": "사유",
+    "en": "Sayu",
+    "jp": "サユ",
+    "cn": "早柚"
+  },
+  "Sethos": {
+    "kr": "세토스",
+    "en": "Sethos",
+    "jp": "セトス",
+    "cn": "赛索斯"
+  },
+  "Shenhe": {
+    "kr": "신학",
+    "en": "Shenhe",
+    "jp": "シェンヘ",
+    "cn": "申鹤"
+  },
+  "Shikanoin Heizou": {
+    "kr": "시카노인 헤이조",
+    "en": "Shikanoin Heizou",
+    "jp": "シカノイン ヘイゾウ",
+    "cn": "鹿野院平藏"
+  },
+  "Sigewinne": {
+    "kr": "시그윈",
+    "en": "Sigewinne",
+    "jp": "シグウィンネ",
+    "cn": "希格雯"
+  },
+  "Sucrose": {
+    "kr": "설탕",
+    "en": "Sucrose",
+    "jp": "スクロース",
+    "cn": "砂糖"
+  },
+  "Tartaglia": {
+    "kr": "타르탈리아",
+    "en": "Tartaglia",
+    "jp": "タルタリア",
+    "cn": "达达利亚"
+  },
+  "Thoma": {
+    "kr": "토마",
+    "en": "Thoma",
+    "jp": "トーマ",
+    "cn": "托马"
+  },
+  "Tighnari": {
+    "kr": "타이나리",
+    "en": "Tighnari",
+    "jp": "タイナリ",
+    "cn": "提纳里"
+  },
+  "Varesa": {
+    "kr": "바레사",
+    "en": "Varesa",
+    "jp": "バレーサ",
+    "cn": "瓦雷莎"
+  },
+  "Venti": {
+    "kr": "벤티",
+    "en": "Venti",
+    "jp": "ベンティ",
+    "cn": "温迪"
+  },
+  "Wanderer": {
+    "kr": "방랑자",
+    "en": "Wanderer",
+    "jp": "放浪者",
+    "cn": "流浪者"
+  },
+  "Wriothesley": {
+    "kr": "라이오슬리",
+    "en": "Wriothesley",
+    "jp": "リオセスリ",
+    "cn": "莱欧斯利"
+  },
+  "Xiangling": {
+    "kr": "향릉",
+    "en": "Xiangling",
+    "jp": "香菱",
+    "cn": "香菱"
+  },
+  "Xianyun": {
+    "kr": "한운",
+    "en": "Xianyun",
+    "jp": "閑雲",
+    "cn": "闲云"
+  },
+  "Xiao": {
+    "kr": "소",
+    "en": "Xiao",
+    "jp": "魈",
+    "cn": "魈"
+  },
+  "Xilonen": {
+    "kr": "실로닌",
+    "en": "Xilonen",
+    "jp": "シロネン",
+    "cn": "希诺宁"
+  },
+  "Xingqiu": {
+    "kr": "행추",
+    "en": "Xingqiu",
+    "jp": "シンキュー",
+    "cn": "行秋"
+  },
+  "Xinyan": {
+    "kr": "신염",
+    "en": "Xinyan",
+    "jp": "シンヤン",
+    "cn": "辛焱"
+  },
+  "Yae Miko": {
+    "kr": "야에 미코",
+    "en": "Yae Miko",
+    "jp": "ヤエ ミコ",
+    "cn": "八重神子"
+  },
+  "Yanfei": {
+    "kr": "연비",
+    "en": "Yanfei",
+    "jp": "ヤンフェー",
+    "cn": "烟绯"
+  },
+  "Yaoyao": {
+    "kr": "요요",
+    "en": "Yaoyao",
+    "jp": "ヨウヨウ",
+    "cn": "瑶瑶"
+  },
+  "Yelan": {
+    "kr": "야란",
+    "en": "Yelan",
+    "jp": "ヤラン",
+    "cn": "夜兰"
+  },
+  "Yoimiya": {
+    "kr": "요이미야",
+    "en": "Yoimiya",
+    "jp": "ヨイミヤ",
+    "cn": "宵宫"
+  },
+  "Yumemizuki Mizuki": {
+    "kr": "유메미즈키 미즈키",
+    "en": "Yumemizuki Mizuki",
+    "jp": "ユメミズキ ミズキ",
+    "cn": "梦见月瑞希"
+  },
+  "Yun Jin": {
+    "kr": "운근",
+    "en": "Yun Jin",
+    "jp": "ユンジン",
+    "cn": "云堇"
+  },
+  "Zhongli": {
+    "kr": "종려",
+    "en": "Zhongli",
+    "jp": "ショウリ",
+    "cn": "钟离"
+  }
+}
