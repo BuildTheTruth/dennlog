@@ -1,26 +1,26 @@
 {
-  "Aether": {
-    "kr": "아이테르",
-    "en": "Aether",
-    "jp": "アイテル",
-    "cn": "空"
+  "Traveler": {
+    "kr": "여행자",
+    "en": "Traveler",
+    "jp": "旅人",
+    "cn": "旅行者"
   },
   "Albedo": {
     "kr": "알베도",
     "en": "Albedo",
-    "jp": "アルベ도",
+    "jp": "アルベド",
     "cn": "阿贝多"
   },
   "Alhaitham": {
     "kr": "알하이탐",
     "en": "Alhaitham",
-    "jp": "アルハイタム",
+    "jp": "アルハイゼン",
     "cn": "艾尔海森"
   },
   "Aloy": {
     "kr": "에일로이",
     "en": "Aloy",
-    "jp": "アロイ",
+    "jp": "アーロイ",
     "cn": "埃洛伊"
   },
   "Amber": {
@@ -86,7 +86,7 @@
   "Chevreuse": {
     "kr": "슈브르즈",
     "en": "Chevreuse",
-    "jp": "シュヴェルーズ",
+    "jp": "シュヴルーズ",
     "cn": "夏沃蕾"
   },
   "Chiori": {
@@ -240,9 +240,9 @@
     "cn": "凯亚"
   },
   "Kamisato Ayaka": {
-    "kr": "카미사토 아아캬",
+    "kr": "카미사토 아야카",
     "en": "Kamisato Ayaka",
-    "jp": "カミサト アイカ",
+    "jp": "カミサト アヤカ",
     "cn": "神里绫华"
   },
   "Kamisato Ayato": {
@@ -310,12 +310,6 @@
     "en": "Lisa",
     "jp": "リサ",
     "cn": "丽莎"
-  },
-  "Lumine": {
-    "kr": "루미네",
-    "en": "Lumine",
-    "jp": "ルミネ",
-    "cn": "荧"
   },
   "Lynette": {
     "kr": "리넷",
@@ -524,7 +518,7 @@
   "Xingqiu": {
     "kr": "행추",
     "en": "Xingqiu",
-    "jp": "シンキュー",
+    "jp": "行秋",
     "cn": "行秋"
   },
   "Xinyan": {

@@ -1,5 +1,5 @@
 export const CHARACTER_NAMES = [
-  "Aether", // 아이테르
+  "Traveler", // 여행자
   "Albedo", // 알베도
   "Alhaitham", // 알하이탐
   "Aloy", // 에일로이
@@ -51,7 +51,6 @@ export const CHARACTER_NAMES = [
   "Lan Yan", // 남연
   "Layla", // 레일라
   "Lisa", // 리사
-  "Lumine", // 루미네
   "Lynette", // 리넷
   "Lyney", // 리니
   "Mavuika", // 마비카
