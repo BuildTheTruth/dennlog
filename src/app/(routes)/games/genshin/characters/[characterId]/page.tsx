@@ -24,9 +24,14 @@ const GenshinCharacterPage = ({ params }: Props) => {
   }
 
   return (
-    <div className="flex flex-col w-full gap-20">
-      <div className="flex flex-col gap-2">
-        <Typography variant="h2">{character.name}</Typography>
+    <div className="flex flex-col w-full gap-20 items-center">
+      <div className="flex flex-col gap-2 w-full max-w-[720px]">
+        <Typography
+          variant="h2"
+          className="py-2 px-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg w-full text-center"
+        >
+          {character.name}
+        </Typography>
         <figure className="relative w-[720px] h-[500px]">
           <Image
             src={character.imageURL}
@@ -38,43 +43,59 @@ const GenshinCharacterPage = ({ params }: Props) => {
         </figure>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <Typography variant="h3">특성 (스킬) 순서</Typography>
-        <Table className="font-bold text-lg">
+      <div className="flex flex-col gap-2 w-full max-w-[720px]">
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg w-full"
+        >
+          {character.name} 특성 (스킬)
+        </Typography>
+        <Table className="text-lg">
           <TableHeader>
             <TableRow>
-              <TableHead></TableHead>
-              <TableHead>기본 공격</TableHead>
-              <TableHead>원소 전투 스킬</TableHead>
-              <TableHead>원소 폭발</TableHead>
+              <TableHead className="text-end"></TableHead>
+              <TableHead className="text-end w-[200px]">기본 공격</TableHead>
+              <TableHead className="text-end w-[200px]">원소 전투 스킬(E)</TableHead>
+              <TableHead className="text-end w-[200px]">원소 폭발(Q)</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow>
               <TableCell>최소 (권장)</TableCell>
               {character.skills.map(skill => (
-                <TableCell key={skill.id}>{skill.min}</TableCell>
+                <TableCell className="text-end" key={skill.id}>
+                  {skill.min}
+                </TableCell>
               ))}
             </TableRow>
             <TableRow>
-              <TableCell>최대 (추천)</TableCell>
+              <TableCell className="font-bold">최대 (고인물)</TableCell>
               {character.skills.map(skill => (
-                <TableCell key={skill.id}>{skill.max}</TableCell>
+                <TableCell className="font-bold text-end" key={skill.id}>
+                  {skill.max}
+                </TableCell>
               ))}
             </TableRow>
             <TableRow>
-              <TableCell>우선순위</TableCell>
+              <TableCell className="text-gray-500">우선순위</TableCell>
               {character.skills.map(skill => (
-                <TableCell key={skill.id}>{skill.priority}</TableCell>
+                <TableCell className="text-gray-500 text-end" key={skill.id}>
+                  {skill.priority}
+                </TableCell>
               ))}
             </TableRow>
           </TableBody>
         </Table>
       </div>
-      <div className="flex flex-col gap-2">
-        <Typography variant="h3">추천 무기</Typography>
+      <div className="flex flex-col gap-2 w-full max-w-[720px]">
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full"
+        >
+          추천 무기
+        </Typography>
         {character.recommendedWeapons.map(weapon => (
-          <div key={weapon.id} className="flex flex-col items-center gap-2 my-4">
+          <div key={weapon.id} className="flex flex-col items-center gap-2 my-4 w-full">
             <span className="text-lg font-bold">
               {weapon.priority}위. {weapon.name}
             </span>
