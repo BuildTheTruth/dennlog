@@ -1,6 +1,6 @@
 "use client";
 
-import characters from "@/__mock__/genshin/characters";
+import characters from "@/data/genshin/characters";
 import { useRouter } from "next/navigation";
 
 const GenshinCharactersPage = () => {

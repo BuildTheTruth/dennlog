@@ -1,10 +1,10 @@
-export const CHARACTER_NAMES = [
+export const GENSHIN_CHARACTER_NAMES = [
   "Traveler", // 여행자
   "Albedo", // 알베도
   "Alhaitham", // 알하이탐
   "Aloy", // 에일로이
   "Amber", // 엠버
-  "Arataki Itto", // 아라타키 이토
+  "AratakiItto", // 아라타키 이토
   "Arlecchino", // 아를레키노
   "Baizhu", // 백출
   "Barbara", // 바바라
@@ -33,22 +33,22 @@ export const CHARACTER_NAMES = [
   "Gaming", // 가명
   "Ganyu", // 감우
   "Gorou", // 고로
-  "Hu Tao", // 호두
+  "HuTao", // 호두
   "Iansan", // 얀사
   "Jean", // 진
   "Kachina", // 카치나
-  "Kaedehara Kazuha", // 카에데하라 카즈하
+  "KaedeharaKazuha", // 카에데하라 카즈하
   "Kaeya", // 케이아
-  "Kamisato Ayaka", // 카미사토 아아캬
-  "Kamisato Ayato", // 카미사토 아야토
+  "KamisatoAyaka", // 카미사토 아아캬
+  "KamisatoAyato", // 카미사토 아야토
   "Kaveh", // 카베
   "Keqing", // 각청
   "Kinich", // 키니치
   "Kirara", // 키라라
   "Klee", // 클레
-  "Kujou Sara", // 쿠죠 사라
-  "Kuki Shinobu", // 쿠키 시노부
-  "Lan Yan", // 남연
+  "KujouSara", // 쿠죠 사라
+  "KukiShinobu", // 쿠키 시노부
+  "LanYan", // 남연
   "Layla", // 레일라
   "Lisa", // 리사
   "Lynette", // 리넷
@@ -65,14 +65,14 @@ export const CHARACTER_NAMES = [
   "Noelle", // 노엘
   "Ororon", // 올로룬
   "Qiqi", // 치치
-  "Raiden Shogun", // 라이덴 쇼군
+  "RaidenShogun", // 라이덴 쇼군
   "Razor", // 레이저
   "Rosaria", // 로자리아
-  "Sangonomiya Kokomi", // 산고노미야 코코미
+  "SangonomiyaKokomi", // 산고노미야 코코미
   "Sayu", // 사유
   "Sethos", // 세토스
   "Shenhe", // 신학
-  "Shikanoin Heizou", // 시카노인 헤이조
+  "ShikanoinHeizou", // 시카노인 헤이조
   "Sigewinne", // 시그윈
   "Sucrose", // 설탕
   "Tartaglia", // 타르탈리아
@@ -93,7 +93,7 @@ export const CHARACTER_NAMES = [
   "Yaoyao", // 요요
   "Yelan", // 야란
   "Yoimiya", // 요이미야
-  "Yumemizuki Mizuki", // 유메미즈키 미즈키
-  "Yun Jin", // 운근
+  "YumemizukiMizuki", // 유메미즈키 미즈키
+  "YunJin", // 운근
   "Zhongli", // 종려
 ];
