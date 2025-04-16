@@ -40,9 +40,9 @@ export default function RouteLayout({ children }: Props) {
   const navItems = createNavItems(pathname);
 
   return (
-    <div className="flex">
+    <div className="flex w-full">
       <LNB items={navItems} />
-      <main className="flex-1 p-8">{children}</main>
+      <main className="flex p-8 w-full">{children}</main>
     </div>
   );
 }
