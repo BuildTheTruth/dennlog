@@ -199,9 +199,9 @@ const characters: GenshinCharacter[] = [
     weaponType: "양손검",
     rarity: 5,
     imageURL:
-      "https://i.namu.wiki/i/uokOamxY4uU48QGBFlBwoerdlK-Ai6DZbumzi4E_csLODbpi0Xzqv_Jsj_E4cgGiMZsUbdAX-6oDX0msDRcXOrLZz-SjPNqmkmzbmYOR4ErPitkG-JSk0bclMNeYS-HtSY6XpG8QK4LgxdkYL_DLBQ.webp",
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/mavuika/default.webp",
     thumbnailImageURL:
-      "https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Shougun.png",
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/mavuika/profile.webp",
     skills,
     stats,
     recommendedArtifactSets,
