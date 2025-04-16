@@ -12,18 +12,12 @@ interface CharacterSkill {
 
 type StatType = "기본" | "준종결" | "종결";
 
-// 성유물
-interface Artifact {
-  id: string;
-  name: string;
-  stat: string; // 공%, 치확, 치피, 불원피 등
-}
-
 interface CharacterStat {
   id: string;
   characterId: string;
   type: StatType;
-  artifactIds: string;
+  /* { "공격력": "1800+", "원소 마스터리": "120~300", "성배": "불원피/공%" } */
+  fields: { [name: string]: string };
 }
 
 // 추천 성유물 세트
@@ -101,123 +95,36 @@ const skills: CharacterSkill[] = [
   },
 ];
 
-const basicArtifacts: Artifact[] = [
-  {
-    id: "1",
-    name: "시계",
-    stat: "공%",
-  },
-  {
-    id: "2",
-    name: "성배",
-    stat: "불원피/공%",
-  },
-  {
-    id: "3",
-    name: "왕관",
-    stat: "치확/치피",
-  },
-  {
-    id: "4",
-    name: "공격력",
-    stat: "1800+",
-  },
-  {
-    id: "5",
-    name: "원마",
-    stat: "120~300",
-  },
-  {
-    id: "6",
-    name: "치확/치피",
-    stat: "80/200",
-  },
-];
-
-const normalArtifacts: Artifact[] = [
-  {
-    id: "7",
-    name: "시계",
-    stat: "공%",
-  },
-  {
-    id: "8",
-    name: "성배",
-    stat: "불원피/공%",
-  },
-  {
-    id: "9",
-    name: "왕관",
-    stat: "치확/치피",
-  },
-  {
-    id: "10",
-    name: "공격력",
-    stat: "1800+",
-  },
-  {
-    id: "11",
-    name: "원마",
-    stat: "120~300",
-  },
-  {
-    id: "12",
-    name: "치확/치피",
-    stat: "80/200",
-  },
-];
-
-const finalArtifacts: Artifact[] = [
-  {
-    id: "13",
-    name: "시계",
-    stat: "공%",
-  },
-  {
-    id: "14",
-    name: "성배",
-    stat: "불원피/공%",
-  },
-  {
-    id: "15",
-    name: "왕관",
-    stat: "치확/치피",
-  },
-  {
-    id: "16",
-    name: "공격력",
-    stat: "1800+",
-  },
-  {
-    id: "17",
-    name: "원마",
-    stat: "120~300",
-  },
-  {
-    id: "18",
-    name: "치확/치피",
-    stat: "80/200",
-  },
-];
-
 const stats: CharacterStat[] = [
   {
     id: "mavuika-stat-basic",
     characterId: "mavuika",
     type: "기본",
-    artifactIds: basicArtifacts.map((artifact) => artifact.id).join(","),
+    fields: {
+      공격력: "1800+",
+      "원소 마스터리": "120~300",
+      성배: "불원피/공%",
+    },
   },
   {
     id: "mavuika-stat-normal",
     characterId: "mavuika",
     type: "준종결",
-    artifactIds: normalArtifacts.map((artifact) => artifact.id).join(","),
+    fields: {
+      공격력: "1800+",
+      "원소 마스터리": "120~300",
+      성배: "불원피/공%",
+    },
   },
   {
     id: "mavuika-stat-final",
     characterId: "mavuika",
     type: "종결",
-    artifactIds: finalArtifacts.map((artifact) => artifact.id).join(","),
+    fields: {
+      공격력: "1800+",
+      "원소 마스터리": "120~300",
+      성배: "불원피/공%",
+    },
   },
 ];
 
@@ -302,3 +209,5 @@ const characters: GenshinCharacter[] = [
     recommendedTeams,
   },
 ];
+
+export default characters;
