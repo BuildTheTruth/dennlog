@@ -125,15 +125,17 @@ const recommendedTeams: RecommendedTeam[] = [
 ];
 
 const Iansan: GenshinCharacter = {
-  id: "Mavuika",
-  name: "마비카",
-  element: "불",
-  weaponType: "양손검",
-  rarity: 5,
+  id: "Iansan",
+  name: "얀사",
+  element: "번개",
+  weaponType: "장병기",
+  rarity: 4,
   imageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/default.webp",
   profileImageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/profile.webp",
+  thumbnailImageURL:
+    "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/thumbnail.webp",
   skills,
   stats,
   recommendedArtifactSets,

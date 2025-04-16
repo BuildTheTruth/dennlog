@@ -125,15 +125,17 @@ const recommendedTeams: RecommendedTeam[] = [
 ];
 
 const Varesa: GenshinCharacter = {
-  id: "Mavuika",
-  name: "마비카",
-  element: "불",
-  weaponType: "양손검",
+  id: "Varesa",
+  name: "바레사",
+  element: "번개",
+  weaponType: "법구",
   rarity: 5,
   imageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/default.webp",
   profileImageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/profile.webp",
+  thumbnailImageURL:
+    "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/thumbnail.webp",
   skills,
   stats,
   recommendedArtifactSets,

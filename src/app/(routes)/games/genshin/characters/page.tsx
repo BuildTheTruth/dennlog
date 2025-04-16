@@ -1,6 +1,6 @@
 "use client";
 
-import characters from "@/data/genshin/characters";
+import { GENSHIN_CHARACTERS } from "@/data/genshin/characters";
 import { useRouter } from "next/navigation";
 
 const GenshinCharactersPage = () => {
@@ -12,7 +12,7 @@ const GenshinCharactersPage = () => {
         캐릭터 육성법
       </div>
       <div className="flex flex-wrap gap-4">
-        {characters.map((character) => (
+        {GENSHIN_CHARACTERS.map((character) => (
           <div
             className="flex flex-col items-center gap-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-4"
             key={character.id}

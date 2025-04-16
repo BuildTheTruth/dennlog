@@ -134,6 +134,8 @@ const Mavuika: GenshinCharacter = {
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/default.webp",
   profileImageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/profile.webp",
+  thumbnailImageURL:
+    "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/thumbnail.webp",
   skills,
   stats,
   recommendedArtifactSets,

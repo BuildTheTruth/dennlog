@@ -125,15 +125,17 @@ const recommendedTeams: RecommendedTeam[] = [
 ];
 
 const RaidenShogun: GenshinCharacter = {
-  id: "Mavuika",
-  name: "마비카",
-  element: "불",
-  weaponType: "양손검",
+  id: "RaidenShogun",
+  name: "라이덴 쇼군",
+  element: "번개",
+  weaponType: "장병기",
   rarity: 5,
   imageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/default.webp",
   profileImageURL:
     "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/profile.webp",
+  thumbnailImageURL:
+    "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/thumbnail.webp",
   skills,
   stats,
   recommendedArtifactSets,

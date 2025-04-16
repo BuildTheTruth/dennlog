@@ -58,6 +58,7 @@ interface GenshinCharacter {
   rarity: number;
   imageURL: string;
   profileImageURL: string;
+  thumbnailImageURL: string;
   skills: CharacterSkill[];
   stats: CharacterStat[];
   recommendedArtifactSets: RecommendedArtifactSet[]; // 추천 성유물

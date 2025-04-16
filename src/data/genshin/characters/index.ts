@@ -3,6 +3,15 @@ import Mavuika from "./Mavuika";
 import RaidenShogun from "./RaidenShogun";
 import Varesa from "./Varesa";
 
-const characters: GenshinCharacter[] = [Mavuika, RaidenShogun, Varesa, Iansan];
+export const GENSHIN_CHARACTER_BY_ID = {
+  Mavuika,
+  RaidenShogun,
+  Varesa,
+  Iansan,
+} as const;
 
-export default characters;
+export const GENSHIN_CHARACTERS: GenshinCharacter[] = Object.values(
+  GENSHIN_CHARACTER_BY_ID
+);
+
+export type GenshinCharacterID = keyof typeof GENSHIN_CHARACTER_BY_ID;
