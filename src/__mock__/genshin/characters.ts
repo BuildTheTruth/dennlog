@@ -57,7 +57,7 @@ interface GenshinCharacter {
   weaponType: string;
   rarity: number;
   imageURL: string;
-  thumbnailImageURL: string;
+  profileImageURL: string;
   skills: CharacterSkill[];
   stats: CharacterStat[];
   recommendedArtifactSets: RecommendedArtifactSet[]; // 추천 성유물
@@ -193,15 +193,63 @@ const recommendedTeams: RecommendedTeam[] = [
 
 const characters: GenshinCharacter[] = [
   {
-    id: "mavuika",
+    id: "Mavuika",
     name: "마비카",
     element: "불",
     weaponType: "양손검",
     rarity: 5,
     imageURL:
-      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/mavuika/default.webp",
-    thumbnailImageURL:
-      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/mavuika/profile.webp",
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/default.webp",
+    profileImageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/profile.webp",
+    skills,
+    stats,
+    recommendedArtifactSets,
+    recommendedWeapons,
+    recommendedTeams,
+  },
+  {
+    id: "RaidenShogun",
+    name: "라이덴 쇼군",
+    element: "번개",
+    weaponType: "장병기",
+    rarity: 5,
+    imageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/default.webp",
+    profileImageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/profile.webp",
+    skills,
+    stats,
+    recommendedArtifactSets,
+    recommendedWeapons,
+    recommendedTeams,
+  },
+  {
+    id: "Varesa",
+    name: "바레사",
+    element: "번개",
+    weaponType: "법구",
+    rarity: 5,
+    imageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/default.webp",
+    profileImageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/profile.webp",
+    skills,
+    stats,
+    recommendedArtifactSets,
+    recommendedWeapons,
+    recommendedTeams,
+  },
+  {
+    id: "Iansan",
+    name: "얀사",
+    element: "번개",
+    weaponType: "장병기",
+    rarity: 4,
+    imageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/default.webp",
+    profileImageURL:
+      "https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/profile.webp",
     skills,
     stats,
     recommendedArtifactSets,

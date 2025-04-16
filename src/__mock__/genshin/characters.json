@@ -29,7 +29,7 @@
     "jp": "アンバー",
     "cn": "安柏"
   },
-  "Arataki Itto": {
+  "AratakiItto": {
     "kr": "아라타키 이토",
     "en": "Arataki Itto",
     "jp": "荒瀧一斗",
@@ -203,7 +203,7 @@
     "jp": "五郎",
     "cn": "五郎"
   },
-  "Hu Tao": {
+  "HuTao": {
     "kr": "호두",
     "en": "Hu Tao",
     "jp": "胡桃",
@@ -227,7 +227,7 @@
     "jp": "カチナ",
     "cn": "卡齐娜"
   },
-  "Kaedehara Kazuha": {
+  "KaedeharaKazuha": {
     "kr": "카에데하라 카즈하",
     "en": "Kaedehara Kazuha",
     "jp": "楓原万葉",
@@ -239,13 +239,13 @@
     "jp": "ケイア",
     "cn": "凯亚"
   },
-  "Kamisato Ayaka": {
+  "KamisatoAyaka": {
     "kr": "카미사토 아야카",
     "en": "Kamisato Ayaka",
     "jp": "神里綾華",
     "cn": "神里绫华"
   },
-  "Kamisato Ayato": {
+  "KamisatoAyato": {
     "kr": "카미사토 아야토",
     "en": "Kamisato Ayato",
     "jp": "神里綾人",
@@ -281,19 +281,19 @@
     "jp": "クレー",
     "cn": "可莉"
   },
-  "Kujou Sara": {
+  "KujouSara": {
     "kr": "쿠죠 사라",
     "en": "Kujou Sara",
     "jp": "九条裟羅",
     "cn": "九条裟罗"
   },
-  "Kuki Shinobu": {
+  "KukiShinobu": {
     "kr": "쿠키 시노부",
     "en": "Kuki Shinobu",
     "jp": "久岐忍",
     "cn": "久岐忍"
   },
-  "Lan Yan": {
+  "LanYan": {
     "kr": "남연",
     "en": "Lan Yan",
     "jp": "ラン ヤン",
@@ -389,7 +389,7 @@
     "jp": "七七",
     "cn": "七七"
   },
-  "Raiden Shogun": {
+  "RaidenShogun": {
     "kr": "라이덴 쇼군",
     "en": "Raiden Shogun",
     "jp": "雷電将軍",
@@ -407,7 +407,7 @@
     "jp": "ロザリア",
     "cn": "罗莎莉亚"
   },
-  "Sangonomiya Kokomi": {
+  "SangonomiyaKokomi": {
     "kr": "산고노미야 코코미",
     "en": "Sangonomiya Kokomi",
     "jp": "珊瑚宮心海",
@@ -431,7 +431,7 @@
     "jp": "申鶴",
     "cn": "申鹤"
   },
-  "Shikanoin Heizou": {
+  "ShikanoinHeizou": {
     "kr": "시카노인 헤이조",
     "en": "Shikanoin Heizou",
     "jp": "鹿野院平蔵",
@@ -527,7 +527,7 @@
     "jp": "辛焱",
     "cn": "辛焱"
   },
-  "Yae Miko": {
+  "YaeMiko": {
     "kr": "야에 미코",
     "en": "Yae Miko",
     "jp": "八重神子",
@@ -557,13 +557,13 @@
     "jp": "宵宮",
     "cn": "宵宫"
   },
-  "Yumemizuki Mizuki": {
+  "YumemizukiMizuki": {
     "kr": "유메미즈키 미즈키",
     "en": "Yumemizuki Mizuki",
     "jp": "夢見月瑞希",
     "cn": "梦见月瑞希"
   },
-  "Yun Jin": {
+  "YunJin": {
     "kr": "운근",
     "en": "Yun Jin",
     "jp": "雲菫",
