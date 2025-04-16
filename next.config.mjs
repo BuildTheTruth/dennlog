@@ -5,17 +5,17 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "idphhmvmuywfflotbvei.supabase.co",
-        port: "",
+        protocol: 'https',
+        hostname: 'idphhmvmuywfflotbvei.supabase.co',
+        port: '',
       },
     ],
   },
   async redirects() {
     return [
       {
-        source: "/games/genshin",
-        destination: "/games/genshin/characters",
+        source: '/games/genshin',
+        destination: '/games/genshin/characters',
         permanent: true,
       },
     ];

@@ -1,5 +1,5 @@
-import { createClient } from "@supabase/supabase-js";
-import { Database } from "@/types/supabase";
+import { createClient } from '@supabase/supabase-js';
+import { Database } from '@/types/supabase';
 
 // Supabase 클라이언트 타입 정의
 export type SupabaseClient = ReturnType<typeof createClient<Database>>;
@@ -25,7 +25,7 @@ export function getSupabaseClient(): SupabaseClient {
 
   // 환경 변수가 설정되어 있는지 확인
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error("Supabase URL과 API 키가 설정되어 있지 않습니다.");
+    throw new Error('Supabase URL과 API 키가 설정되어 있지 않습니다.');
   }
 
   // 새로운 Supabase 클라이언트 생성
@@ -53,7 +53,7 @@ export function getServerSupabaseClient(): SupabaseClient {
 
   // 환경 변수가 설정되어 있는지 확인
   if (!supabaseUrl || !supabaseServiceKey) {
-    throw new Error("Supabase URL과 서비스 키가 설정되어 있지 않습니다.");
+    throw new Error('Supabase URL과 서비스 키가 설정되어 있지 않습니다.');
   }
 
   // 서버 사이드용 Supabase 클라이언트 생성

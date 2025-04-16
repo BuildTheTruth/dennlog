@@ -1,9 +1,9 @@
-import { getSupabaseClient } from "./supabase";
+import { getSupabaseClient } from './supabase';
 
 export async function getCharacterData(characterId: string) {
   const supabase = getSupabaseClient();
   const { data: character, error } = await supabase
-    .from("characters")
+    .from('characters')
     .select(
       `
       *,
@@ -26,9 +26,9 @@ export async function getCharacterData(characterId: string) {
         *,
         attribute:game_specific_attributes(*)
       )
-    `
+    `,
     )
-    .eq("id", characterId)
+    .eq('id', characterId)
     .single();
 
   if (error) {

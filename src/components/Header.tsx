@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { ModeToggle } from "./ModeToggle";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
+import Link from 'next/link';
+import { ModeToggle } from './ModeToggle';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const navItems = [
-  { href: "/dev", label: "Dev" },
-  { href: "/games", label: "Games" },
-  { href: "/about", label: "About" },
+  { href: '/dev', label: 'Dev' },
+  { href: '/games', label: 'Games' },
+  { href: '/about', label: 'About' },
 ];
 
 export function Header() {
@@ -25,15 +25,15 @@ export function Header() {
         </div>
         {/* 네비게이션 - 왼쪽 배치 */}
         <nav className="flex-1 flex items-center justify-start space-x-6 text-sm font-medium ml-8">
-          {navItems.map((item) => (
+          {navItems.map(item => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                "transition-colors hover:text-foreground/80",
+                'transition-colors hover:text-foreground/80',
                 pathname.startsWith(item.href)
-                  ? "text-foreground font-semibold"
-                  : "text-foreground/60"
+                  ? 'text-foreground font-semibold'
+                  : 'text-foreground/60',
               )}
             >
               {item.label}

@@ -1,8 +1,7 @@
-type SkillType = "기본공격" | "원소전투스킬" | "원소폭발";
+type SkillType = '기본공격' | '원소전투스킬' | '원소폭발';
 
 interface CharacterSkill {
   id: string;
-  characterId: string;
   type: SkillType;
   name: string;
   max: number; // 고인물 특성 레벨
@@ -10,11 +9,10 @@ interface CharacterSkill {
   priority: number; // 레벨업 순서
 }
 
-type StatType = "기본" | "준종결" | "종결";
+type StatType = '기본' | '준종결' | '종결';
 
 interface CharacterStat {
   id: string;
-  characterId: string;
   type: StatType;
   /* { "공격력": "1800+", "원소 마스터리": "120~300", "성배": "불원피/공%" } */
   fields: { [name: string]: string };
@@ -23,7 +21,7 @@ interface CharacterStat {
 // 추천 성유물 세트
 interface RecommendedArtifactSet {
   id: string;
-  characterId: string;
+
   name: string;
   priority: number;
   imageURLs: string;
@@ -32,7 +30,7 @@ interface RecommendedArtifactSet {
 
 interface RecommendedWeapon {
   id: string;
-  characterId: string;
+
   name: string;
   imageURL: string;
   priority: number;
@@ -43,7 +41,7 @@ interface RecommendedWeapon {
 
 interface RecommendedTeam {
   id: string;
-  characterId: string;
+
   name: string;
   characters: string;
   description: string;

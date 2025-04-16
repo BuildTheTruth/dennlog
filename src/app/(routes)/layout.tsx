@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import { LNB } from "@/components/LNB";
-import { usePathname } from "next/navigation";
+import { LNB } from '@/components/LNB';
+import { usePathname } from 'next/navigation';
 
 const titleByRoute = {
-  denncar: "DennCar",
-  dennquiz: "DennQuiz",
-  genshin: "원신",
-  wutheringwaves: "명조",
-  zenless: "젠레스 존 제로",
+  denncar: 'DennCar',
+  dennquiz: 'DennQuiz',
+  genshin: '원신',
+  wutheringwaves: '명조',
+  zenless: '젠레스 존 제로',
 } as const;
 
 const categoriesByPage: Record<string, (keyof typeof titleByRoute)[]> = {
-  "/dev": ["denncar", "dennquiz"],
-  "/games": ["genshin", "wutheringwaves", "zenless"],
+  '/dev': ['denncar', 'dennquiz'],
+  '/games': ['genshin', 'wutheringwaves', 'zenless'],
 };
 
 const createNavItems = (pathname: string) => {
