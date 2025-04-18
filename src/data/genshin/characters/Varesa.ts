@@ -66,8 +66,8 @@ const recommendedArtifactSets: RecommendedArtifactSet[] = [
     id: 'mavuika-artifact-set-first',
 
     name: '흑요석 4세트',
-    priority: 1,
-    imageURLs: '',
+    recommendedScore: 1,
+    imageURLs: [],
     description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
   },
 ];
@@ -111,7 +111,7 @@ const recommendedTeams: RecommendedTeam[] = [
 
     name: '마비카 하이퍼캐리',
     characters: '마비카, 실로닌, 베넷, 실로닌',
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
+    descriptions: ['마비카 E', '실로닌 (Q)E 평평', '베넷 EQ', '실로닌 EQ 평평'],
     recommendedScore: 10,
   },
   {
@@ -119,7 +119,7 @@ const recommendedTeams: RecommendedTeam[] = [
 
     name: '마비카 오프필드 조합',
     characters: '마비카, 키니치, 나히다, 실로닌',
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
+    descriptions: ['마비카 E', '키니치 E(Q)', '나히다 E', '실로닌 EQ 평평'],
     recommendedScore: 9,
   },
 ];
