@@ -1,3 +1,5 @@
+import { getArtifactImageURL } from '@/lib/image/genshin';
+
 const skills: CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
@@ -60,11 +62,17 @@ const stats: CharacterStat[] = [
 
 const recommendedArtifactSets: RecommendedArtifactSet[] = [
   {
-    id: 'mavuika-artifact-set-first',
-    name: '흑요석 4세트',
-    priority: 1,
-    imageURLs: '',
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
+    id: 'ObsidianCodex',
+    name: '흑요석 비전',
+    recommendedScore: 5,
+    imageURLs: [
+      getArtifactImageURL('ObsidianCodex/flower'),
+      getArtifactImageURL('ObsidianCodex/plume'),
+      getArtifactImageURL('ObsidianCodex/sands'),
+      getArtifactImageURL('ObsidianCodex/goblet'),
+      getArtifactImageURL('ObsidianCodex/circlet'),
+    ],
+    description: '마비카에게 흑요석을 맞춰주는 것만이 정답</br>흑요석 특성 레벨 120 이상 권장',
   },
 ];
 
@@ -106,15 +114,14 @@ const recommendedTeams: RecommendedTeam[] = [
     id: 'mavuika-team-first',
     name: '마실시베 융해 파티',
     characters: 'Mavuika, Xilonen,Citlali, Bennett',
-    description:
-      '1. 마키바 E</br>2. 실로닌 (Q)E 평평</br>3. 베넷 EQ</br>4. 시틀라리 EQ 평</br>5. 마비카 Q 강공',
+    descriptions: ['마키바 E', '실로닌 (Q)E 평평', '베넷 EQ', '시틀라리 EQ 평', '마비카 Q 강공'],
     recommendedScore: 5,
   },
   {
     id: 'mavuika-team-second',
     name: '키에베마 연소 파티',
     characters: 'Kinich, Emilie, Bennett, Mavuika',
-    description: '1. 에밀리 E(Q)</br>2. 마키바 EQ</br>3. 베넷 EQ</br>4. 키니치 E(Q) 평평x4',
+    descriptions: ['에밀리 E(Q)', '마키바 EQ', '베넷 EQ', '키니치 E(Q) 평평x4'],
     recommendedScore: 4,
   },
 ];

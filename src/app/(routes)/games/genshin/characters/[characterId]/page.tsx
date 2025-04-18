@@ -116,6 +116,42 @@ const GenshinCharacterPage = ({ params }: Props) => {
         ))}
       </div>
       <div className="flex flex-col gap-2 w-full max-w-[720px]">
+        <div>
+          <Typography
+            variant="h3"
+            className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full"
+          >
+            추천 성유물
+          </Typography>
+          <div className="flex flex-col gap-2">
+            {character.recommendedArtifactSets.map(artifactSet => (
+              <div key={artifactSet.id} className="flex flex-col items-center gap-2 my-4">
+                <div>{artifactSet.name}</div>
+                <div className="flex items-center gap-2">
+                  추천도:
+                  <span className="font-bold">
+                    {Array.from({ length: artifactSet.recommendedScore }).map(() => (
+                      <>⭐️</>
+                    ))}
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  {artifactSet.imageURLs.map(imageURL => (
+                    <span className="bg-gray-100 border border-gray-300">
+                      <Image src={imageURL} alt={artifactSet.name} width={100} height={100} />
+                    </span>
+                  ))}
+                </div>
+                <div
+                  className="text-center"
+                  dangerouslySetInnerHTML={{ __html: artifactSet.description }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2 w-full max-w-[720px]">
         <Typography
           variant="h3"
           className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full"
@@ -148,11 +184,14 @@ const GenshinCharacterPage = ({ params }: Props) => {
                   </span>
                 ))}
             </div>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: team.description,
-              }}
-            />
+            <div className="text-gray-500">파티 사이클</div>
+            <div className="flex flex-col gap-2">
+              {team.descriptions.map((desc, index) => (
+                <div key={desc}>
+                  {index + 1}. {desc}
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>

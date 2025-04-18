@@ -21,16 +21,14 @@ interface CharacterStat {
 // 추천 성유물 세트
 interface RecommendedArtifactSet {
   id: string;
-
   name: string;
-  priority: number;
-  imageURLs: string;
+  recommendedScore: number;
+  imageURLs: string[];
   description: string;
 }
 
 interface RecommendedWeapon {
   id: string;
-
   name: string;
   imageURL: string;
   priority: number;
@@ -41,10 +39,9 @@ interface RecommendedWeapon {
 
 interface RecommendedTeam {
   id: string;
-
   name: string;
   characters: string;
-  description: string;
+  descriptions: string[];
   recommendedScore: number; // 0 ~ 10
 }
 

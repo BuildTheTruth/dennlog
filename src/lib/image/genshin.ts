@@ -6,3 +6,5 @@ export const getCharacterDefaultImageURL = (id: string) =>
   `${BASE_URL}/characters/${id}/default.webp`;
 export const getCharacterThumbnailImageURL = (id: string) =>
   `${BASE_URL}/characters/${id}/thumbnail.webp`;
+
+export const getArtifactImageURL = (id: string) => `${BASE_URL}/artifacts/${id}.webp`;
