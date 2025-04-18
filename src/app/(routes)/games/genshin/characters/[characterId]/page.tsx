@@ -1,17 +1,18 @@
 'use client';
 
-import { GENSHIN_CHARACTER_BY_ID, GenshinCharacterID } from '@/data/genshin/characters';
-import Image from 'next/image';
+import Typography from '@/components/Typography';
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import Typography from '@/components/Typography';
+import { GENSHIN_CHARACTER_BY_ID, GenshinCharacterID } from '@/data/genshin/characters';
+import { getCharacterProfileImageURL } from '@/lib/image/genshin';
+import Image from 'next/image';
+
 interface Props {
   params: { characterId: GenshinCharacterID };
 }
@@ -111,6 +112,47 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 priority
               />
             </figure>
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-col gap-2 w-full max-w-[720px]">
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full"
+        >
+          {character.name} 파티 조합
+        </Typography>
+        {character.recommendedTeams.map(team => (
+          <div key={team.id} className="flex flex-col items-center gap-2 my-8 w-full">
+            <span className="text-lg font-bold">{team.name}</span>
+            <div className="flex items-center gap-2">
+              추천도:
+              <span className="font-bold">
+                {Array.from({ length: team.recommendedScore }).map(() => (
+                  <>⭐️</>
+                ))}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              {team.characters
+                .split(',')
+                .map(id => id.trim())
+                .map(id => (
+                  <span key={id} className="bg-gray-100 border border-gray-300">
+                    <Image
+                      src={getCharacterProfileImageURL(id)}
+                      alt={id}
+                      width={100}
+                      height={100}
+                    />
+                  </span>
+                ))}
+            </div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: team.description,
+              }}
+            />
           </div>
         ))}
       </div>

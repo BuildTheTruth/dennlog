@@ -73,7 +73,7 @@ const recommendedWeapons: RecommendedWeapon[] = [
     id: 'mavuika-weapon-first',
     name: '타오르는 천개의 태양',
     imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/ThousandBlazingSuns.webp',
+      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/AThousandBlazingSuns.webp',
     priority: 1,
     description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 741',
@@ -104,17 +104,18 @@ const recommendedWeapons: RecommendedWeapon[] = [
 const recommendedTeams: RecommendedTeam[] = [
   {
     id: 'mavuika-team-first',
-    name: '마비카 하이퍼캐리',
-    characters: '마비카, 실로닌, 베넷, 실로닌',
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
-    recommendedScore: 10,
+    name: '마실시베 융해 파티',
+    characters: 'Mavuika, Xilonen,Citlali, Bennett',
+    description:
+      '1. 마키바 E</br>2. 실로닌 (Q)E 평평</br>3. 베넷 EQ</br>4. 시틀라리 EQ 평</br>5. 마비카 Q 강공',
+    recommendedScore: 5,
   },
   {
     id: 'mavuika-team-second',
-    name: '마비카 오프필드 조합',
-    characters: '마비카, 키니치, 나히다, 실로닌',
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
-    recommendedScore: 9,
+    name: '키에베마 연소 파티',
+    characters: 'Kinich, Emilie, Bennett, Mavuika',
+    description: '1. 에밀리 E(Q)</br>2. 마키바 EQ</br>3. 베넷 EQ</br>4. 키니치 E(Q) 평평x4',
+    recommendedScore: 4,
   },
 ];
 
