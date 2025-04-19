@@ -129,6 +129,23 @@ const recommendedTeams: RecommendedTeam[] = [
   },
 ];
 
+const recommendedBreakthroughs: RecommendedBreakthrough[] = [
+  {
+    id: 'mavuika-breakthrough-first',
+    name: '1돌: 밤 주인의 계시',
+    description: '밤혼 최대치 및 전의효율 / 공격력 증가 (명함 대비 약 15% 딜 상승)',
+  },
+  {
+    id: 'mavuika-breakthrough-second',
+    name: '2돌: 잿더미의 대가',
+    description: '기초 공격력 및 무장 효과 강화 (명함 대비 약 50% 딜 상승)',
+  },
+  {
+    id: 'mavuika-breakthrough-third',
+    name: '6돌: 인간의 이름 해방',
+    description: '무장 효과 완전 강화 (명함 대비 약 130% 딜 상승)',
+  },
+];
 const Mavuika: GenshinCharacter = {
   id: 'Mavuika',
   name: '마비카',
@@ -146,6 +163,7 @@ const Mavuika: GenshinCharacter = {
   recommendedArtifactSets,
   recommendedWeapons,
   recommendedTeams,
+  recommendedBreakthroughs,
 };
 
 export default Mavuika;

@@ -96,7 +96,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
           variant="h3"
           className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
-          추천 무기
+          {character.name} 추천 무기
         </Typography>
         <div className="flex flex-col gap-6">
           {character.recommendedWeapons.map(weapon => (
@@ -126,7 +126,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
             variant="h3"
             className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
           >
-            추천 성유물
+            {character.name} 추천 성유물
           </Typography>
           <div className="flex flex-col gap-4">
             {character.recommendedArtifactSets.map(artifactSet => (
@@ -225,6 +225,32 @@ const GenshinCharacterPage = ({ params }: Props) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+        >
+          {character.name} 추천 돌파
+        </Typography>
+        <div className="flex flex-col gap-2">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>돌파</TableHead>
+                <TableHead>설명</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {character.recommendedBreakthroughs.map(breakthrough => (
+                <TableRow key={breakthrough.id}>
+                  <TableCell>{breakthrough.name}</TableCell>
+                  <TableCell>{breakthrough.description}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </div>
   );

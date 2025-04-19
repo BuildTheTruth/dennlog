@@ -45,6 +45,12 @@ interface RecommendedTeam {
   recommendedScore: number; // 0 ~ 10
 }
 
+interface RecommendedBreakthrough {
+  id: string;
+  name: string;
+  description: string;
+}
+
 interface GenshinCharacter {
   id: string;
   name: string;
@@ -59,4 +65,5 @@ interface GenshinCharacter {
   recommendedArtifactSets: RecommendedArtifactSet[]; // 추천 성유물
   recommendedWeapons: RecommendedWeapon[]; // 추천 무기
   recommendedTeams: RecommendedTeam[]; // 추천 팀
+  recommendedBreakthroughs: RecommendedBreakthrough[]; // 추천 돌파
 }
