@@ -12,6 +12,7 @@ import {
 import { GENSHIN_CHARACTER_BY_ID, GenshinCharacterID } from '@/data/genshin/characters';
 import { getCharacterProfileImageURL } from '@/lib/image/genshin';
 import Image from 'next/image';
+import StatsTable from '@/components/StatsTable';
 
 interface Props {
   params: { characterId: GenshinCharacterID };
@@ -79,9 +80,9 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell className="text-gray-500">우선순위</TableCell>
+                <TableCell>우선순위</TableCell>
                 {character.skills.map(skill => (
-                  <TableCell className="text-gray-500 text-end" key={skill.id}>
+                  <TableCell className="text-end" key={skill.id}>
                     {skill.priority}
                   </TableCell>
                 ))}
@@ -164,6 +165,17 @@ const GenshinCharacterPage = ({ params }: Props) => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+        >
+          {character.name} 기본 / 준종결 / 종결 스펙
+        </Typography>
+        <div className="overflow-x-auto">
+          <StatsTable stats={character.stats} />
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
