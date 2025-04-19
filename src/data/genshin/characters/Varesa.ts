@@ -154,7 +154,7 @@ const breakthroughs: Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
     name: '2돌: 빛의 한계 돌파',
-    description: '매번 사용 가능, 낙하 공격 명중 시 에너지 회복',
+    description: '원소 폭발 매번 사용 가능, 낙하 공격 명중 시 에너지 회복',
   },
 ];
 
