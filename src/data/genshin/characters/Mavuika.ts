@@ -1,6 +1,6 @@
 import {
   getArtifactImageURL,
-  getCharacterDefaultImageURL,
+  getCharacterImageURL,
   getCharacterProfileImageURL,
   getCharacterThumbnailImageURL,
   getWeaponImageURL,
@@ -131,7 +131,7 @@ const teams: Team[] = [
   {
     id: 'mavuika-team-first',
     name: '마실시베 융해 파티',
-    characters: 'Mavuika, Xilonen,Citlali, Bennett',
+    characters: 'Mavuika, Xilonen, Citlali, Bennett',
     descriptions: ['마키바 E', '실로닌 (Q)E 평평', '베넷 EQ', '시틀라리 EQ 평', '마비카 Q 강공'],
     score: 5,
   },
@@ -168,7 +168,7 @@ const Mavuika: GenshinCharacter = {
   element: '불',
   weaponType: '양손검',
   rarity: 5,
-  imageURL: getCharacterDefaultImageURL('Mavuika'),
+  imageURL: getCharacterImageURL('Mavuika'),
   profileImageURL: getCharacterProfileImageURL('Mavuika'),
   thumbnailImageURL: getCharacterThumbnailImageURL('Mavuika'),
   skills,

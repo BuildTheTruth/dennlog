@@ -1,27 +1,35 @@
+import {
+  getArtifactImageURL,
+  getCharacterImageURL,
+  getCharacterProfileImageURL,
+  getCharacterThumbnailImageURL,
+  getWeaponImageURL,
+} from '@/lib/image/genshin';
+
 const skills: CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
     type: '기본공격',
     name: '기본 공격',
-    max: 1,
-    min: 1,
-    priority: 3,
+    max: 10,
+    min: 8,
+    priority: 1,
   },
   {
     id: 'mavuika-skill-elemental-skill',
     type: '원소전투스킬',
     name: '원소 전투 스킬',
-    max: 10,
+    max: 9,
     min: 8,
-    priority: 2,
+    priority: 3,
   },
   {
     id: 'mavuika-skill-elemental-burst',
     type: '원소폭발',
     name: '원소 폭발',
-    max: 10,
+    max: 9,
     min: 8,
-    priority: 1,
+    priority: 2,
   },
 ];
 
@@ -30,101 +38,123 @@ const stats: CharacterStat[] = [
     id: 'mavuika-stat-basic',
     type: '기본',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '공%',
+      성배: '번원피',
+      왕관: '치확/치피',
+      공격력: '1800~2000',
+      원충: '120%+',
+      '치확/치피': '70/150',
     },
   },
   {
     id: 'mavuika-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '공%',
+      성배: '번원피',
+      왕관: '치확/치피',
+      공격력: '2000~2200',
+      원충: '130%+',
+      '치확/치피': '80/170',
     },
   },
   {
     id: 'mavuika-stat-final',
     type: '종결',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '공%',
+      성배: '번원피',
+      왕관: '치확/치피',
+      공격력: '2300+',
+      원충: '140%+',
+      '치확/치피': '90/190',
     },
   },
 ];
 
 const artifactSets: ArtifactSet[] = [
   {
-    id: 'mavuika-artifact-set-first',
+    id: 'LongNightOath',
+    name: '긴 밤의 맹세 4세트',
+    score: 5,
+    imageURLs: [
+      getArtifactImageURL('LongNightOath/flower'),
+      getArtifactImageURL('LongNightOath/plume'),
+      getArtifactImageURL('LongNightOath/sands'),
+      getArtifactImageURL('LongNightOath/goblet'),
+      getArtifactImageURL('LongNightOath/circlet'),
+    ],
+  },
+  {
+    id: 'ObsidianCodex',
     name: '흑요석 4세트',
-    score: 1,
-    imageURLs: [],
+    score: 4,
+    imageURLs: [
+      getArtifactImageURL('ObsidianCodex/flower'),
+      getArtifactImageURL('ObsidianCodex/plume'),
+      getArtifactImageURL('ObsidianCodex/sands'),
+      getArtifactImageURL('ObsidianCodex/goblet'),
+      getArtifactImageURL('ObsidianCodex/circlet'),
+    ],
   },
 ];
 
 const weapons: Weapon[] = [
   {
-    id: 'mavuika-weapon-first',
-    name: '타오르는 천개의 태양',
-    imageURL: '',
+    id: 'VividNotions',
+    name: '빛나는 마음',
+    imageURL: getWeaponImageURL('VividNotions'),
     priority: 1,
-    mainStat: '기초 공격력 741',
-    subStat: '치명톼 확률 11.0%',
-  },
-  {
-    id: 'mavuika-weapon-second',
-
-    name: '판정',
-    imageURL: '',
-    priority: 2,
     mainStat: '기초 공격력 674',
-    subStat: '치명타 확률 22.1%',
+    subStat: '치명타 피해 44.1%',
   },
   {
-    id: 'mavuika-weapon-third',
-
-    name: '이무기 검',
-    imageURL: '',
+    id: 'LostPrayerToTheSacredWinds',
+    name: '사풍 원서',
+    imageURL: getWeaponImageURL('LostPrayerToTheSacredWinds'),
+    priority: 2,
+    mainStat: '기초 공격력 608',
+    subStat: '치명타 확률 33.1%',
+  },
+  {
+    id: 'TheWidsith',
+    name: '음유시인의 악장',
+    imageURL: getWeaponImageURL('TheWidsith'),
     priority: 3,
     mainStat: '기초 공격력 510',
-    subStat: '치명타 확률 27.6%',
+    subStat: '치명타 피해 55.1%',
   },
 ];
 
 const teams: Team[] = [
   {
     id: 'mavuika-team-first',
-    name: '마비카 하이퍼캐리',
-    characters: '마비카, 실로닌, 베넷, 실로닌',
-    descriptions: ['마비카 E', '실로닌 (Q)E 평평', '베넷 EQ', '실로닌 EQ 평평'],
-    score: 10,
+    name: '바푸얀한',
+    characters: 'Varesa, Furina, Iansan, Xianyun',
+    descriptions: ['바레사 E', '푸리나 EQ', '얀사 EQ', '한운 EQ', '바레사 E평평x2 Q 반복'],
+    score: 5,
   },
   {
     id: 'mavuika-team-second',
-    name: '마비카 오프필드 조합',
-    characters: '마비카, 키니치, 나히다, 실로닌',
-    descriptions: ['마비카 E', '키니치 E(Q)', '나히다 E', '실로닌 EQ 평평'],
-    score: 9,
+    name: '바마얀슈',
+    characters: 'Varesa, Mavuika, Iansan, Chevreuse',
+    descriptions: [
+      '마비카 E',
+      '얀사 Q',
+      '슈브르즈 E',
+      '얀사 E',
+      '바레사 Q E평평x2 Q 반복',
+      '마비카 Q',
+    ],
+    score: 4,
   },
 ];
 
 const breakthroughs: Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
-    name: '1돌: 밤 주인의 계시',
-    description: '밤혼 최대치 및 전의효율 / 공격력 증가 (명함 대비 약 15% 딜 상승)',
-  },
-  {
-    id: 'mavuika-breakthrough-second',
-    name: '2돌: 잿더미의 대가',
-    description: '기초 공격력 및 무장 효과 강화 (명함 대비 약 50% 딜 상승)',
-  },
-  {
-    id: 'mavuika-breakthrough-third',
-    name: '6돌: 인간의 이름 해방',
-    description: '무장 효과 완전 강화 (명함 대비 약 130% 딜 상승)',
+    name: '2돌: 빛의 한계 돌파',
+    description: '매번 사용 가능, 낙하 공격 명중 시 에너지 회복',
   },
 ];
 
@@ -134,12 +164,9 @@ const Varesa: GenshinCharacter = {
   element: '번개',
   weaponType: '법구',
   rarity: 5,
-  imageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/default.webp',
-  profileImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/profile.webp',
-  thumbnailImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Varesa/thumbnail.webp',
+  imageURL: getCharacterImageURL('Varesa'),
+  profileImageURL: getCharacterProfileImageURL('Varesa'),
+  thumbnailImageURL: getCharacterThumbnailImageURL('Varesa'),
   skills,
   stats,
   artifactSets,

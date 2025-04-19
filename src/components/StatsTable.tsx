@@ -2,7 +2,7 @@
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
-const FIELD_PRIORITY = ['시계', '성배', '왕관', '공격력', '원마', '치확/치피'];
+const FIELD_PRIORITY = ['시계', '성배', '왕관', '공격력', '원마', '원충', '치확/치피'];
 
 interface Props {
   stats: CharacterStat[];

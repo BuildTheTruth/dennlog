@@ -1,6 +1,6 @@
 import {
   getArtifactImageURL,
-  getCharacterDefaultImageURL,
+  getCharacterImageURL,
   getCharacterThumbnailImageURL,
   getWeaponImageURL,
 } from '@/lib/image/genshin';
@@ -103,7 +103,7 @@ const weapons: Weapon[] = [
     imageURL: getWeaponImageURL('SkywardPride'),
     priority: 2,
     mainStat: '기초 공격력 674',
-    subStat: '치명타 확률 22.1%',
+    subStat: '원소 충전 효율 36.8%',
   },
   {
     id: 'TheCatch',
@@ -111,23 +111,23 @@ const weapons: Weapon[] = [
     imageURL: getWeaponImageURL('TheCatch'),
     priority: 3,
     mainStat: '기초 공격력 510',
-    subStat: '치명타 확률 27.6%',
+    subStat: '원소 충전 효율 45.9%',
   },
   {
     id: 'WavebreakerFin',
     name: '파도 베는 지느러미',
     imageURL: getWeaponImageURL('WavebreakerFin'),
     priority: 4,
-    mainStat: '기초 공격력 510',
-    subStat: '치명타 확률 27.6%',
+    mainStat: '기초 공격력 620',
+    subStat: '공격력 13.8%',
   },
   {
     id: 'FavoniusLance',
     name: '페보니우스 장창',
     imageURL: getWeaponImageURL('FavoniusLance'),
     priority: 5,
-    mainStat: '기초 공격력 510',
-    subStat: '치명타 확률 27.6%',
+    mainStat: '기초 공격력 565',
+    subStat: '원소 충전 효율 30.6%',
   },
 ];
 
@@ -169,7 +169,7 @@ const RaidenShogun: GenshinCharacter = {
   element: '번개',
   weaponType: '장병기',
   rarity: 5,
-  imageURL: getCharacterDefaultImageURL('RaidenShogun'),
+  imageURL: getCharacterImageURL('RaidenShogun'),
   profileImageURL: getCharacterProfileImageURL('RaidenShogun'),
   thumbnailImageURL: getCharacterThumbnailImageURL('RaidenShogun'),
   skills,
