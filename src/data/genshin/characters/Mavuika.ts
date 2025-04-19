@@ -63,11 +63,11 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const recommendedArtifactSets: RecommendedArtifactSet[] = [
+const artifactSets: ArtifactSet[] = [
   {
     id: 'ObsidianCodex',
     name: '흑요석 비전',
-    recommendedScore: 5,
+    score: 5,
     imageURLs: [
       getArtifactImageURL('ObsidianCodex/flower'),
       getArtifactImageURL('ObsidianCodex/plume'),
@@ -75,18 +75,16 @@ const recommendedArtifactSets: RecommendedArtifactSet[] = [
       getArtifactImageURL('ObsidianCodex/goblet'),
       getArtifactImageURL('ObsidianCodex/circlet'),
     ],
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답</br>흑요석 특성 레벨 120 이상 권장',
   },
 ];
 
-const recommendedWeapons: RecommendedWeapon[] = [
+const weapons: Weapon[] = [
   {
     id: 'mavuika-weapon-first',
     name: '타오르는 천개의 태양',
     imageURL:
       'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/AThousandBlazingSuns.webp',
     priority: 1,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 741',
     subStat: '치명타 확률 11.0%',
   },
@@ -96,7 +94,6 @@ const recommendedWeapons: RecommendedWeapon[] = [
     imageURL:
       'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/Verdict.webp',
     priority: 2,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 674',
     subStat: '치명타 확률 22.1%',
   },
@@ -106,30 +103,47 @@ const recommendedWeapons: RecommendedWeapon[] = [
     imageURL:
       'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/SerpentSpine.webp',
     priority: 3,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 510',
     subStat: '치명타 확률 27.6%',
   },
+  {
+    id: 'mavuika-weapon-fourth',
+    name: '쇄석의 붉은 뿔',
+    imageURL:
+      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/RedhornStonethresher.webp',
+    priority: 4,
+    mainStat: '기초 공격력 542',
+    subStat: '치명타 피해 88.2%',
+  },
+  {
+    id: 'mavuika-weapon-fifth',
+    name: '꽃 장식 대검',
+    imageURL:
+      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/MailedFlower.png',
+    priority: 5,
+    mainStat: '기초 공격력 565',
+    subStat: '원소 마스터리 110',
+  },
 ];
 
-const recommendedTeams: RecommendedTeam[] = [
+const teams: Team[] = [
   {
     id: 'mavuika-team-first',
     name: '마실시베 융해 파티',
     characters: 'Mavuika, Xilonen,Citlali, Bennett',
     descriptions: ['마키바 E', '실로닌 (Q)E 평평', '베넷 EQ', '시틀라리 EQ 평', '마비카 Q 강공'],
-    recommendedScore: 5,
+    score: 5,
   },
   {
     id: 'mavuika-team-second',
     name: '키에베마 연소 파티',
     characters: 'Kinich, Emilie, Bennett, Mavuika',
     descriptions: ['에밀리 E(Q)', '마키바 EQ', '베넷 EQ', '키니치 E(Q) 평평x4'],
-    recommendedScore: 4,
+    score: 4,
   },
 ];
 
-const recommendedBreakthroughs: RecommendedBreakthrough[] = [
+const breakthroughs: Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
     name: '1돌: 밤 주인의 계시',
@@ -146,6 +160,7 @@ const recommendedBreakthroughs: RecommendedBreakthrough[] = [
     description: '무장 효과 완전 강화 (명함 대비 약 130% 딜 상승)',
   },
 ];
+
 const Mavuika: GenshinCharacter = {
   id: 'Mavuika',
   name: '마비카',
@@ -160,10 +175,10 @@ const Mavuika: GenshinCharacter = {
     'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/thumbnail.webp',
   skills,
   stats,
-  recommendedArtifactSets,
-  recommendedWeapons,
-  recommendedTeams,
-  recommendedBreakthroughs,
+  artifactSets,
+  weapons,
+  teams,
+  breakthroughs,
 };
 
 export default Mavuika;

@@ -61,25 +61,23 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const recommendedArtifactSets: RecommendedArtifactSet[] = [
+const artifactSets: ArtifactSet[] = [
   {
     id: 'mavuika-artifact-set-first',
 
     name: '흑요석 4세트',
-    recommendedScore: 1,
+    score: 1,
     imageURLs: [],
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
   },
 ];
 
-const recommendedWeapons: RecommendedWeapon[] = [
+const weapons: Weapon[] = [
   {
     id: 'mavuika-weapon-first',
 
     name: '타오르는 천개의 태양',
     imageURL: '',
     priority: 1,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 741',
     subStat: '치명톼 확률 11.0%',
   },
@@ -89,7 +87,6 @@ const recommendedWeapons: RecommendedWeapon[] = [
     name: '판정',
     imageURL: '',
     priority: 2,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 674',
     subStat: '치명타 확률 22.1%',
   },
@@ -99,20 +96,19 @@ const recommendedWeapons: RecommendedWeapon[] = [
     name: '이무기 검',
     imageURL: '',
     priority: 3,
-    description: '마비카에게 흑요석을 맞춰주는 것만이 정답',
     mainStat: '기초 공격력 510',
     subStat: '치명타 확률 27.6%',
   },
 ];
 
-const recommendedTeams: RecommendedTeam[] = [
+const teams: Team[] = [
   {
     id: 'mavuika-team-first',
 
     name: '마비카 하이퍼캐리',
     characters: '마비카, 실로닌, 베넷, 실로닌',
     descriptions: ['마비카 E', '실로닌 (Q)E 평평', '베넷 EQ', '실로닌 EQ 평평'],
-    recommendedScore: 10,
+    score: 10,
   },
   {
     id: 'mavuika-team-second',
@@ -120,7 +116,25 @@ const recommendedTeams: RecommendedTeam[] = [
     name: '마비카 오프필드 조합',
     characters: '마비카, 키니치, 나히다, 실로닌',
     descriptions: ['마비카 E', '키니치 E(Q)', '나히다 E', '실로닌 EQ 평평'],
-    recommendedScore: 9,
+    score: 9,
+  },
+];
+
+const breakthroughs: Breakthrough[] = [
+  {
+    id: 'mavuika-breakthrough-first',
+    name: '1돌: 밤 주인의 계시',
+    description: '밤혼 최대치 및 전의효율 / 공격력 증가 (명함 대비 약 15% 딜 상승)',
+  },
+  {
+    id: 'mavuika-breakthrough-second',
+    name: '2돌: 잿더미의 대가',
+    description: '기초 공격력 및 무장 효과 강화 (명함 대비 약 50% 딜 상승)',
+  },
+  {
+    id: 'mavuika-breakthrough-third',
+    name: '6돌: 인간의 이름 해방',
+    description: '무장 효과 완전 강화 (명함 대비 약 130% 딜 상승)',
   },
 ];
 
@@ -138,9 +152,10 @@ const Iansan: GenshinCharacter = {
     'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/thumbnail.webp',
   skills,
   stats,
-  recommendedArtifactSets,
-  recommendedWeapons,
-  recommendedTeams,
+  artifactSets,
+  weapons,
+  teams,
+  breakthroughs,
 };
 
 export default Iansan;

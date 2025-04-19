@@ -14,38 +14,35 @@ type StatType = '기본' | '준종결' | '종결';
 interface CharacterStat {
   id: string;
   type: StatType;
-  /* { "공격력": "1800+", "원소 마스터리": "120~300", "성배": "불원피/공%" } */
-  fields: { [name: string]: string };
+  fields: { [name: string]: string }; // { "공격력": "1800+", "원마": "120~300", "성배": "불원피/공%" }
 }
 
 // 추천 성유물 세트
-interface RecommendedArtifactSet {
+interface ArtifactSet {
   id: string;
   name: string;
-  recommendedScore: number;
+  score: number;
   imageURLs: string[];
-  description: string;
 }
 
-interface RecommendedWeapon {
+interface Weapon {
   id: string;
   name: string;
   imageURL: string;
   priority: number;
-  description: string;
   mainStat: string;
   subStat: string;
 }
 
-interface RecommendedTeam {
+interface Team {
   id: string;
   name: string;
   characters: string;
   descriptions: string[];
-  recommendedScore: number; // 0 ~ 10
+  score: number; // 0 ~ 10
 }
 
-interface RecommendedBreakthrough {
+interface Breakthrough {
   id: string;
   name: string;
   description: string;
@@ -62,8 +59,8 @@ interface GenshinCharacter {
   thumbnailImageURL: string;
   skills: CharacterSkill[];
   stats: CharacterStat[];
-  recommendedArtifactSets: RecommendedArtifactSet[]; // 추천 성유물
-  recommendedWeapons: RecommendedWeapon[]; // 추천 무기
-  recommendedTeams: RecommendedTeam[]; // 추천 팀
-  recommendedBreakthroughs: RecommendedBreakthrough[]; // 추천 돌파
+  artifactSets: ArtifactSet[]; // 추천 성유물
+  weapons: Weapon[]; // 추천 무기
+  teams: Team[]; // 추천 팀
+  breakthroughs: Breakthrough[]; // 추천 돌파
 }

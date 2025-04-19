@@ -94,12 +94,12 @@ const GenshinCharacterPage = ({ params }: Props) => {
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px]">
         <Typography
           variant="h3"
-          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+          className="text-center py-2 px-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
           {character.name} 추천 무기
         </Typography>
         <div className="flex flex-col gap-6">
-          {character.recommendedWeapons.map(weapon => (
+          {character.weapons.map(weapon => (
             <div key={weapon.id} className="flex flex-col items-center gap-2 w-full">
               <span className="text-base md:text-lg font-bold text-center">
                 {weapon.priority}위. {weapon.name}
@@ -121,56 +121,50 @@ const GenshinCharacterPage = ({ params }: Props) => {
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px]">
-        <div>
-          <Typography
-            variant="h3"
-            className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
-          >
-            {character.name} 추천 성유물
-          </Typography>
-          <div className="flex flex-col gap-4">
-            {character.recommendedArtifactSets.map(artifactSet => (
-              <div key={artifactSet.id} className="flex flex-col items-center gap-2 my-4">
-                <div className="text-base md:text-lg font-semibold text-center">
-                  {artifactSet.name}
-                </div>
-                <div className="flex items-center gap-2 text-sm md:text-base">
-                  추천도:
-                  <span className="font-bold">
-                    {Array.from({ length: artifactSet.recommendedScore }).map((_, i) => (
-                      <span key={i}>⭐️</span>
-                    ))}
-                  </span>
-                </div>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {artifactSet.imageURLs.map((imageURL, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
-                    >
-                      <Image
-                        src={imageURL}
-                        alt={artifactSet.name}
-                        width={80}
-                        height={80}
-                        className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
-                      />
-                    </span>
-                  ))}
-                </div>
-                <div
-                  className="text-center text-sm md:text-base"
-                  dangerouslySetInnerHTML={{ __html: artifactSet.description }}
-                />
+        <Typography
+          variant="h3"
+          className="text-center py-2 px-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-lg w-full text-lg md:text-xl"
+        >
+          {character.name} 추천 성유물
+        </Typography>
+        <div className="flex flex-col gap-4">
+          {character.artifactSets.map(artifactSet => (
+            <div key={artifactSet.id} className="flex flex-col items-center gap-2 my-4">
+              <div className="text-base md:text-lg font-semibold text-center">
+                {artifactSet.name}
               </div>
-            ))}
-          </div>
+              <div className="flex items-center gap-2 text-sm md:text-base">
+                추천도:
+                <span className="font-bold">
+                  {Array.from({ length: artifactSet.score }).map((_, i) => (
+                    <span key={i}>⭐️</span>
+                  ))}
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {artifactSet.imageURLs.map((imageURL, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
+                  >
+                    <Image
+                      src={imageURL}
+                      alt={artifactSet.name}
+                      width={80}
+                      height={80}
+                      className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                    />
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
         <Typography
           variant="h3"
-          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+          className="text-center py-2 px-4 bg-gradient-to-r from-rose-500 to-red-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
           {character.name} 기본 / 준종결 / 종결 스펙
         </Typography>
@@ -181,17 +175,17 @@ const GenshinCharacterPage = ({ params }: Props) => {
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
         <Typography
           variant="h3"
-          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+          className="text-center py-2 px-4 bg-gradient-to-r from-indigo-500 to-violet-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
           {character.name} 파티 조합
         </Typography>
-        {character.recommendedTeams.map(team => (
+        {character.teams.map(team => (
           <div key={team.id} className="flex flex-col items-center gap-2 my-6 md:my-8 w-full">
             <span className="text-base md:text-lg font-bold text-center">{team.name}</span>
             <div className="flex items-center gap-2 text-sm md:text-base">
               추천도:
               <span className="font-bold">
-                {Array.from({ length: team.recommendedScore }).map((_, i) => (
+                {Array.from({ length: team.score }).map((_, i) => (
                   <span key={i}>⭐️</span>
                 ))}
               </span>
@@ -229,7 +223,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
         <Typography
           variant="h3"
-          className="text-center py-2 px-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-lg w-full text-lg md:text-xl"
+          className="text-center py-2 px-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
           {character.name} 추천 돌파
         </Typography>
@@ -242,7 +236,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {character.recommendedBreakthroughs.map(breakthrough => (
+              {character.breakthroughs.map(breakthrough => (
                 <TableRow key={breakthrough.id}>
                   <TableCell>{breakthrough.name}</TableCell>
                   <TableCell>{breakthrough.description}</TableCell>
