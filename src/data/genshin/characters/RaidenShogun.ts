@@ -1,3 +1,12 @@
+import {
+  getArtifactImageURL,
+  getCharacterDefaultImageURL,
+  getCharacterThumbnailImageURL,
+  getWeaponImageURL,
+} from '@/lib/image/genshin';
+
+import { getCharacterProfileImageURL } from '@/lib/image/genshin';
+
 const skills: CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
@@ -30,62 +39,93 @@ const stats: CharacterStat[] = [
     id: 'mavuika-stat-basic',
     type: '기본',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '원충',
+      성배: '번원피',
+      왕관: '치확/치피',
+      원충: '250%+',
+      공격력: '1600~1800',
+      '치확/치피': '55/110',
     },
   },
   {
     id: 'mavuika-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '원충/공%',
+      성배: '번원피',
+      왕관: '치확/치피',
+      원충: '260%+',
+      공격력: '1800~2000',
+      '치확/치피': '60/120',
     },
   },
   {
     id: 'mavuika-stat-final',
     type: '종결',
     fields: {
-      공격력: '1800+',
-      '원소 마스터리': '120~300',
-      성배: '불원피/공%',
+      시계: '원충/공%',
+      성배: '번원피',
+      왕관: '치확/치피',
+      원충: '270%+',
+      공격력: '2100~2300',
+      '치확/치피': '70/140',
     },
   },
 ];
 
 const artifactSets: ArtifactSet[] = [
   {
-    id: 'mavuika-artifact-set-first',
-    name: '흑요석 4세트',
-    score: 1,
-    imageURLs: [],
+    id: 'EmblemOfSeveredFate',
+    name: '절연 4세트',
+    score: 5,
+    imageURLs: [
+      getArtifactImageURL('EmblemOfSeveredFate/flower'),
+      getArtifactImageURL('EmblemOfSeveredFate/plume'),
+      getArtifactImageURL('EmblemOfSeveredFate/sands'),
+      getArtifactImageURL('EmblemOfSeveredFate/goblet'),
+      getArtifactImageURL('EmblemOfSeveredFate/circlet'),
+    ],
   },
 ];
 
 const weapons: Weapon[] = [
   {
-    id: 'mavuika-weapon-first',
-    name: '타오르는 천개의 태양',
-    imageURL: '',
+    id: 'EngulfingLightning',
+    name: '예초의 번개',
+    imageURL: getWeaponImageURL('EngulfingLightning'),
     priority: 1,
-    mainStat: '기초 공격력 741',
-    subStat: '치명톼 확률 11.0%',
+    mainStat: '기초 공격력 608',
+    subStat: '원소 충전 효율 55.1%',
   },
   {
-    id: 'mavuika-weapon-second',
-    name: '판정',
-    imageURL: '',
+    id: 'SkywardPride',
+    name: '천공의 마루',
+    imageURL: getWeaponImageURL('SkywardPride'),
     priority: 2,
     mainStat: '기초 공격력 674',
     subStat: '치명타 확률 22.1%',
   },
   {
-    id: 'mavuika-weapon-third',
-    name: '이무기 검',
-    imageURL: '',
+    id: 'TheCatch',
+    name: '어획',
+    imageURL: getWeaponImageURL('TheCatch'),
     priority: 3,
+    mainStat: '기초 공격력 510',
+    subStat: '치명타 확률 27.6%',
+  },
+  {
+    id: 'WavebreakerFin',
+    name: '파도 베는 지느러미',
+    imageURL: getWeaponImageURL('WavebreakerFin'),
+    priority: 4,
+    mainStat: '기초 공격력 510',
+    subStat: '치명타 확률 27.6%',
+  },
+  {
+    id: 'FavoniusLance',
+    name: '페보니우스 장창',
+    imageURL: getWeaponImageURL('FavoniusLance'),
+    priority: 5,
     mainStat: '기초 공격력 510',
     subStat: '치명타 확률 27.6%',
   },
@@ -94,35 +134,32 @@ const weapons: Weapon[] = [
 const teams: Team[] = [
   {
     id: 'mavuika-team-first',
-    name: '마비카 하이퍼캐리',
-    characters: '마비카, 실로닌, 베넷, 실로닌',
-    descriptions: ['마비카 E', '실로닌 (Q)E 평평', '베넷 EQ', '실로닌 EQ 평평'],
-    score: 10,
+    name: '라사카베',
+    characters: 'RaidenShogun, KujouSara, KaedeharaKazuha, Bennett',
+    descriptions: ['라이덴 E', '카즈하 EQ', '베넷 QE', '쿠죠 사라 EQ', '라이덴 Q'],
+    score: 5,
   },
   {
     id: 'mavuika-team-second',
-    name: '마비카 오프필드 조합',
-    characters: '마비카, 키니치, 나히다, 실로닌',
-    descriptions: ['마비카 E', '키니치 E(Q)', '나히다 E', '실로닌 EQ 평평'],
-    score: 9,
+    name: '라행향베',
+    characters: 'RaidenShogun, Xingqiu, Xiangling, Bennett',
+    descriptions: ['라이덴 E', '행추 Q평 E평 E평', '베넷 QE', '향릉 QE', '라이덴 Q'],
+    score: 4,
+  },
+  {
+    id: 'mavuika-team-second',
+    name: '라미카베',
+    characters: 'RaidenShogun, YaeMiko, KaedeharaKazuha, Bennett',
+    descriptions: ['라이덴 E', '미코 EEE', '카즈하 EQ', '베넷 EQ', '미코 QEEE', '라이덴 Q'],
+    score: 4,
   },
 ];
 
 const breakthroughs: Breakthrough[] = [
   {
-    id: 'mavuika-breakthrough-first',
-    name: '1돌: 밤 주인의 계시',
-    description: '밤혼 최대치 및 전의효율 / 공격력 증가 (명함 대비 약 15% 딜 상승)',
-  },
-  {
     id: 'mavuika-breakthrough-second',
-    name: '2돌: 잿더미의 대가',
-    description: '기초 공격력 및 무장 효과 강화 (명함 대비 약 50% 딜 상승)',
-  },
-  {
-    id: 'mavuika-breakthrough-third',
-    name: '6돌: 인간의 이름 해방',
-    description: '무장 효과 완전 강화 (명함 대비 약 130% 딜 상승)',
+    name: '2돌: 강철 절단',
+    description: '원소 폭발 시전 시 라이덴 쇼군은 적의 방어력 60%를 무시',
   },
 ];
 
@@ -132,12 +169,9 @@ const RaidenShogun: GenshinCharacter = {
   element: '번개',
   weaponType: '장병기',
   rarity: 5,
-  imageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/default.webp',
-  profileImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/profile.webp',
-  thumbnailImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/RaidenShogun/thumbnail.webp',
+  imageURL: getCharacterDefaultImageURL('RaidenShogun'),
+  profileImageURL: getCharacterProfileImageURL('RaidenShogun'),
+  thumbnailImageURL: getCharacterThumbnailImageURL('RaidenShogun'),
   skills,
   stats,
   artifactSets,

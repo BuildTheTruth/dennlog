@@ -8,3 +8,5 @@ export const getCharacterThumbnailImageURL = (id: string) =>
   `${BASE_URL}/characters/${id}/thumbnail.webp`;
 
 export const getArtifactImageURL = (id: string) => `${BASE_URL}/artifacts/${id}.webp`;
+
+export const getWeaponImageURL = (id: string) => `${BASE_URL}/weapons/${id}.webp`;

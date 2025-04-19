@@ -12,7 +12,7 @@ const GenshinCharactersPage = () => {
       <div className="flex flex-wrap gap-4">
         {GENSHIN_CHARACTERS.map(character => (
           <div
-            className="flex flex-col items-center gap-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-4"
+            className="flex flex-col items-center gap-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-4 cursor-pointer"
             key={character.id}
             onClick={() => {
               router.push(`/games/genshin/characters/${character.id}`);

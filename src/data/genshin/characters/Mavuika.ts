@@ -1,4 +1,10 @@
-import { getArtifactImageURL } from '@/lib/image/genshin';
+import {
+  getArtifactImageURL,
+  getCharacterDefaultImageURL,
+  getCharacterProfileImageURL,
+  getCharacterThumbnailImageURL,
+  getWeaponImageURL,
+} from '@/lib/image/genshin';
 
 const skills: CharacterSkill[] = [
   {
@@ -66,7 +72,7 @@ const stats: CharacterStat[] = [
 const artifactSets: ArtifactSet[] = [
   {
     id: 'ObsidianCodex',
-    name: '흑요석 비전',
+    name: '흑요석 4세트',
     score: 5,
     imageURLs: [
       getArtifactImageURL('ObsidianCodex/flower'),
@@ -80,46 +86,41 @@ const artifactSets: ArtifactSet[] = [
 
 const weapons: Weapon[] = [
   {
-    id: 'mavuika-weapon-first',
+    id: 'AThousandBlazingSuns',
     name: '타오르는 천개의 태양',
-    imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/AThousandBlazingSuns.webp',
+    imageURL: getWeaponImageURL('AThousandBlazingSuns'),
     priority: 1,
     mainStat: '기초 공격력 741',
     subStat: '치명타 확률 11.0%',
   },
   {
-    id: 'mavuika-weapon-second',
+    id: 'Verdict',
     name: '판정',
-    imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/Verdict.webp',
+    imageURL: getWeaponImageURL('Verdict'),
     priority: 2,
     mainStat: '기초 공격력 674',
     subStat: '치명타 확률 22.1%',
   },
   {
-    id: 'mavuika-weapon-third',
+    id: 'SerpentSpine',
     name: '이무기 검',
-    imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/SerpentSpine.webp',
+    imageURL: getWeaponImageURL('SerpentSpine'),
     priority: 3,
     mainStat: '기초 공격력 510',
     subStat: '치명타 확률 27.6%',
   },
   {
-    id: 'mavuika-weapon-fourth',
+    id: 'RedhornStonethresher',
     name: '쇄석의 붉은 뿔',
-    imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/RedhornStonethresher.webp',
+    imageURL: getWeaponImageURL('RedhornStonethresher'),
     priority: 4,
     mainStat: '기초 공격력 542',
     subStat: '치명타 피해 88.2%',
   },
   {
-    id: 'mavuika-weapon-fifth',
+    id: 'MailedFlower',
     name: '꽃 장식 대검',
-    imageURL:
-      'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/weapons/MailedFlower.png',
+    imageURL: getWeaponImageURL('MailedFlower'),
     priority: 5,
     mainStat: '기초 공격력 565',
     subStat: '원소 마스터리 110',
@@ -167,12 +168,9 @@ const Mavuika: GenshinCharacter = {
   element: '불',
   weaponType: '양손검',
   rarity: 5,
-  imageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/default.webp',
-  profileImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/profile.webp',
-  thumbnailImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Mavuika/thumbnail.webp',
+  imageURL: getCharacterDefaultImageURL('Mavuika'),
+  profileImageURL: getCharacterProfileImageURL('Mavuika'),
+  thumbnailImageURL: getCharacterThumbnailImageURL('Mavuika'),
   skills,
   stats,
   artifactSets,
