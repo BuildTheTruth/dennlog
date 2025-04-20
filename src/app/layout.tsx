@@ -8,7 +8,15 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'DennLog',
-  description: '개인 블로그',
+  description: '개발, 게임 공략 블로그',
+  keywords: [
+    '원신',
+    '젠레스존제로',
+    '명조',
+    'Genshin Impact',
+    'Wuthringwaves',
+    'Zenless Zone Zero',
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
