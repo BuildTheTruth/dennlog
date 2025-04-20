@@ -6,7 +6,7 @@ import {
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
-const skills: CharacterSkill[] = [
+const skills: Genshin.CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
     type: '기본공격',
@@ -33,7 +33,7 @@ const skills: CharacterSkill[] = [
   },
 ];
 
-const stats: CharacterStat[] = [
+const stats: Genshin.CharacterStat[] = [
   {
     id: 'mavuika-stat-basic',
     type: '기본',
@@ -72,7 +72,7 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const artifactSets: ArtifactSet[] = [
+const artifactSets: Genshin.ArtifactSet[] = [
   {
     id: 'LongNightOath',
     name: '긴 밤의 맹세 4세트',
@@ -99,7 +99,7 @@ const artifactSets: ArtifactSet[] = [
   },
 ];
 
-const weapons: Weapon[] = [
+const weapons: Genshin.Weapon[] = [
   {
     id: 'VividNotions',
     name: '빛나는 마음',
@@ -126,7 +126,7 @@ const weapons: Weapon[] = [
   },
 ];
 
-const teams: Team[] = [
+const teams: Genshin.Team[] = [
   {
     id: 'mavuika-team-first',
     name: '바푸얀한',
@@ -150,7 +150,7 @@ const teams: Team[] = [
   },
 ];
 
-const breakthroughs: Breakthrough[] = [
+const breakthroughs: Genshin.Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
     name: '2돌: 빛의 한계 돌파',
@@ -158,7 +158,7 @@ const breakthroughs: Breakthrough[] = [
   },
 ];
 
-const Varesa: GenshinCharacter = {
+const Varesa: Genshin.Character = {
   id: 'Varesa',
   name: '바레사',
   element: '번개',

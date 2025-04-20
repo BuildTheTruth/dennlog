@@ -6,7 +6,7 @@ import {
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
-const skills: CharacterSkill[] = [
+const skills: Genshin.CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
     type: '기본공격',
@@ -33,7 +33,7 @@ const skills: CharacterSkill[] = [
   },
 ];
 
-const stats: CharacterStat[] = [
+const stats: Genshin.CharacterStat[] = [
   {
     id: 'mavuika-stat-basic',
     type: '기본',
@@ -69,7 +69,7 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const artifactSets: ArtifactSet[] = [
+const artifactSets: Genshin.ArtifactSet[] = [
   {
     id: 'ObsidianCodex',
     name: '흑요석 4세트',
@@ -84,7 +84,7 @@ const artifactSets: ArtifactSet[] = [
   },
 ];
 
-const weapons: Weapon[] = [
+const weapons: Genshin.Weapon[] = [
   {
     id: 'AThousandBlazingSuns',
     name: '타오르는 천개의 태양',
@@ -127,7 +127,7 @@ const weapons: Weapon[] = [
   },
 ];
 
-const teams: Team[] = [
+const teams: Genshin.Team[] = [
   {
     id: 'mavuika-team-first',
     name: '마실시베 융해 파티',
@@ -144,7 +144,7 @@ const teams: Team[] = [
   },
 ];
 
-const breakthroughs: Breakthrough[] = [
+const breakthroughs: Genshin.Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
     name: '1돌: 밤 주인의 계시',
@@ -162,7 +162,7 @@ const breakthroughs: Breakthrough[] = [
   },
 ];
 
-const Mavuika: GenshinCharacter = {
+const Mavuika: Genshin.Character = {
   id: 'Mavuika',
   name: '마비카',
   element: '불',

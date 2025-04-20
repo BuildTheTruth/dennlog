@@ -1,6 +1,6 @@
 import { getArtifactImageURL, getWeaponImageURL } from '@/lib/image/genshin';
 
-const skills: CharacterSkill[] = [
+const skills: Genshin.CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
     type: '기본공격',
@@ -27,7 +27,7 @@ const skills: CharacterSkill[] = [
   },
 ];
 
-const stats: CharacterStat[] = [
+const stats: Genshin.CharacterStat[] = [
   {
     id: 'mavuika-stat-basic',
     type: '기본',
@@ -63,7 +63,7 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const artifactSets: ArtifactSet[] = [
+const artifactSets: Genshin.ArtifactSet[] = [
   {
     id: 'ScrollOfTheHeroOfCinderCity',
     name: '잿더미 4세트',
@@ -78,7 +78,7 @@ const artifactSets: ArtifactSet[] = [
   },
 ];
 
-const weapons: Weapon[] = [
+const weapons: Genshin.Weapon[] = [
   {
     id: 'SkywardPride',
     name: '천공의 마루',
@@ -105,7 +105,7 @@ const weapons: Weapon[] = [
   },
 ];
 
-const teams: Team[] = [
+const teams: Genshin.Team[] = [
   {
     id: 'mavuika-team-first',
     name: '바푸얀한',
@@ -129,7 +129,7 @@ const teams: Team[] = [
   },
 ];
 
-const breakthroughs: Breakthrough[] = [
+const breakthroughs: Genshin.Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-first',
     name: '1돌: 뭐든 시작이 어려운 법',
@@ -147,7 +147,7 @@ const breakthroughs: Breakthrough[] = [
   },
 ];
 
-const Iansan: GenshinCharacter = {
+const Iansan: Genshin.Character = {
   id: 'Iansan',
   name: '얀사',
   element: '번개',

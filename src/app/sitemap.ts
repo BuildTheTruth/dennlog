@@ -12,8 +12,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/games/genshin/characters', // 원신 캐릭터 목록 페이지
     '/games/zenless', // 젠레스존제로 페이지
     '/games/zenless/characters', // 젠레스존제로 캐릭터 목록 페이지
-    '/games/wuthringwaves', // 명조 페이지
-    '/games/wuthringwaves/characters', // 명조 캐릭터 목록 페이지
+    '/games/wutheringwaves', // 명조 페이지
+    '/games/wutheringwaves/characters', // 명조 캐릭터 목록 페이지
     '/about', // 소개 페이지
   ].map(route => ({
     url: `${baseURL}${route}`,

@@ -7,7 +7,7 @@ import {
 
 import { getCharacterProfileImageURL } from '@/lib/image/genshin';
 
-const skills: CharacterSkill[] = [
+const skills: Genshin.CharacterSkill[] = [
   {
     id: 'mavuika-skill-basic',
     type: '기본공격',
@@ -34,7 +34,7 @@ const skills: CharacterSkill[] = [
   },
 ];
 
-const stats: CharacterStat[] = [
+const stats: Genshin.CharacterStat[] = [
   {
     id: 'mavuika-stat-basic',
     type: '기본',
@@ -73,7 +73,7 @@ const stats: CharacterStat[] = [
   },
 ];
 
-const artifactSets: ArtifactSet[] = [
+const artifactSets: Genshin.ArtifactSet[] = [
   {
     id: 'EmblemOfSeveredFate',
     name: '절연 4세트',
@@ -88,7 +88,7 @@ const artifactSets: ArtifactSet[] = [
   },
 ];
 
-const weapons: Weapon[] = [
+const weapons: Genshin.Weapon[] = [
   {
     id: 'EngulfingLightning',
     name: '예초의 번개',
@@ -131,7 +131,7 @@ const weapons: Weapon[] = [
   },
 ];
 
-const teams: Team[] = [
+const teams: Genshin.Team[] = [
   {
     id: 'mavuika-team-first',
     name: '라사카베',
@@ -155,7 +155,7 @@ const teams: Team[] = [
   },
 ];
 
-const breakthroughs: Breakthrough[] = [
+const breakthroughs: Genshin.Breakthrough[] = [
   {
     id: 'mavuika-breakthrough-second',
     name: '2돌: 강철 절단',
@@ -163,7 +163,7 @@ const breakthroughs: Breakthrough[] = [
   },
 ];
 
-const RaidenShogun: GenshinCharacter = {
+const RaidenShogun: Genshin.Character = {
   id: 'RaidenShogun',
   name: '라이덴 쇼군',
   element: '번개',

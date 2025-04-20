@@ -10,6 +10,6 @@ export const GENSHIN_CHARACTER_BY_ID = {
   Iansan,
 } as const;
 
-export const GENSHIN_CHARACTERS: GenshinCharacter[] = Object.values(GENSHIN_CHARACTER_BY_ID);
+export const GENSHIN_CHARACTERS: Genshin.Character[] = Object.values(GENSHIN_CHARACTER_BY_ID);
 
 export type GenshinCharacterID = keyof typeof GENSHIN_CHARACTER_BY_ID;

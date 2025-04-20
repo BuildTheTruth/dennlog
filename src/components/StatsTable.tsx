@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 const FIELD_PRIORITY = ['시계', '성배', '왕관', '공격력', '원마', '원충', '치확/치피'];
 
 interface Props {
-  stats: CharacterStat[];
+  stats: Genshin.CharacterStat[];
 }
 
 const StatsTable = ({ stats }: Props) => {
