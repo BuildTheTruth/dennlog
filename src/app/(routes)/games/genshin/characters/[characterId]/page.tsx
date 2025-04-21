@@ -34,7 +34,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
         >
           {character.name}
         </Typography>
-        <figure className="relative w-full h-[300px] md:h-[500px] md:w-[720px]">
+        <figure className="relative h-[300px] md:h-[500px] w-full">
           <Image
             src={character.imageURL}
             alt={character.name}

@@ -18,6 +18,11 @@ const nextConfig = {
         destination: '/games/genshin/characters',
         permanent: true,
       },
+      {
+        source: '/games/wutheringwaves',
+        destination: '/games/wutheringwaves/characters',
+        permanent: true,
+      },
     ];
   },
 };

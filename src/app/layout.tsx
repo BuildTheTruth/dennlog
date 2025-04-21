@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     '젠레스존제로',
     '명조',
     'Genshin Impact',
-    'Wuthringwaves',
+    'Wuthering Waves',
     'Zenless Zone Zero',
   ],
 };
