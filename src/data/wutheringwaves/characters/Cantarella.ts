@@ -84,6 +84,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '크라운리스',
     mainURL: getEchoImageURL('Crownless'),
     sonataEffect: 'HavocEclipse',
+    description: '부옵션으로 크리티컬 및 일반 공격 피해 추천',
     score: 5,
   },
 ];

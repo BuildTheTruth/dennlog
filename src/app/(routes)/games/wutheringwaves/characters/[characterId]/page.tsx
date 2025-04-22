@@ -53,16 +53,18 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
           variant="h3"
           className="text-center py-2 px-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
-          {character.name} 특성 (스킬)
+          {character.name} 스킬 순서
         </Typography>
         <div className="overflow-x-auto">
           <Table className="text-sm md:text-lg min-w-full">
             <TableHeader>
               <TableRow>
                 <TableHead className="text-end"></TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">기본 공격</TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">원소 전투 스킬(E)</TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">원소 폭발(Q)</TableHead>
+                <TableHead className="text-end">기본 공격</TableHead>
+                <TableHead className="text-end">공명 스킬</TableHead>
+                <TableHead className="text-end">공명 회로</TableHead>
+                <TableHead className="text-end">공명 해방</TableHead>
+                <TableHead className="text-end">변주 스킬</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -107,9 +109,8 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
               <span className="text-base md:text-lg font-bold text-center">
                 {weapon.priority}위. {weapon.name}
               </span>
-              <span className="text-gray-500 text-sm">
-                {weapon.mainStat} / {weapon.subStat}
-              </span>
+              <span className="text-sm">{weapon.mainStat}</span>
+              <span className="text-gray-500 text-sm">{weapon.subStat}</span>
               <figure className="relative w-[120px] h-[120px] md:w-[160px] md:h-[160px] border border-gray-300 rounded-md bg-gray-100">
                 <Image
                   src={weapon.imageURL}
@@ -128,7 +129,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
           variant="h3"
           className="text-center py-2 px-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-lg w-full text-lg md:text-xl"
         >
-          {character.name} 추천 성유물
+          {character.name} 추천 에코
         </Typography>
         <div className="flex flex-col gap-4">
           {character.echoSets.map(echoSet => (
@@ -153,6 +154,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                   />
                 </span>
               </div>
+              <div className="text-sm md:text-base">{echoSet.description}</div>
             </div>
           ))}
         </div>
@@ -165,7 +167,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
           {character.name} 기본 / 준종결 / 종결 스펙
         </Typography>
         <div className="overflow-x-auto">
-          <StatsTable stats={character.stats} />
+          <StatsTable type="wutheringwaves" stats={character.stats} />
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">

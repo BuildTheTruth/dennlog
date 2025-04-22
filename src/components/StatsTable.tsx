@@ -2,13 +2,21 @@
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
-const FIELD_PRIORITY = ['시계', '성배', '왕관', '공격력', '원마', '원충', '치확/치피'];
+const FIELD_PRIORITIES = {
+  genshin: ['시계', '성배', '왕관', '공격력', '원마', '원충', '치확/치피'],
+  wutheringwaves: ['공격력', '공명 효율', '크확/크피'],
+} satisfies Record<string, string[]>;
+
+type FieldPriority = keyof typeof FIELD_PRIORITIES;
 
 interface Props {
-  stats: Genshin.CharacterStat[];
+  type: FieldPriority;
+  stats: Genshin.CharacterStat[] | Wutheringwaves.CharacterStat[];
 }
 
-const StatsTable = ({ stats }: Props) => {
+const StatsTable = ({ type, stats }: Props) => {
+  const fieldPriority = FIELD_PRIORITIES[type];
+
   const heads = Array.from(
     stats.reduce((acc, stat) => {
       Object.keys(stat.fields).forEach(field => {
@@ -20,8 +28,8 @@ const StatsTable = ({ stats }: Props) => {
   );
 
   const sortedHeads = heads.sort((a, b) => {
-    const aIndex = FIELD_PRIORITY.indexOf(a);
-    const bIndex = FIELD_PRIORITY.indexOf(b);
+    const aIndex = fieldPriority.indexOf(a);
+    const bIndex = fieldPriority.indexOf(b);
     return aIndex - bIndex;
   });
 

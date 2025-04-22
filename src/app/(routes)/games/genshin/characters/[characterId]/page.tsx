@@ -169,7 +169,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
           {character.name} 기본 / 준종결 / 종결 스펙
         </Typography>
         <div className="overflow-x-auto">
-          <StatsTable stats={character.stats} />
+          <StatsTable type="genshin" stats={character.stats} />
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">

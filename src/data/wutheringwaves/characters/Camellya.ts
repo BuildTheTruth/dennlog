@@ -7,12 +7,12 @@ import {
 
 const skills: Wutheringwaves.CharacterSkill[] = [
   {
-    id: 'Camellya-skill-1',
-    name: '공명 회로',
-    type: '공명회로',
+    id: 'Camellya-skill-3',
+    name: '기본 공격',
+    type: '기본공격',
     max: 10,
     min: 8,
-    priority: 1,
+    priority: 3,
   },
   {
     id: 'Camellya-skill-2',
@@ -23,12 +23,12 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 2,
   },
   {
-    id: 'Camellya-skill-3',
-    name: '기본 공격',
-    type: '기본공격',
+    id: 'Camellya-skill-1',
+    name: '공명 회로',
+    type: '공명회로',
     max: 10,
     min: 8,
-    priority: 3,
+    priority: 1,
   },
   {
     id: 'Camellya-skill-4',
@@ -42,8 +42,8 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Camellya-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
-    max: 8,
-    min: 6,
+    max: 6,
+    min: 1,
     priority: 5,
   },
 ];
@@ -84,7 +84,8 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '크라운리스',
     mainURL: getEchoImageURL('Crownless'),
     sonataEffect: 'HavocEclipse',
-    score: 10,
+    description: '부옵션 크리티컬 및 일반 공격 피해 추천',
+    score: 5,
   },
 ];
 
@@ -126,9 +127,24 @@ const weapons: Wutheringwaves.Weapon[] = [
 const teams: Wutheringwaves.Team[] = [
   {
     id: 'Camellya-team-1',
-    name: '팀 1',
+    name: '카멜리아, 산화, 파수인',
     characters: 'Camellya, Sanhua, Shorekeeper',
-    descriptions: ['팀 1 설명'],
+    descriptions: [
+      '[파수인] 평x4 - 강공격 - E - Q - 공명 해방',
+      '[산화] E - Q - 강공 - Q',
+      '[카멜리아] R - E - 평꾹 - E(일순의 꽃) - E - 평꾹',
+    ],
+    score: 5,
+  },
+  {
+    id: 'Camellya-team-1',
+    name: '카멜리아, 로코코, 파수인',
+    characters: 'Camellya, Roccia, Shorekeeper',
+    descriptions: [
+      '[파수인] 평x4 - 강공격 - E - Q - 공명 해방',
+      '[로코코] (평) - E - 낙공x3 - R - Q',
+      '[카멜리아] R - E - 평꾹 - E(일순의 꽃) - E - 평꾹',
+    ],
     score: 5,
   },
 ];
