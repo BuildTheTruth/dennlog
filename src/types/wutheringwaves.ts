@@ -1,11 +1,21 @@
 namespace Wutheringwaves {
   export type SkillType = '기본공격' | '공명스킬' | '공명회로' | '공명해방' | '변주스킬';
   export type SonataEffectType =
-    | '어둠의장막'
-    | '떠오르는구름'
-    | '빛나는별'
-    | '영원의광채'
-    | '냉철한결단';
+    | 'FreezingFrost' // 야밤의 서리
+    | 'MoltenRift' // 솟구치는 용암
+    | 'VoidThunder' // 울려퍼지는 뇌음
+    | 'SierraGale' // 스쳐가는 바람
+    | 'CelestialLight' // 빛나는 별
+    | 'HavocEclipse' // 빛을 삼키는 해
+    | 'RejuvenatingGlow' // 찬란한 광휘
+    | 'MoonlitClouds' // 떠오르는 구름
+    | 'LingeringTunes' // 끊임없는 잔향
+    | 'FrostyResolve' // 냉철한 결단
+    | 'EternalRadiance' // 영원의 광채
+    | 'MidnightVeil' // 어둠의 장막
+    | 'EmpyreanAnthem' // 하늘의 합주곡
+    | 'TidebreakingCourage' // 파도에 맞선 용기
+    | 'GustsOfWelkin'; // 끝없는 하늘
 
   export interface CharacterSkill {
     id: string;
