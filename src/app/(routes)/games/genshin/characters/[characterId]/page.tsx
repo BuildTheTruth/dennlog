@@ -72,7 +72,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell className="font-bold">고인물</TableCell>
+                <TableCell className="font-bold">애정</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="font-bold text-end" key={skill.id}>
                     {skill.max}
@@ -80,7 +80,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell>순서</TableCell>
+                <TableCell>우선순위</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="text-end" key={skill.id}>
                     {skill.priority}

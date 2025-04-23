@@ -69,7 +69,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell>최소 (권장)</TableCell>
+                <TableCell>권장</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="text-end" key={skill.id}>
                     {skill.min}
@@ -77,7 +77,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell className="font-bold">최대 (고인물)</TableCell>
+                <TableCell className="font-bold">애정</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="font-bold text-end" key={skill.id}>
                     {skill.max}
