@@ -39,9 +39,11 @@ export function LNB({ items }: LNBProps) {
     pathSegments.length === 3 && pathSegments[0] === 'games' && pathSegments[2] === 'characters';
   const isCharacterDetailPage =
     pathSegments.length > 3 && pathSegments[0] === 'games' && pathSegments[2] === 'characters';
+  const isDevPath = pathSegments.length >= 1 && pathSegments[0] === 'dev';
 
   // Breadcrumb 표시 조건
   const showAllGames = isGamesRoot || isGameCharactersPage;
+  const showAllItems = showAllGames || isDevPath;
 
   // 캐릭터 상세 페이지일 때 캐릭터 이름 표시
   let characterName = '';
@@ -58,9 +60,9 @@ export function LNB({ items }: LNBProps) {
       {/* 모바일 환경에서만 표시되는 Breadcrumb */}
       <div className="md:hidden w-full border-b p-4">
         <Breadcrumb>
-          <BreadcrumbList className={showAllGames ? 'flex-wrap gap-3' : 'gap-3'}>
-            {showAllGames ? (
-              // 모든 게임 카테고리 목록 표시
+          <BreadcrumbList className={showAllItems ? 'flex-wrap gap-3' : 'gap-3'}>
+            {showAllItems ? (
+              // 모든 카테고리 목록 표시
               items.map(item => (
                 <BreadcrumbItem key={item.href}>
                   <BreadcrumbLink
