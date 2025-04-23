@@ -1,5 +1,6 @@
 'use client';
 
+import * as React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -11,6 +12,10 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { GENSHIN_CHARACTER_BY_ID, GenshinCharacterID } from '@/data/genshin/characters';
+import {
+  WUTHERINGWAVES_CHARACTER_BY_ID,
+  WutheringwavesCharacterID,
+} from '@/data/wutheringwaves/characters';
 
 interface NavItem {
   title: string;
@@ -23,41 +28,66 @@ interface LNBProps {
 
 export function LNB({ items }: LNBProps) {
   const pathname = usePathname();
+  const pathSegments = pathname.split('/').filter(Boolean);
 
   // 현재 경로에 맞는 아이템 찾기
   const activeItem = items.find(item => pathname.startsWith(item.href));
 
-  // 경로 분석
-  const pathSegments = pathname.split('/').filter(Boolean);
+  // 경로 타입 판별
+  const isGamesRoot = pathSegments.length === 1 && pathSegments[0] === 'games';
+  const isGameCharactersPage =
+    pathSegments.length === 3 && pathSegments[0] === 'games' && pathSegments[2] === 'characters';
+  const isCharacterDetailPage =
+    pathSegments.length > 3 && pathSegments[0] === 'games' && pathSegments[2] === 'characters';
 
-  // 마지막 세그먼트가 의미있는 엔티티인 경우에만 표시 (characters는 표시하지 않음)
-  const shouldShowLastSegment =
-    pathSegments.length > 3 && pathSegments[pathSegments.length - 2] === 'characters';
+  // Breadcrumb 표시 조건
+  const showAllGames = isGamesRoot || isGameCharactersPage;
 
-  // 마지막 세그먼트가 있고 표시해야 하는 경우
-  const lastSegment = shouldShowLastSegment ? pathSegments[pathSegments.length - 1] : '';
-
-  // 마지막 세그먼트가 캐릭터인 경우 캐릭터 이름 표시
-  const lastSegmentName = GENSHIN_CHARACTER_BY_ID[lastSegment as GenshinCharacterID]?.name || '';
+  // 캐릭터 상세 페이지일 때 캐릭터 이름 표시
+  let characterName = '';
+  if (isCharacterDetailPage) {
+    const characterId = pathSegments[pathSegments.length - 1];
+    characterName =
+      GENSHIN_CHARACTER_BY_ID[characterId as GenshinCharacterID]?.name ||
+      WUTHERINGWAVES_CHARACTER_BY_ID[characterId as WutheringwavesCharacterID]?.name ||
+      '';
+  }
 
   return (
     <>
       {/* 모바일 환경에서만 표시되는 Breadcrumb */}
       <div className="md:hidden w-full border-b p-4">
         <Breadcrumb>
-          <BreadcrumbList>
-            {activeItem && (
-              <BreadcrumbItem>
-                <BreadcrumbLink href={activeItem.href}>{activeItem.title}</BreadcrumbLink>
-              </BreadcrumbItem>
-            )}
-
-            {lastSegment && (
-              <>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{lastSegmentName}</BreadcrumbPage>
+          <BreadcrumbList className={showAllGames ? 'flex-wrap gap-3' : 'gap-3'}>
+            {showAllGames ? (
+              // 모든 게임 카테고리 목록 표시
+              items.map(item => (
+                <BreadcrumbItem key={item.href}>
+                  <BreadcrumbLink
+                    href={item.href}
+                    className={pathname.startsWith(item.href) ? 'font-medium text-foreground' : ''}
+                  >
+                    {item.title}
+                  </BreadcrumbLink>
                 </BreadcrumbItem>
+              ))
+            ) : (
+              // 게임 > 캐릭터 형태로 표시
+              <>
+                {activeItem && (
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href={activeItem.href}>{activeItem.title}</BreadcrumbLink>
+                  </BreadcrumbItem>
+                )}
+
+                {isCharacterDetailPage && characterName && (
+                  <>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      <BreadcrumbPage>{characterName}</BreadcrumbPage>
+                    </BreadcrumbItem>
+                  </>
+                )}
               </>
             )}
           </BreadcrumbList>
