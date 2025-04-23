@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { GENSHIN_CHARACTERS } from '@/data/genshin/characters';
+import { WUTHERINGWAVES_CHARACTERS } from '@/data/wutheringwaves/characters';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 기본 URL 설정
@@ -10,8 +11,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '', // 홈
     '/games/genshin', // 원신 페이지
     '/games/genshin/characters', // 원신 캐릭터 목록 페이지
-    '/games/zenless', // 젠레스존제로 페이지
-    '/games/zenless/characters', // 젠레스존제로 캐릭터 목록 페이지
     '/games/wutheringwaves', // 명조 페이지
     '/games/wutheringwaves/characters', // 명조 캐릭터 목록 페이지
     '/about', // 소개 페이지
@@ -25,5 +24,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date().toISOString(),
   }));
 
-  return [...staticRoutes, ...genshinCharactersRoutes];
+  const wutheringwavesCharactersRoutes = WUTHERINGWAVES_CHARACTERS.map(({ id }) => ({
+    url: `${baseURL}/games/wutheringwaves/characters/${id}`,
+    lastModified: new Date().toISOString(),
+  }));
+
+  return [...staticRoutes, ...genshinCharactersRoutes, ...wutheringwavesCharactersRoutes];
 }

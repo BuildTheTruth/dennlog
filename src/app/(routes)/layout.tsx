@@ -13,7 +13,7 @@ const titleByRoute = {
 
 const categoriesByPage: Record<string, (keyof typeof titleByRoute)[]> = {
   '/dev': ['denncar', 'dennquiz'],
-  '/games': ['genshin', 'wutheringwaves', 'zenless'],
+  '/games': ['genshin', 'wutheringwaves'],
 };
 
 const createNavItems = (pathname: string) => {
