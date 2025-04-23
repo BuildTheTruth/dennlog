@@ -57,14 +57,14 @@ const GenshinCharacterPage = ({ params }: Props) => {
             <TableHeader>
               <TableRow>
                 <TableHead className="text-end"></TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">기본 공격</TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">원소 전투 스킬(E)</TableHead>
-                <TableHead className="text-end w-[100px] md:w-[200px]">원소 폭발(Q)</TableHead>
+                <TableHead className="text-end">기본 공격</TableHead>
+                <TableHead className="text-end">원소 전투 스킬(E)</TableHead>
+                <TableHead className="text-end">원소 폭발(Q)</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell>최소 (권장)</TableCell>
+                <TableCell>권장</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="text-end" key={skill.id}>
                     {skill.min}
@@ -72,7 +72,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell className="font-bold">최대 (고인물)</TableCell>
+                <TableCell className="font-bold">고인물</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="font-bold text-end" key={skill.id}>
                     {skill.max}
@@ -80,7 +80,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
               </TableRow>
               <TableRow>
-                <TableCell>우선순위</TableCell>
+                <TableCell>순서</TableCell>
                 {character.skills.map(skill => (
                   <TableCell className="text-end" key={skill.id}>
                     {skill.priority}
