@@ -109,8 +109,9 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
               <span className="text-base md:text-lg font-bold text-center">
                 {weapon.priority}위. {weapon.name}
               </span>
-              <span className="text-sm">{weapon.mainStat}</span>
-              <span className="text-gray-500 text-sm">{weapon.subStat}</span>
+              <span className="text-gray-500 text-sm">
+                {weapon.mainStat} / {weapon.subStat}
+              </span>
               <figure className="relative w-[120px] h-[120px] md:w-[160px] md:h-[160px] border border-gray-300 rounded-md bg-gray-100">
                 <Image
                   src={weapon.imageURL}
