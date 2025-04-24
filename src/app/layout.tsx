@@ -8,23 +8,19 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'DennLog',
-  description:
-    '원신(Genshin Impact)과 명조(Wuthering Waves) 캐릭터 육성법, 무기 추천, 성유물/유물 조합, 팀 구성 가이드를 제공하는 게임 공략 블로그',
+  description: '개발 및 게임 공략법 공유 블로그',
   keywords: [
     '원신',
     '명조',
     'Genshin Impact',
     'Wuthering Waves',
-    '원신 캐릭터 육성',
-    '명조 캐릭터 육성',
-    '원신 가이드',
-    '명조 가이드',
-    '원신 무기 추천',
-    '명조 무기 추천',
-    '원신 성유물',
-    '명조 유물',
-    '원신 팀 구성',
-    '명조 팀 구성',
+    '추천 무기',
+    '추천 성유물',
+    '추천 에코',
+    '추천 파티',
+    '추천 돌파',
+    '스킬 순서',
+    '캐릭터 육성법',
   ],
   authors: [
     {
@@ -42,16 +38,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: 'https://dennlog.vercel.app',
-    title: 'DennLog - 원신/명조 캐릭터 육성 가이드',
-    description:
-      '원신(Genshin Impact)과 명조(Wuthering Waves) 캐릭터 육성법, 무기 추천, 성유물/유물 조합, 팀 구성 가이드를 제공하는 게임 공략 블로그',
+    title: 'DennLog',
+    description: '개발 및 게임 공략법 공유 블로그',
     siteName: 'DennLog',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DennLog - 원신/명조 캐릭터 육성 가이드',
-    description:
-      '원신(Genshin Impact)과 명조(Wuthering Waves) 캐릭터 육성법, 무기 추천, 성유물/유물 조합, 팀 구성 가이드',
+    title: 'DennLog',
+    description: '개발 및 게임 공략법 공유 블로그',
     creator: '@dennlog',
   },
   alternates: {
