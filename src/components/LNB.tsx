@@ -1,8 +1,5 @@
 'use client';
 
-import * as React from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -16,10 +13,15 @@ import {
   WUTHERINGWAVES_CHARACTER_BY_ID,
   WutheringwavesCharacterID,
 } from '@/data/wutheringwaves/characters';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface NavItem {
+  id: string;
   title: string;
   href: string;
+  imageURL?: string;
 }
 
 interface LNBProps {
@@ -64,10 +66,10 @@ export function LNB({ items }: LNBProps) {
             {showAllItems ? (
               // 모든 카테고리 목록 표시
               items.map(item => (
-                <BreadcrumbItem key={item.href}>
+                <BreadcrumbItem className="text-base" key={item.id}>
                   <BreadcrumbLink
                     href={item.href}
-                    className={pathname.startsWith(item.href) ? 'font-medium text-foreground' : ''}
+                    className={pathname.startsWith(item.href) ? 'font-bold text-foreground' : ''}
                   >
                     {item.title}
                   </BreadcrumbLink>
@@ -77,7 +79,7 @@ export function LNB({ items }: LNBProps) {
               // 게임 > 캐릭터 형태로 표시
               <>
                 {activeItem && (
-                  <BreadcrumbItem>
+                  <BreadcrumbItem className="text-base">
                     <BreadcrumbLink href={activeItem.href}>{activeItem.title}</BreadcrumbLink>
                   </BreadcrumbItem>
                 )}
@@ -85,7 +87,7 @@ export function LNB({ items }: LNBProps) {
                 {isCharacterDetailPage && characterName && (
                   <>
                     <BreadcrumbSeparator />
-                    <BreadcrumbItem>
+                    <BreadcrumbItem className="text-base">
                       <BreadcrumbPage>{characterName}</BreadcrumbPage>
                     </BreadcrumbItem>
                   </>
@@ -100,15 +102,18 @@ export function LNB({ items }: LNBProps) {
       <nav className="hidden md:block w-64 border-r p-4">
         <ul className="space-y-2">
           {items.map(item => (
-            <li key={item.href}>
+            <li key={item.id}>
               <Link
                 href={item.href}
-                className={`block p-2 rounded-lg transition-colors ${
+                className={`flex items-center gap-2 p-2 rounded-lg transition-colors ${
                   pathname.startsWith(item.href)
                     ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
                     : 'hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
               >
+                {item.imageURL && (
+                  <Image src={item.imageURL} alt={item.title} width={32} height={32} />
+                )}
                 {item.title}
               </Link>
             </li>

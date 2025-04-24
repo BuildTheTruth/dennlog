@@ -22,8 +22,10 @@ const createNavItems = (pathname: string) => {
     if (pathname.startsWith(page)) {
       for (const category of categories) {
         navItems.push({
+          id: category,
           title: titleByRoute[category],
           href: `${page}/${category}`,
+          imageURL: pathname.startsWith('/games') ? `/${category}.webp` : undefined,
         });
       }
     }
