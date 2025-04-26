@@ -131,7 +131,7 @@ const teams: Wutheringwaves.Team[] = [
     characters: 'Camellya, Sanhua, Shorekeeper',
     descriptions: [
       '[파수인] 평x4 - 강공격 - E - Q - R',
-      '[산화] E - Q - 강공 - Q',
+      '[산화] E - R - 강공 - Q',
       '[카멜리아] R - E - 평꾹 - E(일순의 꽃) - E - 평꾹',
     ],
     score: 5,
