@@ -134,7 +134,7 @@ const teams: Wutheringwaves.Team[] = [
       '[벨리나] E - Q - R - 강공 - 공중 평타',
       '[금희] E - 평x4 - Q - E',
       '[칸타렐라] E - Q - R - 강공 - E - 평x3 - E',
-      '[금희] R- E - 평x3 - E - 평 - E',
+      '[금희] R - E - 평x3 - E - 평 - E',
     ],
     score: 5,
   },
