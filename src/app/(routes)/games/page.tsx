@@ -52,9 +52,7 @@ export default function GamesPage() {
                     >
                       {redeem.code}
                     </a>
-                    <p className="text-sm text-gray-500">
-                      {redeem.expires_at ? dayjs(redeem.expires_at).format('YYYY-MM-DD HH:mm') : ''}
-                    </p>
+                    <p className="text-gray-500">{redeem.content}</p>
                   </div>
                 ))
               : !isLoading && <p className="text-gray-500">유효한 리딤코드가 없습니다.</p>}

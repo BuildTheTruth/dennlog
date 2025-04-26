@@ -12,6 +12,7 @@ export type Database = {
       redeems: {
         Row: {
           code: string
+          content: string | null
           created_at: string
           expires_at: string | null
           game_name: string | null
@@ -19,6 +20,7 @@ export type Database = {
         }
         Insert: {
           code: string
+          content?: string | null
           created_at?: string
           expires_at?: string | null
           game_name?: string | null
@@ -26,6 +28,7 @@ export type Database = {
         }
         Update: {
           code?: string
+          content?: string | null
           created_at?: string
           expires_at?: string | null
           game_name?: string | null
