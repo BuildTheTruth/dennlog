@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2400+',
       '공명 효율': '140',
-      '크확/크피': '80/280',
+      '크확/크피': '80/270',
     },
   },
 ];

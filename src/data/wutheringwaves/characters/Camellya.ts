@@ -55,7 +55,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2000~2300',
       '공명 효율': '120',
-      '크확/크피': '60/220',
+      '크확/크피': '60/230',
     },
   },
   {
@@ -64,7 +64,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2300~2600',
       '공명 효율': '120+',
-      '크확/크피': '70/240',
+      '크확/크피': '70/250',
     },
   },
   {
@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2600+',
       '공명 효율': '130+',
-      '크확/크피': '80/280',
+      '크확/크피': '80/270',
     },
   },
 ];

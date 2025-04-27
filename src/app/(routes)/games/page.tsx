@@ -2,8 +2,7 @@
 
 import { redeemsOptions } from '@/tanstack/options/redeems';
 import { Tables } from '@/types/supabase';
-import { useQuery } from '@tanstack/react-query';
-import dayjs from 'dayjs';
+import { useSuspenseQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 
 type GameName = 'genshin' | 'zenless';
@@ -19,7 +18,7 @@ const REDEEM_URL_BY_GAME_NAME = {
 } as const satisfies Record<GameName, string>;
 
 export default function GamesPage() {
-  const { data: redeems = [], isLoading } = useQuery(redeemsOptions());
+  const { data: redeems = [], isLoading } = useSuspenseQuery(redeemsOptions());
   const redeemsByGameName = useMemo(() => {
     return redeems.reduce(
       (acc, redeem) => {
