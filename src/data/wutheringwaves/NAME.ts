@@ -28,7 +28,7 @@ export const WUTHREINGWAVES_CHARACTER_NAMES = [
   'Baizhi', // 설지
   'Dangjin', // 단근
   'Aalto', // 알토
-  'Mortefi', // 모르피피
+  'Mortefi', // 모르테피
   'Yuanwu', // 연무
   'Lumi', // 루미
   'Youhu', // 유호
