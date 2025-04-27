@@ -5,6 +5,7 @@ import Jinhsi from './Jinhsi';
 import Changli from './Changli';
 import Brant from './Brant';
 import Shorekeeper from './Shorekeeper';
+import Phoebe from './Phoebe';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Cantarella,
@@ -14,6 +15,7 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Changli,
   Brant,
   Shorekeeper,
+  Phoebe,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(

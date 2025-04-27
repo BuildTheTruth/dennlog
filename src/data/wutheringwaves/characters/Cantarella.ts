@@ -120,7 +120,7 @@ const weapons: Wutheringwaves.Weapon[] = [
     imageURL: getWeaponImageURL('Augment'),
     priority: 4,
     mainStat: '공격력 413',
-    subStat: ' 크리티컬 20.3%',
+    subStat: '크리티컬 20.3%',
   },
 ];
 
