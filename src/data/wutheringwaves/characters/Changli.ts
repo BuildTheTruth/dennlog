@@ -47,7 +47,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Changli-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
-    max: 10,
+    max: 8,
     min: 6,
     priority: 4,
   },
@@ -136,7 +136,7 @@ const teams: Wutheringwaves.Team[] = [
     characters: 'Changli, Brant, Shorekeeper',
     descriptions: [
       '[장리] R - 강공 - Q',
-      '[파수인] R - E - 평x4 - 강공 - Q',
+      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
       '[브렌트] R - 평x4 - E - Q',
       '[장리] 낙공 - 평x3 - E - 평 - E - 평 - 강공 - R - 강공',
     ],
