@@ -59,7 +59,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '기본',
     fields: {
       공격력: '2000~2200',
-      '크확/크피': '60/230',
+      '크리/크피': '60/230',
       '공명 효율': '120',
     },
   },
@@ -68,7 +68,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '준종결',
     fields: {
       공격력: '2200~2400',
-      '크확/크피': '70/250',
+      '크리/크피': '70/250',
       '공명 효율': '120',
     },
   },
@@ -77,7 +77,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '종결',
     fields: {
       공격력: '2400~2600',
-      '크확/크피': '80/270',
+      '크리/크피': '80/270',
       '공명 효율': '130',
     },
   },
@@ -89,7 +89,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '지옥불 기사',
     mainURL: getEchoImageURL('NightmareInfernoRider'),
     sonataEffect: 'MoltenRift',
-    description: '용융 피해 증가와 공명 스킬 피해 증가',
+    descriptions: ['용융 피해 증가와 공명 스킬 피해 증가'],
     score: 5,
   },
 ];

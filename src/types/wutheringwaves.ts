@@ -39,7 +39,7 @@ namespace Wutheringwaves {
     main: string;
     mainURL: string;
     sonataEffect: SonataEffectType;
-    description: string;
+    descriptions: string[];
     score: number;
   }
 

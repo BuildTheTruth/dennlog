@@ -81,7 +81,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '돌아갈 곳이 없는 오류',
     mainURL: getEchoImageURL('FallacyOfNoReturn'),
     sonataEffect: 'RejuvenatingGlow',
-    description: '공명 효율 최대한 챙기고 추가적으로 HP%',
+    descriptions: ['공명 효율 최대한 챙기고 추가적으로 HP% 챙기기'],
     score: 5,
   },
 ];

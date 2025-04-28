@@ -55,7 +55,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '1800~2000',
       '공명 효율': '120+',
-      '크확/크피': '60/220',
+      '크리/크피': '60/220',
     },
   },
   {
@@ -64,7 +64,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2000~2200',
       '공명 효율': '130+',
-      '크확/크피': '70/240',
+      '크리/크피': '70/240',
     },
   },
   {
@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2200+',
       '공명 효율': '140+',
-      '크확/크피': '80/260',
+      '크리/크피': '80/260',
     },
   },
 ];
@@ -84,7 +84,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '로렐라이',
     mainURL: getEchoImageURL('Lorelei'),
     sonataEffect: 'HavocEclipse',
-    description: '부옵션 크리티컬 관련 및 공명 효율 추천',
+    descriptions: ['부옵션 크리티컬 관련 및 공명 효율 추천'],
     score: 5,
   },
 ];

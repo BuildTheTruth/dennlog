@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 
 const FIELD_PRIORITIES = {
   genshin: ['시계', '성배', '왕관', '공격력', '원마', '원충', '치확/치피'],
-  wutheringwaves: ['공격력', '공명 효율', '크확/크피'],
+  wutheringwaves: ['공격력', '공명 효율', '크리/크피'],
 } satisfies Record<string, string[]>;
 
 type FieldPriority = keyof typeof FIELD_PRIORITIES;

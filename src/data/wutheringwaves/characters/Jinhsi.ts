@@ -60,7 +60,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '1900~2100',
       '공명 효율': '120',
-      '크확/크피': '60/230',
+      '크리/크피': '60/230',
     },
   },
   {
@@ -69,7 +69,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2000~2200',
       '공명 효율': '120+',
-      '크확/크피': '70/250',
+      '크리/크피': '70/250',
     },
   },
   {
@@ -78,7 +78,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2200~2400',
       '공명 효율': '130+',
-      '크확/크피': '80/270',
+      '크리/크피': '80/270',
     },
   },
 ];
@@ -89,7 +89,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '용의 별자리',
     mainURL: getEchoImageURL('Jue'),
     sonataEffect: 'HavocEclipse',
-    description: '부옵션 크리티컬 및 공명 스킬 피해 추천',
+    descriptions: ['부옵션 크리티컬 및 공명 스킬 피해 추천'],
     score: 5,
   },
 ];

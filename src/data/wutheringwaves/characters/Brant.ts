@@ -58,7 +58,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Brant-stat-1',
     type: '기본',
     fields: {
-      '크확/크피': '50/200',
+      '크리/크피': '50/200',
       '공명 효율': '260',
     },
   },
@@ -66,7 +66,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Brant-stat-2',
     type: '준종결',
     fields: {
-      '크확/크피': '60/220',
+      '크리/크피': '60/220',
       '공명 효율': '270',
     },
   },
@@ -74,7 +74,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Brant-stat-3',
     type: '종결',
     fields: {
-      '크확/크피': '70/240',
+      '크리/크피': '70/240',
       '공명 효율': '280+',
     },
   },
@@ -86,7 +86,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '탄식의 고룡',
     mainURL: getEchoImageURL('DragonOfDirge'),
     sonataEffect: 'TidebreakingCourage',
-    description: '공명효율 최대 280% 그 외는 크리티컬 관련',
+    descriptions: ['공명효율 최대 280%', '크리티컬 관련'],
     score: 5,
   },
 ];

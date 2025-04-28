@@ -55,7 +55,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2000~2200',
       '공명 효율': '120',
-      '크확/크피': '60/230',
+      '크리/크피': '60/230',
     },
   },
   {
@@ -64,7 +64,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2200~2400',
       '공명 효율': '130',
-      '크확/크피': '70/250',
+      '크리/크피': '70/250',
     },
   },
   {
@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2400+',
       '공명 효율': '140',
-      '크확/크피': '80/270',
+      '크리/크피': '80/270',
     },
   },
 ];
@@ -84,7 +84,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '이성(異性) 무장',
     mainURL: getEchoImageURL('PhantomSentryConstruct'),
     sonataEffect: 'FrostyResolve',
-    description: '부옵션 크리티컬 및 공명 스킬 피해 추천',
+    descriptions: ['부옵션 크리티컬 및 공명 스킬 피해 추천'],
     score: 5,
   },
 ];

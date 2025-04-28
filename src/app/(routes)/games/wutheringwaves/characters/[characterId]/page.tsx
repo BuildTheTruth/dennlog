@@ -155,7 +155,11 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                   />
                 </span>
               </div>
-              <div className="text-sm md:text-base">{echoSet.description}</div>
+              <div className="text-sm md:text-base flex flex-col gap-2 items-center">
+                {echoSet.descriptions.map((desc, index) => (
+                  <div key={index}>{desc}</div>
+                ))}
+              </div>
             </div>
           ))}
         </div>

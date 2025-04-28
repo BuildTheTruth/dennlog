@@ -60,7 +60,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '1800~1900',
       '공명 효율': '110',
-      '크확/크피': '50/240',
+      '크리/크피': '50/240',
     },
   },
   {
@@ -69,7 +69,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '1900~2000',
       '공명 효율': '115',
-      '크확/크피': '60/250',
+      '크리/크피': '60/250',
     },
   },
   {
@@ -78,7 +78,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2000~2200',
       '공명 효율': '120',
-      '크확/크피': '70/290',
+      '크리/크피': '70/290',
     },
   },
 ];
@@ -89,7 +89,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '악몽 · 애곡하는 아익스',
     mainURL: getEchoImageURL('NightmareMourningAix'),
     sonataEffect: 'EternalRadiance',
-    description: '부옵션 크리티컬 관련 및 강공격 피해 보너스',
+    descriptions: ['부옵션 크리티컬 관련 및 강공격 피해 보너스'],
     score: 5,
   },
 ];
