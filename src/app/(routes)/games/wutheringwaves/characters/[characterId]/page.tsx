@@ -1,5 +1,3 @@
-'use client';
-
 import StatsTable from '@/components/StatsTable';
 import Typography from '@/components/Typography';
 import {
