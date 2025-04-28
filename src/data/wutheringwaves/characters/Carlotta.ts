@@ -144,7 +144,7 @@ const Carlotta: Wutheringwaves.Character = {
   id: 'Carlotta',
   name: '카를로타',
   attribute: '인멸',
-  weaponType: '직검',
+  weaponType: '권총',
   rarity: 5,
   imageURL: getCharacterImageURL('Carlotta'),
   profileImageURL: getCharacterProfileImageURL('Carlotta'),

@@ -15,17 +15,17 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Zani-skill-1',
     name: '기본 공격',
     type: '기본공격',
-    max: 6,
-    min: 1,
+    max: 10,
+    min: 8,
     priority: 3,
   },
   {
     id: 'Zani-skill-2',
     name: '공명 스킬',
     type: '공명스킬',
-    max: 10,
-    min: 8,
-    priority: 2,
+    max: 8,
+    min: 6,
+    priority: 4,
   },
   {
     id: 'Zani-skill-3',
@@ -49,7 +49,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     type: '변주스킬',
     max: 6,
     min: 1,
-    priority: 3,
+    priority: 5,
   },
 ];
 
@@ -112,12 +112,12 @@ const weapons: Wutheringwaves.Weapon[] = [
     subStat: '공격력 36.4%',
   },
   {
-    id: 'LegendOfDrunkenHero',
-    name: '만취 영웅지',
-    imageURL: getWeaponImageURL('LegendOfDrunkenHero'),
+    id: 'Stonard',
+    name: '황금 권갑',
+    imageURL: getWeaponImageURL('Stonard'),
     priority: 3,
-    mainStat: '공격력 462',
-    subStat: '공격력 18.2%',
+    mainStat: '공격력 412',
+    subStat: '크리티컬 20.2%',
   },
 ];
 
@@ -128,6 +128,13 @@ const teams: Wutheringwaves.Team[] = [
     characters: 'Zani, Phoebe, Shorekeeper',
     descriptions: [],
     score: 5,
+  },
+  {
+    id: 'Zani-team-2',
+    name: '잔니, 페비, 샤콘',
+    characters: 'Zani, Phoebe, Ciaccona',
+    descriptions: [],
+    score: 4,
   },
 ];
 

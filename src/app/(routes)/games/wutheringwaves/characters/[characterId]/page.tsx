@@ -212,14 +212,18 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                   </span>
                 ))}
             </div>
-            <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
-            <div className="flex flex-col gap-2 text-sm md:text-base">
-              {team.descriptions.map((desc, index) => (
-                <div key={desc} className="text-center md:text-left">
-                  {index + 1}. {desc}
+            {team.descriptions.length > 0 && (
+              <>
+                <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
+                <div className="flex flex-col gap-2 text-sm md:text-base">
+                  {team.descriptions.map((desc, index) => (
+                    <div key={desc} className="text-center md:text-left">
+                      {index + 1}. {desc}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
           </div>
         ))}
       </div>
