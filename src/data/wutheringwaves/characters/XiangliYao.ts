@@ -154,7 +154,7 @@ const teams: Wutheringwaves.Team[] = [
   {
     id: 'XiangliYao-team-2',
     name: '상리요, 장리, 벨리나',
-    characters: 'XiangliYao, Jinhsi, Verina',
+    characters: 'XiangliYao, Changli, Verina',
     descriptions: [],
     score: 4,
   },

@@ -35,7 +35,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
         >
           {character.name}
         </Typography>
-        <figure className="relative h-[300px] md:h-[500px] w-full">
+        <figure className="relative h-[400px] md:h-[600px] w-full">
           <Image
             src={character.imageURL}
             alt={character.name}

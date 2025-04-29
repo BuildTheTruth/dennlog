@@ -11,6 +11,7 @@ import Yinlin from './Yinlin';
 import Zani from './Zani';
 import Ciaccona from './Ciaccona';
 import XiangliYao from './XiangliYao';
+import Jiyan from './Jiyan';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Cantarella,
@@ -26,6 +27,7 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Zani,
   Ciaccona,
   XiangliYao,
+  Jiyan,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(

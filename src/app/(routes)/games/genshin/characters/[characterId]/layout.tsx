@@ -7,6 +7,7 @@ interface Props {
 }
 
 const DESCRIPTIONS = [
+  '육성법',
   '특성 순서',
   '추천 무기',
   '추천 성유물',
