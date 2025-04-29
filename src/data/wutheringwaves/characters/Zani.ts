@@ -100,7 +100,7 @@ const weapons: Wutheringwaves.Weapon[] = [
     name: '불빛의 심판',
     imageURL: getWeaponImageURL('BlazingJustice'),
     priority: 1,
-    mainStat: '공격력 587',
+    mainStat: '공격력 588',
     subStat: '크리티컬 피해 48.6%',
   },
   {
@@ -108,8 +108,8 @@ const weapons: Wutheringwaves.Weapon[] = [
     name: '물결의 파동',
     imageURL: getWeaponImageURL('AbyssSurges'),
     priority: 2,
-    mainStat: '공격력 587',
-    subStat: '공격력 36.4%',
+    mainStat: '공격력 588',
+    subStat: '공격력 36.5%',
   },
   {
     id: 'Stonard',
