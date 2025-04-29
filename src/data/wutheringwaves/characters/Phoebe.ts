@@ -68,7 +68,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '준종결',
     fields: {
       공격력: '1900~2000',
-      '공명 효율': '115',
+      '공명 효율': '120',
       '크리/크피': '60/250',
     },
   },
@@ -77,7 +77,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '종결',
     fields: {
       공격력: '2000~2200',
-      '공명 효율': '120',
+      '공명 효율': '130',
       '크리/크피': '70/290',
     },
   },

@@ -53,8 +53,8 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Camellya-stat-1',
     type: '기본',
     fields: {
-      공격력: '2000~2300',
-      '공명 효율': '120',
+      공격력: '2000~2200',
+      '공명 효율': '110',
       '크리/크피': '60/230',
     },
   },
@@ -62,8 +62,8 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Camellya-stat-2',
     type: '준종결',
     fields: {
-      공격력: '2300~2600',
-      '공명 효율': '120+',
+      공격력: '2200~2400',
+      '공명 효율': '120',
       '크리/크피': '70/250',
     },
   },
@@ -71,8 +71,8 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Camellya-stat-3',
     type: '종결',
     fields: {
-      공격력: '2600+',
-      '공명 효율': '130+',
+      공격력: '2400~2600',
+      '공명 효율': '120',
       '크리/크피': '80/270',
     },
   },
