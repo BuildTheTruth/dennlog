@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const WutheringwavesCharactersPage = () => {
   return (
-    <div className="flex flex-col gap-4 px-4 md:px-0 w-full max-w-screen-xl mx-auto md:mx-0 md:w-auto">
+    <div className="flex flex-col gap-4 px-4 md:px-0 w-full mx-auto md:mx-0 md:w-auto">
       <div className="text-black dark:text-white text-lg font-bold">캐릭터 육성법</div>
       <div className="flex flex-wrap justify-center md:justify-start gap-4">
         {WUTHERINGWAVES_CHARACTERS.map(character => (
