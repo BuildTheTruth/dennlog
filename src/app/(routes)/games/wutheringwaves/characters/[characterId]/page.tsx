@@ -33,7 +33,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
           variant="h2"
           className="py-2 px-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg w-full text-center text-xl md:text-2xl"
         >
-          {character.name}
+          [명조] {character.name} 육성법
         </Typography>
         <figure className="relative h-[400px] md:h-[600px] w-full">
           <Image

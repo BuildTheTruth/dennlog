@@ -20,10 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const character = GENSHIN_CHARACTER_BY_ID[params.characterId];
 
   return {
-    title: `${character.name} | DennLog`,
+    title: `[원신] ${character.name} 육성법`,
     description: `${DESCRIPTIONS.map(desc => `원신 ${character.name} ${desc}`).join(', ')}`,
     openGraph: {
-      title: `${character.name} | DennLog`,
+      title: `[원신] ${character.name} 육성법`,
       description: `${DESCRIPTIONS.map(desc => `원신 ${character.name} ${desc}`).join(', ')}`,
       images: [{ url: character.imageURL }],
     },

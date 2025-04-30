@@ -5,10 +5,10 @@ interface Props {
 }
 
 export const metadata: Metadata = {
-  title: '원신 | DennLog',
+  title: '[원신] 캐릭터 목록',
   description: '원신 캐릭터 육성 가이드',
   openGraph: {
-    title: '원신 | DennLog',
+    title: '[원신] 캐릭터 목록',
     description: '원신 캐릭터 육성 가이드',
     images: [{ url: '/genshin.webp' }],
   },

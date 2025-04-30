@@ -30,7 +30,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
           variant="h2"
           className="py-2 px-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg w-full text-center text-xl md:text-2xl"
         >
-          {character.name}
+          [원신] {character.name} 육성법
         </Typography>
         <figure className="relative h-[300px] md:h-[500px] w-full">
           <Image

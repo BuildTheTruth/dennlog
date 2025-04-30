@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const character = WUTHERINGWAVES_CHARACTER_BY_ID[params.characterId];
 
   return {
-    title: `${character.name} | DennLog`,
+    title: `[명조] ${character.name} 육성법`,
     description: `${DESCRIPTIONS.map(desc => `명조 ${character.name} ${desc}`).join(', ')}`,
     openGraph: {
-      title: `${character.name} | DennLog`,
+      title: `[명조] ${character.name} 육성법`,
       description: `${DESCRIPTIONS.map(desc => `명조 ${character.name} ${desc}`).join(', ')}`,
       images: [{ url: character.imageURL }],
     },
