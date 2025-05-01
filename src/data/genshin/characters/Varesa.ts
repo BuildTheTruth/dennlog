@@ -8,7 +8,7 @@ import {
 
 const skills: Genshin.CharacterSkill[] = [
   {
-    id: 'mavuika-skill-basic',
+    id: 'Varesa-skill-basic',
     type: '기본공격',
     name: '기본 공격',
     max: 10,
@@ -16,7 +16,7 @@ const skills: Genshin.CharacterSkill[] = [
     priority: 1,
   },
   {
-    id: 'mavuika-skill-elemental-skill',
+    id: 'Varesa-skill-elemental-skill',
     type: '원소전투스킬',
     name: '원소 전투 스킬',
     max: 9,
@@ -24,7 +24,7 @@ const skills: Genshin.CharacterSkill[] = [
     priority: 3,
   },
   {
-    id: 'mavuika-skill-elemental-burst',
+    id: 'Varesa-skill-elemental-burst',
     type: '원소폭발',
     name: '원소 폭발',
     max: 9,
@@ -35,38 +35,38 @@ const skills: Genshin.CharacterSkill[] = [
 
 const stats: Genshin.CharacterStat[] = [
   {
-    id: 'mavuika-stat-basic',
+    id: 'Varesa-stat-basic',
     type: '기본',
     fields: {
       시계: '공%',
       성배: '번원피',
       왕관: '치확/치피',
       공격력: '1800~2000',
-      원충: '120%+',
+      원충: '120',
       '치확/치피': '70/150',
     },
   },
   {
-    id: 'mavuika-stat-normal',
+    id: 'Varesa-stat-normal',
     type: '준종결',
     fields: {
       시계: '공%',
       성배: '번원피',
       왕관: '치확/치피',
       공격력: '2000~2200',
-      원충: '130%+',
+      원충: '130',
       '치확/치피': '80/170',
     },
   },
   {
-    id: 'mavuika-stat-final',
+    id: 'Varesa-stat-final',
     type: '종결',
     fields: {
       시계: '공%',
       성배: '번원피',
       왕관: '치확/치피',
-      공격력: '2300+',
-      원충: '140%+',
+      공격력: '2200~2400',
+      원충: '140',
       '치확/치피': '90/190',
     },
   },
@@ -128,16 +128,16 @@ const weapons: Genshin.Weapon[] = [
 
 const teams: Genshin.Team[] = [
   {
-    id: 'mavuika-team-first',
+    id: 'Varesa-team-first',
     name: '바푸얀한',
     characters: 'Varesa, Furina, Iansan, Xianyun',
     descriptions: ['바레사 E', '푸리나 EQ', '얀사 EQ', '한운 EQ', '바레사 E평평x2 Q 반복'],
     score: 5,
   },
   {
-    id: 'mavuika-team-second',
+    id: 'Varesa-team-second',
     name: '바마얀슈',
-    characters: 'Varesa, Mavuika, Iansan, Chevreuse',
+    characters: 'Varesa, Varesa, Iansan, Chevreuse',
     descriptions: [
       '마비카 E',
       '얀사 Q',
@@ -152,7 +152,7 @@ const teams: Genshin.Team[] = [
 
 const breakthroughs: Genshin.Breakthrough[] = [
   {
-    id: 'mavuika-breakthrough-first',
+    id: 'Varesa-breakthrough-first',
     name: '2돌: 빛의 한계 돌파',
     description: '원소 폭발 매번 사용 가능, 낙하 공격 명중 시 에너지 회복',
   },

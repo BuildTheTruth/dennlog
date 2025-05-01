@@ -9,7 +9,7 @@ import { getCharacterProfileImageURL } from '@/lib/image/genshin';
 
 const skills: Genshin.CharacterSkill[] = [
   {
-    id: 'mavuika-skill-basic',
+    id: 'RaidenShogun-skill-basic',
     type: '기본공격',
     name: '기본 공격',
     max: 1,
@@ -17,7 +17,7 @@ const skills: Genshin.CharacterSkill[] = [
     priority: 3,
   },
   {
-    id: 'mavuika-skill-elemental-skill',
+    id: 'RaidenShogun-skill-elemental-skill',
     type: '원소전투스킬',
     name: '원소 전투 스킬',
     max: 10,
@@ -25,7 +25,7 @@ const skills: Genshin.CharacterSkill[] = [
     priority: 2,
   },
   {
-    id: 'mavuika-skill-elemental-burst',
+    id: 'RaidenShogun-skill-elemental-burst',
     type: '원소폭발',
     name: '원소 폭발',
     max: 10,
@@ -36,37 +36,37 @@ const skills: Genshin.CharacterSkill[] = [
 
 const stats: Genshin.CharacterStat[] = [
   {
-    id: 'mavuika-stat-basic',
+    id: 'RaidenShogun-stat-basic',
     type: '기본',
     fields: {
       시계: '원충',
       성배: '번원피',
       왕관: '치확/치피',
-      원충: '250%+',
+      원충: '250',
       공격력: '1600~1800',
       '치확/치피': '55/110',
     },
   },
   {
-    id: 'mavuika-stat-normal',
+    id: 'RaidenShogun-stat-normal',
     type: '준종결',
     fields: {
       시계: '원충/공%',
       성배: '번원피',
       왕관: '치확/치피',
-      원충: '260%+',
+      원충: '260',
       공격력: '1800~2000',
       '치확/치피': '60/120',
     },
   },
   {
-    id: 'mavuika-stat-final',
+    id: 'RaidenShogun-stat-final',
     type: '종결',
     fields: {
       시계: '원충/공%',
       성배: '번원피',
       왕관: '치확/치피',
-      원충: '270%+',
+      원충: '270',
       공격력: '2100~2300',
       '치확/치피': '70/140',
     },
@@ -133,21 +133,21 @@ const weapons: Genshin.Weapon[] = [
 
 const teams: Genshin.Team[] = [
   {
-    id: 'mavuika-team-first',
+    id: 'RaidenShogun-team-first',
     name: '라사카베',
     characters: 'RaidenShogun, KujouSara, KaedeharaKazuha, Bennett',
     descriptions: ['라이덴 E', '카즈하 EQ', '베넷 QE', '쿠죠 사라 EQ', '라이덴 Q'],
     score: 5,
   },
   {
-    id: 'mavuika-team-second',
+    id: 'RaidenShogun-team-second',
     name: '라행향베',
     characters: 'RaidenShogun, Xingqiu, Xiangling, Bennett',
     descriptions: ['라이덴 E', '행추 Q평 E평 E평', '베넷 QE', '향릉 QE', '라이덴 Q'],
     score: 4,
   },
   {
-    id: 'mavuika-team-second',
+    id: 'RaidenShogun-team-second',
     name: '라미카베',
     characters: 'RaidenShogun, YaeMiko, KaedeharaKazuha, Bennett',
     descriptions: ['라이덴 E', '미코 EEE', '카즈하 EQ', '베넷 EQ', '미코 QEEE', '라이덴 Q'],
@@ -157,7 +157,7 @@ const teams: Genshin.Team[] = [
 
 const breakthroughs: Genshin.Breakthrough[] = [
   {
-    id: 'mavuika-breakthrough-second',
+    id: 'RaidenShogun-breakthrough-second',
     name: '2돌: 강철 절단',
     description: '원소 폭발 시전 시 라이덴 쇼군은 적의 방어력 60%를 무시',
   },
