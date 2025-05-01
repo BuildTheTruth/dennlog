@@ -1,9 +1,6 @@
-'use client';
-
-import { redeemsOptions } from '@/tanstack/options/redeems';
+import { getRedeems } from '@/lib/api';
 import { Tables } from '@/types/supabase';
-import { useSuspenseQuery } from '@tanstack/react-query';
-import { useMemo } from 'react';
+import { cache } from 'react';
 
 type GameName = 'genshin' | 'zenless';
 
@@ -17,20 +14,19 @@ const REDEEM_URL_BY_GAME_NAME = {
   zenless: 'https://zenless.hoyoverse.com/redemption',
 } as const satisfies Record<GameName, string>;
 
-export default function GamesPage() {
-  const { data: redeems = [], isLoading } = useSuspenseQuery(redeemsOptions());
-  const redeemsByGameName = useMemo(() => {
-    return redeems.reduce(
-      (acc, redeem) => {
-        if (!acc[redeem.game_name as GameName]) {
-          acc[redeem.game_name as GameName] = [];
-        }
-        acc[redeem.game_name as GameName].push(redeem);
-        return acc;
-      },
-      {} as Record<GameName, Tables<'redeems'>[]>,
-    );
-  }, [redeems]);
+export default async function GamesPage() {
+  const redeems = await cache(getRedeems)();
+
+  const redeemsByGameName = redeems.reduce(
+    (acc, redeem) => {
+      if (!acc[redeem.game_name as GameName]) {
+        acc[redeem.game_name as GameName] = [];
+      }
+      acc[redeem.game_name as GameName].push(redeem);
+      return acc;
+    },
+    {} as Record<GameName, Tables<'redeems'>[]>,
+  );
 
   return (
     <div className="container mx-auto py-4">
@@ -41,20 +37,18 @@ export default function GamesPage() {
             <span className="text-gray-500"> 리딤코드</span>
           </h1>
           <div className="flex flex-col gap-2">
-            {redeemsByGameName[gameName as GameName]?.length > 0
-              ? redeemsByGameName[gameName as GameName].map(redeem => (
-                  <div className="flex gap-2" key={redeem.code}>
-                    <a
-                      className="text-blue-500"
-                      target="_blank"
-                      href={`${url}?code=${redeem.code}`}
-                    >
-                      {redeem.code}
-                    </a>
-                    <p className="text-gray-500">{redeem.content}</p>
-                  </div>
-                ))
-              : !isLoading && <p className="text-gray-500">유효한 리딤코드가 없습니다.</p>}
+            {redeemsByGameName[gameName as GameName]?.length > 0 ? (
+              redeemsByGameName[gameName as GameName].map(redeem => (
+                <div className="flex gap-2" key={redeem.code}>
+                  <a className="text-blue-500" target="_blank" href={`${url}?code=${redeem.code}`}>
+                    {redeem.code}
+                  </a>
+                  <p className="text-gray-500">{redeem.content}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-500">유효한 리딤코드가 없습니다.</p>
+            )}
           </div>
         </div>
       ))}
