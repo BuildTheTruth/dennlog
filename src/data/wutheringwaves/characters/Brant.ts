@@ -15,7 +15,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Brant-skill-3',
     name: '기본 공격',
     type: '기본공격',
-    max: 10,
+    max: 8,
     min: 6,
     priority: 3,
   },

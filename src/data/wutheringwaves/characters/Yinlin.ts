@@ -15,9 +15,9 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Yinlin-skill-3',
     name: '기본 공격',
     type: '기본공격',
-    max: 8,
-    min: 6,
-    priority: 3,
+    max: 6,
+    min: 1,
+    priority: 4,
   },
   {
     id: 'Yinlin-skill-2',
@@ -47,9 +47,9 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Yinlin-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
-    max: 8,
-    min: 6,
-    priority: 3,
+    max: 6,
+    min: 1,
+    priority: 5,
   },
 ];
 

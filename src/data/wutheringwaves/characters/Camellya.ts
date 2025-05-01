@@ -34,8 +34,8 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Camellya-skill-4',
     name: '공명 해방',
     type: '공명해방',
-    max: 10,
-    min: 8,
+    max: 8,
+    min: 6,
     priority: 4,
   },
   {

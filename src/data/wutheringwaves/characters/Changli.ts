@@ -47,8 +47,8 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Changli-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
-    max: 8,
-    min: 6,
+    max: 6,
+    min: 1,
     priority: 4,
   },
 ];
