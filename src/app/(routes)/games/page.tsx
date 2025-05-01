@@ -1,6 +1,5 @@
 import { getRedeems } from '@/lib/api';
 import { Tables } from '@/types/supabase';
-import { cache } from 'react';
 
 type GameName = 'genshin' | 'zenless';
 
@@ -15,7 +14,7 @@ const REDEEM_URL_BY_GAME_NAME = {
 } as const satisfies Record<GameName, string>;
 
 export default async function GamesPage() {
-  const redeems = await cache(getRedeems)();
+  const redeems = await getRedeems();
 
   const redeemsByGameName = redeems.reduce(
     (acc, redeem) => {
