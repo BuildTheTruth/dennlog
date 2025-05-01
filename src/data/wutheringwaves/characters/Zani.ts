@@ -23,8 +23,8 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Zani-skill-2',
     name: '공명 스킬',
     type: '공명스킬',
-    max: 10,
-    min: 8,
+    max: 8,
+    min: 6,
     priority: 3,
   },
   {
@@ -89,7 +89,11 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '카피타네우스',
     mainURL: getEchoImageURL('Capitaneus'),
     sonataEffect: 'EternalRadiance',
-    descriptions: ['메인 에코로 3코스트 착용', '크리티컬 및 강공격 피해 보너스'],
+    descriptions: [
+      '메인 에코로 3코스트 착용',
+      '부옵션 크리티컬 및 강공격 피해 보너스',
+      '파수인과 조합 시 크리티컬 67.5% 이하로 조절',
+    ],
     score: 5,
   },
 ];
