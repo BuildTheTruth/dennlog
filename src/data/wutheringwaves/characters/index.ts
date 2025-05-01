@@ -13,6 +13,7 @@ import Ciaccona from './Ciaccona';
 import XiangliYao from './XiangliYao';
 import Jiyan from './Jiyan';
 import Jianxin from './Jianxin';
+import Roccia from './Roccia';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Cantarella,
@@ -30,6 +31,7 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   XiangliYao,
   Jiyan,
   Jianxin,
+  Roccia,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(
