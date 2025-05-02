@@ -86,7 +86,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '공명의 메아리 · 플뢰르 드 리스',
     mainURL: getEchoImageURL('ReminiscenceFleurdelys'),
     sonataEffect: 'GustsOfWelkin',
-    descriptions: ['크리티컬 관련 및 기류 피해 보너스'],
+    descriptions: ['끝없는 하늘', '크리티컬 관련 및 기류 피해 보너스'],
     score: 5,
   },
   {
@@ -94,7 +94,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '음험한 백로',
     mainURL: getEchoImageURL('ImpermanenceHeron'),
     sonataEffect: 'MoonlitClouds',
-    descriptions: ['크리티컬 관련 및 공명 효율'],
+    descriptions: ['떠오르는 구름', '크리티컬 관련 및 기류 피해 보너스'],
     score: 4,
   },
 ];
