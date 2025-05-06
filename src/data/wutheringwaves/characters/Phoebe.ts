@@ -58,7 +58,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Phoebe-stat-1',
     type: '기본',
     fields: {
-      공격력: '1800~1900',
+      공격력: '1800~2000',
       '공명 효율': '110',
       '크리/크피': '50/240',
     },
@@ -67,16 +67,16 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Phoebe-stat-2',
     type: '준종결',
     fields: {
-      공격력: '1900~2000',
+      공격력: '2000~2200',
       '공명 효율': '120',
-      '크리/크피': '60/250',
+      '크리/크피': '60/260',
     },
   },
   {
     id: 'Phoebe-stat-2',
     type: '종결',
     fields: {
-      공격력: '2000~2200',
+      공격력: '2200~2400',
       '공명 효율': '130',
       '크리/크피': '70/290',
     },
