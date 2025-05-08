@@ -98,9 +98,9 @@ const weapons: Genshin.Weapon[] = [
     subStat: '원소 충전 효율 55.1%',
   },
   {
-    id: 'SkywardPride',
+    id: 'SkywardSpine',
     name: '천공의 마루',
-    imageURL: getWeaponImageURL('SkywardPride'),
+    imageURL: getWeaponImageURL('SkywardSpine'),
     priority: 2,
     mainStat: '기초 공격력 674',
     subStat: '원소 충전 효율 36.8%',

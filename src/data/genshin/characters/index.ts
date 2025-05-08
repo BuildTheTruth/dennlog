@@ -1,3 +1,4 @@
+import Escoffier from './Escoffier';
 import Iansan from './Iansan';
 import Mavuika from './Mavuika';
 import RaidenShogun from './RaidenShogun';
@@ -8,6 +9,7 @@ export const GENSHIN_CHARACTER_BY_ID = {
   RaidenShogun,
   Varesa,
   Iansan,
+  Escoffier,
 } as const;
 
 export const GENSHIN_CHARACTERS: Genshin.Character[] = Object.values(GENSHIN_CHARACTER_BY_ID);

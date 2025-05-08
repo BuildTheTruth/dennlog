@@ -207,43 +207,49 @@ const GenshinCharacterPage = ({ params }: Props) => {
                   </span>
                 ))}
             </div>
-            <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
-            <div className="flex flex-col gap-2 text-sm md:text-base">
-              {team.descriptions.map((desc, index) => (
-                <div key={desc} className="text-center md:text-left">
-                  {index + 1}. {desc}
+            {team.descriptions.length > 0 && (
+              <>
+                <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
+                <div className="flex flex-col gap-2 text-sm md:text-base">
+                  {team.descriptions.map((desc, index) => (
+                    <div key={desc} className="text-center md:text-left">
+                      {index + 1}. {desc}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
           </div>
         ))}
       </div>
-      <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
-        <Typography
-          variant="h3"
-          className="text-center py-2 px-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-lg w-full text-lg md:text-xl"
-        >
-          {character.name} 추천 돌파
-        </Typography>
-        <div className="flex flex-col gap-2">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>돌파</TableHead>
-                <TableHead>설명</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {character.breakthroughs.map(breakthrough => (
-                <TableRow key={breakthrough.id}>
-                  <TableCell>{breakthrough.name}</TableCell>
-                  <TableCell>{breakthrough.description}</TableCell>
+      {character.breakthroughs.length > 0 && (
+        <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px] mb-10">
+          <Typography
+            variant="h3"
+            className="text-center py-2 px-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-lg w-full text-lg md:text-xl"
+          >
+            {character.name} 추천 돌파
+          </Typography>
+          <div className="flex flex-col gap-2">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>돌파</TableHead>
+                  <TableHead>설명</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+              </TableHeader>
+              <TableBody>
+                {character.breakthroughs.map(breakthrough => (
+                  <TableRow key={breakthrough.id}>
+                    <TableCell>{breakthrough.name}</TableCell>
+                    <TableCell>{breakthrough.description}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

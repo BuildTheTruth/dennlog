@@ -96,4 +96,6 @@ export const GENSHIN_CHARACTER_NAMES = [
   'YumemizukiMizuki', // 유메미즈키 미즈키
   'YunJin', // 운근
   'Zhongli', // 종려
+  'Escoffier', // 에스코피에
+  'Ayaka', // 아야카
 ];
