@@ -58,7 +58,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Zani-stat-1',
     type: '기본',
     fields: {
-      공격력: '2000~2200',
+      공격력: '2200~2400',
       '공명 효율': '120',
       '크리/크피': '50/260',
     },
@@ -67,16 +67,16 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Camellya-stat-2',
     type: '준종결',
     fields: {
-      공격력: '2200~2400',
+      공격력: '2400~2600',
       '공명 효율': '120',
-      '크리/크피': '60/280',
+      '크리/크피': '60/290',
     },
   },
   {
     id: 'Zani-stat-2',
     type: '종결',
     fields: {
-      공격력: '2400+',
+      공격력: '2600+',
       '공명 효율': '130',
       '크리/크피': '70/330',
     },
