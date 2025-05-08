@@ -71,7 +71,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     imageURLs: [
       getArtifactImageURL('ScrollOfTheHeroOfCinderCity/flower'),
       getArtifactImageURL('ScrollOfTheHeroOfCinderCity/plume'),
-      getArtifactImageURL('ScrollOfTheHeroOfCinderCity/sands'),
+      getArtifactImageURL('ScrollOfTheHeroOfCindeFrCity/sands'),
       getArtifactImageURL('ScrollOfTheHeroOfCinderCity/goblet'),
       getArtifactImageURL('ScrollOfTheHeroOfCinderCity/circlet'),
     ],
@@ -80,9 +80,9 @@ const artifactSets: Genshin.ArtifactSet[] = [
 
 const weapons: Genshin.Weapon[] = [
   {
-    id: 'SkywardPride',
+    id: 'SkywardSpine',
     name: '천공의 마루',
-    imageURL: getWeaponImageURL('SkywardPride'),
+    imageURL: getWeaponImageURL('SkywardSpine'),
     priority: 1,
     mainStat: '기초 공격력 674',
     subStat: '원소 충전 효율 36.8%',
