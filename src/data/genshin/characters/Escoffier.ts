@@ -40,7 +40,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-basic',
     type: '기본',
     fields: {
-      공격력: '2000~2200',
+      공격력: '1800~2000',
       원충: '140',
       성배: '공%',
       시계: '원충/공%',
@@ -51,7 +51,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '2200~2400',
+      공격력: '2000~2200',
       원충: '160',
       성배: '공%',
       시계: '원충/공%',
@@ -62,7 +62,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-final',
     type: '종결',
     fields: {
-      공격력: '2400~2600',
+      공격력: '2200~2400',
       원충: '180',
       성배: '공%',
       시계: '원충/공%',
