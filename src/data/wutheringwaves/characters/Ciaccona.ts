@@ -136,7 +136,7 @@ const teams: Wutheringwaves.Team[] = [
   },
   {
     id: 'Zani-team-2',
-    name: '잔니, 페비, 샤콘',
+    name: '젠니, 페비, 샤콘',
     characters: 'Zani, Phoebe, Ciaccona',
     descriptions: [],
     score: 4,

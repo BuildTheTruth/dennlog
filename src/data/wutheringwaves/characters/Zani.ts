@@ -128,14 +128,14 @@ const weapons: Wutheringwaves.Weapon[] = [
 const teams: Wutheringwaves.Team[] = [
   {
     id: 'Zani-team-1',
-    name: '잔니, 페비, 파수인',
+    name: '젠니, 페비, 파수인',
     characters: 'Zani, Phoebe, Shorekeeper',
     descriptions: [],
     score: 5,
   },
   {
     id: 'Zani-team-2',
-    name: '잔니, 방랑자(회절), 벨리나',
+    name: '젠니, 방랑자(회절), 벨리나',
     characters: 'Zani, Rover/Female, Verina',
     descriptions: [],
     score: 4,

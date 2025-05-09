@@ -98,10 +98,18 @@ const weapons: Genshin.Weapon[] = [
     subStat: '치명타 피해 66.2%',
   },
   {
+    id: 'CalamityQueller',
+    name: '식재',
+    imageURL: getWeaponImageURL('CalamityQueller'),
+    priority: 3,
+    mainStat: '기초 공격력 741',
+    subStat: '공격력 16.5%',
+  },
+  {
     id: 'Deathmatch',
     name: '결투의 창',
     imageURL: getWeaponImageURL('Deathmatch'),
-    priority: 3,
+    priority: 4,
     mainStat: '기초 공격력 454',
     subStat: '치명타 확률 36.8%',
   },
@@ -109,17 +117,9 @@ const weapons: Genshin.Weapon[] = [
     id: 'SkywardSpine',
     name: '천공의 마루',
     imageURL: getWeaponImageURL('SkywardSpine'),
-    priority: 4,
+    priority: 5,
     mainStat: '기초 공격력 674',
     subStat: '원소 충전 효율 36.8%',
-  },
-  {
-    id: 'FavoniusLance',
-    name: '페보니우스 장창',
-    imageURL: getWeaponImageURL('FavoniusLance'),
-    priority: 5,
-    mainStat: '기초 공격력 565',
-    subStat: '원소 충전 효율 30.6%',
   },
 ];
 
