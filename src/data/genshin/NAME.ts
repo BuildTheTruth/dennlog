@@ -39,7 +39,7 @@ export const GENSHIN_CHARACTER_NAMES = [
   'Kachina', // 카치나
   'KaedeharaKazuha', // 카에데하라 카즈하
   'Kaeya', // 케이아
-  'KamisatoAyaka', // 카미사토 아아캬
+  'KamisatoAyaka', // 카미사토 아야캬
   'KamisatoAyato', // 카미사토 아야토
   'Kaveh', // 카베
   'Keqing', // 각청
@@ -97,5 +97,4 @@ export const GENSHIN_CHARACTER_NAMES = [
   'YunJin', // 운근
   'Zhongli', // 종려
   'Escoffier', // 에스코피에
-  'Ayaka', // 아야카
 ];

@@ -40,7 +40,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-basic',
     type: '기본',
     fields: {
-      공격력: '1600~1800',
+      공격력: '2000~2200',
       원충: '140',
       성배: '공%',
       시계: '원충/공%',
@@ -51,7 +51,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '1800~2000',
+      공격력: '2200~2400',
       원충: '160',
       성배: '공%',
       시계: '원충/공%',
@@ -62,7 +62,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-final',
     type: '종결',
     fields: {
-      공격력: '2000~2200',
+      공격력: '2400~2600',
       원충: '180',
       성배: '공%',
       시계: '원충/공%',
@@ -127,9 +127,9 @@ const teams: Genshin.Team[] = [
   {
     id: 'escoffier-team-first',
     name: '아신푸에',
-    characters: 'Ayaka, Shenhe, Furina, Escoffier',
+    characters: 'KamisatoAyaka, Shenhe, Furina, Escoffier',
     descriptions: [],
-    score: 5,
+    score: 4,
   },
   {
     id: 'escoffier-team-second',
