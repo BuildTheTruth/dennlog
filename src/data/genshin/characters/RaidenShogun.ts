@@ -147,7 +147,7 @@ const teams: Genshin.Team[] = [
     score: 4,
   },
   {
-    id: 'RaidenShogun-team-second',
+    id: 'RaidenShogun-team-third',
     name: '라미카베',
     characters: 'RaidenShogun, YaeMiko, KaedeharaKazuha, Bennett',
     descriptions: ['라이덴 E', '미코 EEE', '카즈하 EQ', '베넷 EQ', '미코 QEEE', '라이덴 Q'],

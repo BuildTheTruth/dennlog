@@ -137,7 +137,7 @@ const teams: Genshin.Team[] = [
   {
     id: 'Varesa-team-second',
     name: '바마얀슈',
-    characters: 'Varesa, Varesa, Iansan, Chevreuse',
+    characters: 'Varesa, Mavuika, Iansan, Chevreuse',
     descriptions: [
       '마비카 E',
       '얀사 Q',

@@ -59,7 +59,7 @@ export const GENSHIN_CHARACTER_NAMES = [
   'Mualani', // 말라니
   'Nahida', // 나히다
   'Navia', // 나비아
-  'Neuvillette', // 느비에트
+  'Neuvillette', // 느비예트
   'Nilou', // 닐루
   'Ningguang', // 응광
   'Noelle', // 노엘
@@ -97,4 +97,5 @@ export const GENSHIN_CHARACTER_NAMES = [
   'YunJin', // 운근
   'Zhongli', // 종려
   'Escoffier', // 에스코피에
+  'Ifa', // 이파
 ];
