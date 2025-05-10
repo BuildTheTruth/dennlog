@@ -74,7 +74,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Jianxin-stat-2',
+    id: 'Jianxin-stat-3',
     type: '종결',
     fields: {
       공격력: '2000~2200',

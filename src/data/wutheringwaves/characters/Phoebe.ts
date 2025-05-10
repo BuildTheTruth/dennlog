@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Phoebe-stat-2',
+    id: 'Phoebe-stat-3',
     type: '종결',
     fields: {
       공격력: '2200~2400',

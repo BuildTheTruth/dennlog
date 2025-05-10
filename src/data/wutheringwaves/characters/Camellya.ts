@@ -137,7 +137,7 @@ const teams: Wutheringwaves.Team[] = [
     score: 5,
   },
   {
-    id: 'Camellya-team-1',
+    id: 'Camellya-team-2',
     name: '카멜리아, 로코코, 파수인',
     characters: 'Camellya, Roccia, Shorekeeper',
     descriptions: [

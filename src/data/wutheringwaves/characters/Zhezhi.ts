@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Zhezhi-stat-2',
+    id: 'Zhezhi-stat-3',
     type: '종결',
     fields: {
       공격력: '1800~2000',

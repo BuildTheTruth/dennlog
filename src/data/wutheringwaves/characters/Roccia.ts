@@ -73,7 +73,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Roccia-stat-2',
+    id: 'Roccia-stat-3',
     type: '종결',
     fields: {
       공격력: '2200~2400',
@@ -138,7 +138,7 @@ const teams: Wutheringwaves.Team[] = [
     score: 5,
   },
   {
-    id: 'Roccia-team-1',
+    id: 'Roccia-team-2',
     name: '방랑자(인멸), 로코코, 벨리나',
     characters: 'Rover/Female, Roccia, Verina',
     descriptions: [],
