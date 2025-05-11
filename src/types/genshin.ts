@@ -57,7 +57,7 @@ namespace Genshin {
     rarity: number;
     imageURL: string;
     profileImageURL: string;
-    thumbnailImageURL: string;
+    // thumbnailImageURL: string;
     skills: CharacterSkill[];
     stats: CharacterStat[];
     artifactSets: ArtifactSet[]; // 추천 성유물

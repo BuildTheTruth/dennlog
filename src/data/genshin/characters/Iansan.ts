@@ -2,7 +2,6 @@ import {
   getArtifactImageURL,
   getCharacterImageURL,
   getCharacterProfileImageURL,
-  getCharacterThumbnailImageURL,
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
@@ -161,7 +160,6 @@ const Iansan: Genshin.Character = {
   rarity: 4,
   imageURL: getCharacterImageURL('Iansan'),
   profileImageURL: getCharacterProfileImageURL('Iansan'),
-  thumbnailImageURL: getCharacterThumbnailImageURL('Iansan'),
   skills,
   stats,
   artifactSets,

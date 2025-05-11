@@ -1,9 +1,4 @@
-import {
-  getArtifactImageURL,
-  getCharacterImageURL,
-  getCharacterThumbnailImageURL,
-  getWeaponImageURL,
-} from '@/lib/image/genshin';
+import { getArtifactImageURL, getCharacterImageURL, getWeaponImageURL } from '@/lib/image/genshin';
 
 import { getCharacterProfileImageURL } from '@/lib/image/genshin';
 
@@ -171,7 +166,6 @@ const RaidenShogun: Genshin.Character = {
   rarity: 5,
   imageURL: getCharacterImageURL('RaidenShogun'),
   profileImageURL: getCharacterProfileImageURL('RaidenShogun'),
-  thumbnailImageURL: getCharacterThumbnailImageURL('RaidenShogun'),
   skills,
   stats,
   artifactSets,

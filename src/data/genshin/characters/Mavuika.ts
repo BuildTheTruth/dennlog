@@ -2,7 +2,6 @@ import {
   getArtifactImageURL,
   getCharacterImageURL,
   getCharacterProfileImageURL,
-  getCharacterThumbnailImageURL,
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
@@ -170,7 +169,6 @@ const Mavuika: Genshin.Character = {
   rarity: 5,
   imageURL: getCharacterImageURL('Mavuika'),
   profileImageURL: getCharacterProfileImageURL('Mavuika'),
-  thumbnailImageURL: getCharacterThumbnailImageURL('Mavuika'),
   skills,
   stats,
   artifactSets,

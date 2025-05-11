@@ -4,7 +4,6 @@ import {
   getArtifactImageURL,
   getCharacterImageURL,
   getCharacterProfileImageURL,
-  getCharacterThumbnailImageURL,
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
@@ -150,7 +149,6 @@ const Escoffier: Genshin.Character = {
   rarity: 5,
   imageURL: getCharacterImageURL('Escoffier'),
   profileImageURL: getCharacterProfileImageURL('Escoffier'),
-  thumbnailImageURL: getCharacterThumbnailImageURL('Escoffier'),
   skills,
   stats,
   artifactSets,

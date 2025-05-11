@@ -2,7 +2,6 @@ import {
   getArtifactImageURL,
   getCharacterImageURL,
   getCharacterProfileImageURL,
-  getCharacterThumbnailImageURL,
   getWeaponImageURL,
 } from '@/lib/image/genshin';
 
@@ -166,7 +165,6 @@ const Varesa: Genshin.Character = {
   rarity: 5,
   imageURL: getCharacterImageURL('Varesa'),
   profileImageURL: getCharacterProfileImageURL('Varesa'),
-  thumbnailImageURL: getCharacterThumbnailImageURL('Varesa'),
   skills,
   stats,
   artifactSets,
