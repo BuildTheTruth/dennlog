@@ -1,10 +1,20 @@
-const BASE_URL = 'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/wutheringwaves';
+import { getImageURL } from '.';
+
+const PATH = 'wutheringwaves';
 
 export const getCharacterProfileImageURL = (id: string) =>
-  `${BASE_URL}/characters/${id}/profile.webp`;
+  getImageURL(`${PATH}/characters/${id}/profile.webp`, { format: 'webp', width: 100, height: 100 });
 
-export const getCharacterImageURL = (id: string) => `${BASE_URL}/characters/${id}/default.webp`;
+export const getCharacterImageURL = (id: string) =>
+  getImageURL(`${PATH}/characters/${id}/default.webp`, {
+    format: 'webp',
+    width: 720,
+    height: 600,
+    resize: 'cover',
+  });
 
-export const getEchoImageURL = (id: string) => `${BASE_URL}/echoes/${id}.webp`;
+export const getEchoImageURL = (id: string) =>
+  getImageURL(`${PATH}/echoes/${id}.webp`, { format: 'webp', width: 100, height: 100 });
 
-export const getWeaponImageURL = (id: string) => `${BASE_URL}/weapons/${id}.webp`;
+export const getWeaponImageURL = (id: string) =>
+  getImageURL(`${PATH}/weapons/${id}.webp`, { format: 'webp', width: 160, height: 160 });
