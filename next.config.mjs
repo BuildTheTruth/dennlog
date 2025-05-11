@@ -15,6 +15,8 @@ const nextConfig = {
         search: '',
       },
     ],
+    loader: 'custom',
+    loaderFile: './src/lib/image/loader.ts',
   },
   async redirects() {
     return [

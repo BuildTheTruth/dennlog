@@ -1,4 +1,4 @@
-const BASE_URL = 'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public';
+export const BASE_URL = 'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public';
 
 interface ImageTransformOptions {
   width?: number;
