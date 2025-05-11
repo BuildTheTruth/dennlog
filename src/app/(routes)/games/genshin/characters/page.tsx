@@ -1,4 +1,5 @@
 import { GENSHIN_CHARACTERS } from '@/data/genshin/characters';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const GenshinCharactersPage = () => {
@@ -12,7 +13,7 @@ const GenshinCharactersPage = () => {
             key={character.id}
             href={`/games/genshin/characters/${character.id}`}
           >
-            <img src={character.profileImageURL} alt={character.name} width={100} height={100} />
+            <Image src={character.profileImageURL} alt={character.name} width={100} height={100} />
             <div className="text-black dark:text-white text-lg font-bold">{character.name}</div>
           </Link>
         ))}
