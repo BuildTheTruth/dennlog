@@ -1,4 +1,10 @@
-import { getArtifactImageURL, getWeaponImageURL } from '@/lib/image/genshin';
+import {
+  getArtifactImageURL,
+  getCharacterImageURL,
+  getCharacterProfileImageURL,
+  getCharacterThumbnailImageURL,
+  getWeaponImageURL,
+} from '@/lib/image/genshin';
 
 const skills: Genshin.CharacterSkill[] = [
   {
@@ -153,12 +159,9 @@ const Iansan: Genshin.Character = {
   element: '번개',
   weaponType: '장병기',
   rarity: 4,
-  imageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/default.webp',
-  profileImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/profile.webp',
-  thumbnailImageURL:
-    'https://idphhmvmuywfflotbvei.supabase.co/storage/v1/object/public/genshin/characters/Iansan/thumbnail.webp',
+  imageURL: getCharacterImageURL('Iansan'),
+  profileImageURL: getCharacterProfileImageURL('Iansan'),
+  thumbnailImageURL: getCharacterThumbnailImageURL('Iansan'),
   skills,
   stats,
   artifactSets,
