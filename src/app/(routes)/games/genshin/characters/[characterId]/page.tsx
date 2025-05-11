@@ -32,7 +32,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
         >
           [원신] {character.name} 육성법
         </Typography>
-        <figure className="relative h-[300px] md:h-[500px] w-full">
+        <figure className="relative h-[400px] md:h-[600px] w-full">
           <Image
             src={character.imageURL}
             alt={character.name}
@@ -105,13 +105,13 @@ const GenshinCharacterPage = ({ params }: Props) => {
               <span className="text-gray-400">
                 {weapon.mainStat} / {weapon.subStat}
               </span>
-              <figure className="relative w-[120px] h-[120px] md:w-[160px] md:h-[160px] border border-gray-300 rounded-md bg-gray-100">
+              <figure className="relative border border-gray-300 rounded-md bg-gray-100">
                 <Image
                   src={weapon.imageURL}
                   alt={weapon.name}
                   className="object-cover"
-                  fill
-                  priority
+                  width={160}
+                  height={160}
                 />
               </figure>
             </div>
@@ -145,13 +145,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
                     key={index}
                     className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
                   >
-                    <Image
-                      src={imageURL}
-                      alt={artifactSet.name}
-                      width={80}
-                      height={80}
-                      className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
-                    />
+                    <Image src={imageURL} alt={artifactSet.name} width={100} height={100} />
                   </span>
                 ))}
               </div>
@@ -200,9 +194,8 @@ const GenshinCharacterPage = ({ params }: Props) => {
                     <Image
                       src={getCharacterProfileImageURL(id)}
                       alt={id}
-                      width={80}
-                      height={80}
-                      className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                      width={100}
+                      height={100}
                     />
                   </span>
                 ))}

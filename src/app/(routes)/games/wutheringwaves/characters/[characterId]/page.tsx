@@ -125,13 +125,13 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
               <span className="text-gray-400">
                 {weapon.mainStat} / {weapon.subStat}
               </span>
-              <figure className="relative w-[120px] h-[120px] md:w-[160px] md:h-[160px] border border-gray-300 rounded-md bg-gray-100">
+              <figure className="relative border border-gray-300 rounded-md bg-gray-100">
                 <Image
                   src={weapon.imageURL}
                   alt={weapon.name}
                   className="object-cover"
-                  fill
-                  priority
+                  width={160}
+                  height={160}
                 />
               </figure>
             </div>
@@ -159,13 +159,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
               </div>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden">
-                  <Image
-                    src={echoSet.mainURL}
-                    alt={echoSet.main}
-                    width={80}
-                    height={80}
-                    className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
-                  />
+                  <Image src={echoSet.mainURL} alt={echoSet.main} width={100} height={100} />
                 </span>
               </div>
               <div className="text-sm md:text-base flex flex-col gap-2 items-center">
@@ -218,9 +212,8 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                     <Image
                       src={getCharacterProfileImageURL(id)}
                       alt={id}
-                      width={80}
-                      height={80}
-                      className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                      width={100}
+                      height={100}
                     />
                   </span>
                 ))}
