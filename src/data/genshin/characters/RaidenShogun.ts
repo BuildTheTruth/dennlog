@@ -73,13 +73,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'EmblemOfSeveredFate',
     name: '절연 4세트',
     score: 5,
-    imageURLs: [
-      getArtifactImageURL('EmblemOfSeveredFate/flower'),
-      getArtifactImageURL('EmblemOfSeveredFate/plume'),
-      getArtifactImageURL('EmblemOfSeveredFate/sands'),
-      getArtifactImageURL('EmblemOfSeveredFate/goblet'),
-      getArtifactImageURL('EmblemOfSeveredFate/circlet'),
-    ],
+    imageURLs: [getArtifactImageURL('EmblemOfSeveredFate/sands')],
   },
 ];
 

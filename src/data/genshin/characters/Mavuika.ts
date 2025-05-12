@@ -73,13 +73,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'ObsidianCodex',
     name: '흑요석 4세트',
     score: 5,
-    imageURLs: [
-      getArtifactImageURL('ObsidianCodex/flower'),
-      getArtifactImageURL('ObsidianCodex/plume'),
-      getArtifactImageURL('ObsidianCodex/sands'),
-      getArtifactImageURL('ObsidianCodex/goblet'),
-      getArtifactImageURL('ObsidianCodex/circlet'),
-    ],
+    imageURLs: [getArtifactImageURL('ObsidianCodex/sands')],
   },
 ];
 

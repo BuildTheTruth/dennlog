@@ -76,25 +76,13 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'LongNightOath',
     name: '긴 밤의 맹세 4세트',
     score: 5,
-    imageURLs: [
-      getArtifactImageURL('LongNightOath/flower'),
-      getArtifactImageURL('LongNightOath/plume'),
-      getArtifactImageURL('LongNightOath/sands'),
-      getArtifactImageURL('LongNightOath/goblet'),
-      getArtifactImageURL('LongNightOath/circlet'),
-    ],
+    imageURLs: [getArtifactImageURL('LongNightOath/sands')],
   },
   {
     id: 'ObsidianCodex',
     name: '흑요석 4세트',
     score: 4,
-    imageURLs: [
-      getArtifactImageURL('ObsidianCodex/flower'),
-      getArtifactImageURL('ObsidianCodex/plume'),
-      getArtifactImageURL('ObsidianCodex/sands'),
-      getArtifactImageURL('ObsidianCodex/goblet'),
-      getArtifactImageURL('ObsidianCodex/circlet'),
-    ],
+    imageURLs: [getArtifactImageURL('ObsidianCodex/sands')],
   },
 ];
 
