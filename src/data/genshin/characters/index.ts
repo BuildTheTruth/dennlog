@@ -1,5 +1,6 @@
 import Escoffier from './Escoffier';
 import Iansan from './Iansan';
+import Ifa from './Ifa';
 import Mavuika from './Mavuika';
 import RaidenShogun from './RaidenShogun';
 import Varesa from './Varesa';
@@ -9,6 +10,7 @@ export const GENSHIN_CHARACTER_BY_ID = {
   RaidenShogun,
   Varesa,
   Iansan,
+  Ifa,
   Escoffier,
 } as const;
 
