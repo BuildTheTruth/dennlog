@@ -130,7 +130,7 @@ const teams: Wutheringwaves.Team[] = [
   {
     id: 'Ciaccona-team-1',
     name: '샤콘, 페비, 방랑자(기류)',
-    characters: 'Ciaccona, Phoebe, Rover/Female',
+    characters: 'Ciaccona, Phoebe, Rover',
     descriptions: [],
     score: 5,
   },

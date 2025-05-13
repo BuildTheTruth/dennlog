@@ -140,7 +140,7 @@ const teams: Wutheringwaves.Team[] = [
   {
     id: 'Roccia-team-2',
     name: '방랑자(인멸), 로코코, 벨리나',
-    characters: 'Rover/Female, Roccia, Verina',
+    characters: 'Rover, Roccia, Verina',
     descriptions: [],
     score: 4,
   },

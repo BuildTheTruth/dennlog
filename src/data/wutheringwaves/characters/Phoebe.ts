@@ -133,7 +133,7 @@ const teams: Wutheringwaves.Team[] = [
   {
     id: 'Phoebe-team-1',
     name: '페비, 방랑자, 파수인',
-    characters: 'Phoebe, Rover/Female, Shorekeeper',
+    characters: 'Phoebe, Rover, Shorekeeper',
     descriptions: [
       '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
       '[방랑자] R - E - 강공 - 평 - 강공 - 평 - E - Q',
