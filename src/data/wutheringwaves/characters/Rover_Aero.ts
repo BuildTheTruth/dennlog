@@ -1,8 +1,3 @@
-/**
- * 참고 외부 사이트
- * https://foreverhan.tistory.com/2221
- */
-
 import {
   getCharacterProfileImageURL,
   getCharacterImageURL,
@@ -12,7 +7,7 @@ import {
 
 const skills: Wutheringwaves.CharacterSkill[] = [
   {
-    id: 'Roccia-skill-1',
+    id: 'Rover_Aero-skill-1',
     name: '기본 공격',
     type: '기본공격',
     max: 6,
@@ -20,7 +15,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 4,
   },
   {
-    id: 'Roccia-skill-2',
+    id: 'Rover_Aero-skill-2',
     name: '공명 스킬',
     type: '공명스킬',
     max: 10,
@@ -28,7 +23,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 2,
   },
   {
-    id: 'Roccia-skill-3',
+    id: 'Rover_Aero-skill-3',
     name: '공명 회로',
     type: '공명회로',
     max: 10,
@@ -36,7 +31,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 1,
   },
   {
-    id: 'Roccia-skill-4',
+    id: 'Rover_Aero-skill-4',
     name: '공명 해방',
     type: '공명해방',
     max: 10,
@@ -44,7 +39,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 3,
   },
   {
-    id: 'Roccia-skill-5',
+    id: 'Rover_Aero-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
     max: 6,
@@ -55,7 +50,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
 
 const stats: Wutheringwaves.CharacterStat[] = [
   {
-    id: 'Roccia-stat-1',
+    id: 'Rover_Aero-stat-1',
     type: '기본',
     fields: {
       공격력: '1800~2000',
@@ -64,7 +59,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Roccia-stat-2',
+    id: 'Rover_Aero-stat-2',
     type: '준종결',
     fields: {
       공격력: '2000~2200',
@@ -73,7 +68,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     },
   },
   {
-    id: 'Roccia-stat-3',
+    id: 'Rover_Aero-stat-3',
     type: '종결',
     fields: {
       공격력: '2200~2400',
@@ -131,29 +126,29 @@ const weapons: Wutheringwaves.Weapon[] = [
 
 const teams: Wutheringwaves.Team[] = [
   {
-    id: 'Roccia-team-1',
+    id: 'Rover_Aero-team-1',
     name: '카멜리아, 로코코, 파수인',
-    characters: 'Camellya, Roccia, Shorekeeper',
+    characters: 'Camellya, Rover_Aero, Shorekeeper',
     descriptions: [],
     score: 5,
   },
   {
-    id: 'Roccia-team-2',
+    id: 'Rover_Aero-team-2',
     name: '방랑자(인멸), 로코코, 벨리나',
-    characters: 'Rover_Havoc, Roccia, Verina',
+    characters: 'Rover_Aero, Rover_Aero, Verina',
     descriptions: [],
     score: 4,
   },
 ];
 
-const Roccia: Wutheringwaves.Character = {
-  id: 'Roccia',
-  name: '로코코',
-  attribute: 'Havoc',
-  weaponType: '권갑',
+const Rover_Aero: Wutheringwaves.Character = {
+  id: 'Rover_Aero',
+  name: '방랑자(기류)',
+  attribute: 'Aero',
+  weaponType: '직검',
   rarity: 5,
-  imageURL: getCharacterImageURL('Roccia'),
-  profileImageURL: getCharacterProfileImageURL('Roccia'),
+  imageURL: getCharacterImageURL('Rover'),
+  profileImageURL: getCharacterProfileImageURL('Rover'),
   skills,
   stats,
   echoSets,
@@ -161,4 +156,4 @@ const Roccia: Wutheringwaves.Character = {
   teams,
 };
 
-export default Roccia;
+export default Rover_Aero;

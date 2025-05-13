@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import WutheringwavesCharacterProfile from '@/components/WutheringwavesCharacterProfile';
 import {
   WUTHERINGWAVES_CHARACTER_BY_ID,
   WutheringwavesCharacterID,
@@ -209,12 +210,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                     key={id}
                     className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
                   >
-                    <Image
-                      src={getCharacterProfileImageURL(id)}
-                      alt={id}
-                      width={100}
-                      height={100}
-                    />
+                    <WutheringwavesCharacterProfile id={id} />
                   </span>
                 ))}
             </div>

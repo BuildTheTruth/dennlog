@@ -1,5 +1,5 @@
+import WutheringwavesCharacterProfile from '@/components/WutheringwavesCharacterProfile';
 import { WUTHERINGWAVES_CHARACTERS } from '@/data/wutheringwaves/characters';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const WutheringwavesCharactersPage = () => {
@@ -13,7 +13,7 @@ const WutheringwavesCharactersPage = () => {
             key={character.id}
             href={`/games/wutheringwaves/characters/${character.id}`}
           >
-            <Image src={character.profileImageURL} alt={character.name} width={100} height={100} />
+            <WutheringwavesCharacterProfile id={character.id} />
             <div className="text-black dark:text-white text-lg font-bold">{character.name}</div>
           </Link>
         ))}

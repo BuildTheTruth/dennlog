@@ -153,7 +153,7 @@ const teams: Wutheringwaves.Team[] = [
   {
     id: 'Jianxin-team-2',
     name: '방랑자(인멸), 감심, 설지',
-    characters: 'Rover, Jianxin, Verina',
+    characters: 'Rover_Havoc, Jianxin, Baizhi',
     descriptions: [],
     score: 4,
   },

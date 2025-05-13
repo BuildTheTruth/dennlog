@@ -18,3 +18,6 @@ export const getEchoImageURL = (id: string) =>
 
 export const getWeaponImageURL = (id: string) =>
   getImageURL(`${PATH}/weapons/${id}.webp`, { format: 'webp', width: 160, height: 160 });
+
+export const getAttributeImageURL = (id: string) =>
+  getImageURL(`${PATH}/attributes/${id}.webp`, { format: 'webp', width: 32, height: 32 });
