@@ -10,9 +10,9 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Rover_Havoc-skill-1',
     name: '기본 공격',
     type: '기본공격',
-    max: 6,
-    min: 1,
-    priority: 4,
+    max: 8,
+    min: 6,
+    priority: 3,
   },
   {
     id: 'Rover_Havoc-skill-2',
@@ -34,9 +34,9 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Rover_Havoc-skill-4',
     name: '공명 해방',
     type: '공명해방',
-    max: 10,
-    min: 8,
-    priority: 3,
+    max: 8,
+    min: 6,
+    priority: 4,
   },
   {
     id: 'Rover_Havoc-skill-5',
@@ -55,7 +55,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '1800~2000',
       '공명 효율': '120',
-      '크리/크피': '70/180',
+      '크리/크피': '60/230',
     },
   },
   {
@@ -63,8 +63,8 @@ const stats: Wutheringwaves.CharacterStat[] = [
     type: '준종결',
     fields: {
       공격력: '2000~2200',
-      '공명 효율': '125',
-      '크리/크피': '70/200',
+      '공명 효율': '130',
+      '크리/크피': '70/250',
     },
   },
   {
@@ -73,69 +73,54 @@ const stats: Wutheringwaves.CharacterStat[] = [
     fields: {
       공격력: '2200~2400',
       '공명 효율': '130',
-      '크리/크피': '80/220',
+      '크리/크피': '80/270',
     },
   },
 ];
 
 const echoSets: Wutheringwaves.EchoSet[] = [
   {
-    id: 'NightmareImpermanenceHeron',
-    main: '악몽 · 애곡하는 아익스',
-    mainURL: getEchoImageURL('NightmareImpermanenceHeron'),
+    id: 'Dreamless',
+    main: '무망자',
+    mainURL: getEchoImageURL('Dreamless'),
     sonataEffect: 'MidnightVeil',
-    descriptions: ['크리티컬 관련 및 강공격 피해 보너스'],
+    descriptions: ['크리티컬 관련 및 공명 스킬 피해 보너스'],
     score: 5,
   },
 ];
 
 const weapons: Wutheringwaves.Weapon[] = [
   {
-    id: 'Tragicomedy',
-    name: '희비극',
-    imageURL: getWeaponImageURL('Tragicomedy'),
+    id: 'EmeraldOfGenesis',
+    name: '천년의 회류',
+    imageURL: getWeaponImageURL('EmeraldOfGenesis'),
     priority: 1,
     mainStat: '공격력 588',
     subStat: '크리티컬 24.3%',
   },
   {
-    id: 'VerityHandle',
-    name: '팔방의 천추',
-    imageURL: getWeaponImageURL('VerityHandle'),
+    id: 'LunarCutter',
+    name: '상승의 서녘',
+    imageURL: getWeaponImageURL('LunarCutter'),
     priority: 2,
-    mainStat: '공격력 588',
-    subStat: '크리티컬 24.3%',
+    mainStat: '공격력 413',
+    subStat: '공격력 30.4%',
   },
   {
-    id: 'Stonard',
-    name: '황금 권갑',
-    imageURL: getWeaponImageURL('Stonard'),
+    id: 'CommandoOfConviction',
+    name: '야귀의 신념',
+    imageURL: getWeaponImageURL('CommandoOfConviction'),
     priority: 3,
     mainStat: '공격력 413',
-    subStat: '크리티컬 20.3%',
-  },
-  {
-    id: 'Marcato',
-    name: '바람의 악센트',
-    imageURL: getWeaponImageURL('Marcato'),
-    priority: 4,
-    mainStat: '공격력 338',
-    subStat: '공명 효율 51.8%',
+    subStat: '공격력 30.4%',
   },
 ];
 
 const teams: Wutheringwaves.Team[] = [
   {
     id: 'Rover_Havoc-team-1',
-    name: '카멜리아, 로코코, 파수인',
-    characters: 'Camellya, Rover_Havoc, Shorekeeper',
-    descriptions: [],
-    score: 5,
-  },
-  {
-    id: 'Rover_Havoc-team-2',
-    name: '방랑자(인멸), 로코코, 벨리나',
-    characters: 'Rover_Havoc, Rover_Havoc, Verina',
+    name: '방랑자(인멸), 감심, 벨리나',
+    characters: 'Rover_Havoc, Jianxin, Verina',
     descriptions: [],
     score: 4,
   },
