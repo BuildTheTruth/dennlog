@@ -164,7 +164,7 @@ const Verina: Wutheringwaves.Character = {
   id: 'Verina',
   name: '벨리나',
   attribute: 'Spectro',
-  weaponType: '정류기',
+  weaponType: '증폭기',
   rarity: 5,
   imageURL: getCharacterImageURL('Verina'),
   profileImageURL: getCharacterProfileImageURL('Verina'),

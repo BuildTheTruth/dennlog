@@ -19,6 +19,9 @@ import Sanhua from './Sanhua';
 import Rover_Spectro from './Rorver_Spectro';
 import Rover_Havoc from './Rover_Havoc';
 import Rover_Aero from './Rover_Aero';
+import Mortefi from './Mortefi';
+import Calcharo from './Calcharo';
+import Baizhi from './Baizhi';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Cantarella,
@@ -42,6 +45,9 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Rover_Spectro,
   Rover_Havoc,
   Rover_Aero,
+  Mortefi,
+  Calcharo,
+  Baizhi,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(

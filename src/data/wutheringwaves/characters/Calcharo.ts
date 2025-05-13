@@ -1,6 +1,6 @@
 /**
  * 참고 외부 사이트
- * https://vortexgaming.io/postdetail/421096
+ * https://easyjwork.tistory.com/128
  */
 
 import {
