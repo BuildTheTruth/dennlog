@@ -170,7 +170,7 @@ const teams: Wutheringwaves.Team[] = [
 const Yinlin: Wutheringwaves.Character = {
   id: 'Yinlin',
   name: '음림',
-  attribute: '전도',
+  attribute: 'Conducto',
   weaponType: '증폭기',
   rarity: 5,
   imageURL: getCharacterImageURL('Yinlin'),

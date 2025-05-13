@@ -162,7 +162,7 @@ const teams: Wutheringwaves.Team[] = [
 const Changli: Wutheringwaves.Character = {
   id: 'Changli',
   name: '장리',
-  attribute: '용융',
+  attribute: 'Fusion',
   weaponType: '직검',
   rarity: 5,
   imageURL: getCharacterImageURL('Changli'),

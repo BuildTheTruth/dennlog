@@ -143,7 +143,7 @@ const teams: Wutheringwaves.Team[] = [
 const Cantarella: Wutheringwaves.Character = {
   id: 'Cantarella',
   name: '칸타렐라',
-  attribute: '인멸',
+  attribute: 'Havoc',
   weaponType: '직검',
   rarity: 5,
   imageURL: getCharacterImageURL('Cantarella'),

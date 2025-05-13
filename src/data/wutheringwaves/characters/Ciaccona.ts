@@ -146,7 +146,7 @@ const teams: Wutheringwaves.Team[] = [
 const Ciaccona: Wutheringwaves.Character = {
   id: 'Ciaccona',
   name: '샤콘',
-  attribute: '기류',
+  attribute: 'Aero',
   weaponType: '권총',
   rarity: 5,
   imageURL: getCharacterImageURL('Ciaccona'),

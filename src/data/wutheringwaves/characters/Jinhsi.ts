@@ -161,7 +161,7 @@ const teams: Wutheringwaves.Team[] = [
 const Jinhsi: Wutheringwaves.Character = {
   id: 'Jinhsi',
   name: '금희',
-  attribute: '회절',
+  attribute: 'Spectro',
   weaponType: '대검',
   rarity: 5,
   imageURL: getCharacterImageURL('Jinhsi'),

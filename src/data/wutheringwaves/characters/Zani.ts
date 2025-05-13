@@ -145,7 +145,7 @@ const teams: Wutheringwaves.Team[] = [
 const Zani: Wutheringwaves.Character = {
   id: 'Zani',
   name: '젠니',
-  attribute: '회절',
+  attribute: 'Spectro',
   weaponType: '권갑',
   rarity: 5,
   imageURL: getCharacterImageURL('Zani'),

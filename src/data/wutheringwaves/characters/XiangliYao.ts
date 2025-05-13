@@ -163,7 +163,7 @@ const teams: Wutheringwaves.Team[] = [
 const XiangliYao: Wutheringwaves.Character = {
   id: 'XiangliYao',
   name: '상리요',
-  attribute: '전도',
+  attribute: 'Conducto',
   weaponType: '권갑',
   rarity: 5,
   imageURL: getCharacterImageURL('XiangliYao'),

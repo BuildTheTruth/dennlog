@@ -146,7 +146,7 @@ const teams: Wutheringwaves.Team[] = [
 const Phoebe: Wutheringwaves.Character = {
   id: 'Phoebe',
   name: '페비',
-  attribute: '회절',
+  attribute: 'Spectro',
   weaponType: '증폭기',
   rarity: 5,
   imageURL: getCharacterImageURL('Phoebe'),

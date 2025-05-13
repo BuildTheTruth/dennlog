@@ -143,7 +143,7 @@ const teams: Wutheringwaves.Team[] = [
 const Carlotta: Wutheringwaves.Character = {
   id: 'Carlotta',
   name: '카를로타',
-  attribute: '인멸',
+  attribute: 'Havoc',
   weaponType: '권총',
   rarity: 5,
   imageURL: getCharacterImageURL('Carlotta'),

@@ -133,7 +133,7 @@ const teams: Wutheringwaves.Team[] = [
 const Sanhua: Wutheringwaves.Character = {
   id: 'Sanhua',
   name: '산화',
-  attribute: '응결',
+  attribute: 'Glacio',
   weaponType: '직검',
   rarity: 4,
   imageURL: getCharacterImageURL('Sanhua'),

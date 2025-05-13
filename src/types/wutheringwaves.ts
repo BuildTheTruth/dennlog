@@ -17,6 +17,8 @@ namespace Wutheringwaves {
     | 'TidebreakingCourage' // 파도에 맞선 용기
     | 'GustsOfWelkin'; // 끝없는 하늘
 
+  export type AttributeType = 'Conducto' | 'Glacio' | 'Fusion' | 'Aero' | 'Spectro' | 'Havoc'; // 전도 | 응결 | 용융 | 기류 | 회절 | 인멸
+
   export interface CharacterSkill {
     id: string;
     type: SkillType;
@@ -69,7 +71,7 @@ namespace Wutheringwaves {
   export interface Character {
     id: string;
     name: string;
-    attribute: string; // 속성
+    attribute: AttributeType; // 속성
     weaponType: string;
     rarity: number;
     imageURL: string;

@@ -169,7 +169,7 @@ const teams: Wutheringwaves.Team[] = [
 const Zhezhi: Wutheringwaves.Character = {
   id: 'Zhezhi',
   name: '절지',
-  attribute: '응결',
+  attribute: 'Glacio',
   weaponType: '증폭기',
   rarity: 5,
   imageURL: getCharacterImageURL('Zhezhi'),

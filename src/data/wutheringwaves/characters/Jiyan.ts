@@ -142,7 +142,7 @@ const teams: Wutheringwaves.Team[] = [
 const Jiyan: Wutheringwaves.Character = {
   id: 'Jiyan',
   name: '기염',
-  attribute: '기류',
+  attribute: 'Aero',
   weaponType: '대검',
   rarity: 5,
   imageURL: getCharacterImageURL('Jiyan'),

@@ -163,7 +163,7 @@ const teams: Wutheringwaves.Team[] = [
 const Verina: Wutheringwaves.Character = {
   id: 'Verina',
   name: '벨리나',
-  attribute: '관측',
+  attribute: 'Spectro',
   weaponType: '정류기',
   rarity: 5,
   imageURL: getCharacterImageURL('Verina'),

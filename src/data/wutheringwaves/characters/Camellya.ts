@@ -152,7 +152,7 @@ const teams: Wutheringwaves.Team[] = [
 const Camellya: Wutheringwaves.Character = {
   id: 'Camellya',
   name: '카멜리아',
-  attribute: '인멸',
+  attribute: 'Havoc',
   weaponType: '직검',
   rarity: 5,
   imageURL: getCharacterImageURL('Camellya'),

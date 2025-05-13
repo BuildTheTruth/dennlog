@@ -149,7 +149,7 @@ const teams: Wutheringwaves.Team[] = [
 const Roccia: Wutheringwaves.Character = {
   id: 'Roccia',
   name: '로코코',
-  attribute: '인멸',
+  attribute: 'Havoc',
   weaponType: '권갑',
   rarity: 5,
   imageURL: getCharacterImageURL('Roccia'),

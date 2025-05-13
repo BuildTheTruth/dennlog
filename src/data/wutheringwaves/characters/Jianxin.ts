@@ -162,7 +162,7 @@ const teams: Wutheringwaves.Team[] = [
 const Jianxin: Wutheringwaves.Character = {
   id: 'Jianxin',
   name: '감심',
-  attribute: '기류',
+  attribute: 'Aero',
   weaponType: '권갑',
   rarity: 5,
   imageURL: getCharacterImageURL('Jianxin'),

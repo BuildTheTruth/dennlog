@@ -151,7 +151,7 @@ const teams: Wutheringwaves.Team[] = [
 const Shorekeeper: Wutheringwaves.Character = {
   id: 'Shorekeeper',
   name: '파수인',
-  attribute: '회절',
+  attribute: 'Spectro',
   weaponType: '증폭기',
   rarity: 5,
   imageURL: getCharacterImageURL('Shorekeeper'),

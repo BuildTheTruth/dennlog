@@ -144,7 +144,7 @@ const teams: Wutheringwaves.Team[] = [
 const Brant: Wutheringwaves.Character = {
   id: 'Brant',
   name: '브렌트',
-  attribute: '용융',
+  attribute: 'Fusion',
   weaponType: '직검',
   rarity: 5,
   imageURL: getCharacterImageURL('Brant'),
