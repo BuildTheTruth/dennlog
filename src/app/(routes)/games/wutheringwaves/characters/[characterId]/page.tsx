@@ -13,8 +13,8 @@ import {
   WUTHERINGWAVES_CHARACTER_BY_ID,
   WutheringwavesCharacterID,
 } from '@/data/wutheringwaves/characters';
-import { getCharacterProfileImageURL } from '@/lib/image/wutheringwaves';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Props {
   params: { characterId: WutheringwavesCharacterID };
@@ -206,12 +206,13 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                 .split(',')
                 .map(id => id.trim())
                 .map(id => (
-                  <span
+                  <Link
                     key={id}
+                    href={`/games/wutheringwaves/characters/${id}`}
                     className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
                   >
                     <WutheringwavesCharacterProfile id={id} />
-                  </span>
+                  </Link>
                 ))}
             </div>
             {team.descriptions.length > 0 && (
