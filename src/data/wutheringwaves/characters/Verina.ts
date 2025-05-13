@@ -84,7 +84,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     main: '타종 거북이',
     mainURL: getEchoImageURL('BellBorneGeochelone'),
     sonataEffect: 'RejuvenatingGlow',
-    descriptions: ['공명 효율 및 공격력 챙기기'],
+    descriptions: ['공명 효율 및 공격력'],
     score: 5,
   },
 ];

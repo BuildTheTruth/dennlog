@@ -1,3 +1,5 @@
+// https://wutheringlab.com/character/rover-aero-build/
+
 import {
   getCharacterProfileImageURL,
   getCharacterImageURL,
@@ -10,17 +12,17 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     id: 'Rover_Aero-skill-1',
     name: '기본 공격',
     type: '기본공격',
-    max: 6,
-    min: 1,
-    priority: 4,
+    max: 8,
+    min: 6,
+    priority: 3,
   },
   {
     id: 'Rover_Aero-skill-2',
     name: '공명 스킬',
     type: '공명스킬',
-    max: 10,
-    min: 8,
-    priority: 2,
+    max: 8,
+    min: 6,
+    priority: 4,
   },
   {
     id: 'Rover_Aero-skill-3',
@@ -36,7 +38,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     type: '공명해방',
     max: 10,
     min: 8,
-    priority: 3,
+    priority: 2,
   },
   {
     id: 'Rover_Aero-skill-5',
@@ -80,62 +82,39 @@ const stats: Wutheringwaves.CharacterStat[] = [
 
 const echoSets: Wutheringwaves.EchoSet[] = [
   {
-    id: 'NightmareImpermanenceHeron',
-    main: '악몽 · 애곡하는 아익스',
-    mainURL: getEchoImageURL('NightmareImpermanenceHeron'),
-    sonataEffect: 'MidnightVeil',
-    descriptions: ['크리티컬 관련 및 강공격 피해 보너스'],
+    id: 'ReminiscenceFleurdelys',
+    main: '공명의 메아리 · 플뢰르 드 리스',
+    mainURL: getEchoImageURL('ReminiscenceFleurdelys'),
+    sonataEffect: 'GustsOfWelkin',
+    descriptions: ['끝없는 하늘', '크리티컬 관련 및 기류 피해 보너스'],
     score: 5,
+  },
+  {
+    id: 'BellBorneGeochelone',
+    main: '타종 거북이',
+    mainURL: getEchoImageURL('BellBorneGeochelone'),
+    sonataEffect: 'RejuvenatingGlow',
+    descriptions: ['찬란한 광휘', '크리티컬 관련 및 기류 피해 보너스'],
+    score: 4,
   },
 ];
 
 const weapons: Wutheringwaves.Weapon[] = [
   {
-    id: 'Tragicomedy',
-    name: '희비극',
-    imageURL: getWeaponImageURL('Tragicomedy'),
+    id: 'BloodpactPledge',
+    name: '혈맹의 서약',
+    imageURL: getWeaponImageURL('BloodpactPledge'),
     priority: 1,
-    mainStat: '공격력 588',
-    subStat: '크리티컬 24.3%',
-  },
-  {
-    id: 'VerityHandle',
-    name: '팔방의 천추',
-    imageURL: getWeaponImageURL('VerityHandle'),
-    priority: 2,
-    mainStat: '공격력 588',
-    subStat: '크리티컬 24.3%',
-  },
-  {
-    id: 'Stonard',
-    name: '황금 권갑',
-    imageURL: getWeaponImageURL('Stonard'),
-    priority: 3,
-    mainStat: '공격력 413',
-    subStat: '크리티컬 20.3%',
-  },
-  {
-    id: 'Marcato',
-    name: '바람의 악센트',
-    imageURL: getWeaponImageURL('Marcato'),
-    priority: 4,
-    mainStat: '공격력 338',
-    subStat: '공명 효율 51.8%',
+    mainStat: '공격력 500',
+    subStat: '치유량 보너스 26%',
   },
 ];
 
 const teams: Wutheringwaves.Team[] = [
   {
     id: 'Rover_Aero-team-1',
-    name: '카멜리아, 로코코, 파수인',
-    characters: 'Camellya, Rover_Aero, Shorekeeper',
-    descriptions: [],
-    score: 5,
-  },
-  {
-    id: 'Rover_Aero-team-2',
-    name: '방랑자(인멸), 로코코, 벨리나',
-    characters: 'Rover_Aero, Rover_Aero, Verina',
+    name: '기염, 모르테피, 방랑자(기류)',
+    characters: 'Jiyan, Mortefi, Rover_Aero',
     descriptions: [],
     score: 4,
   },
