@@ -25,6 +25,13 @@ import Baizhi from './Baizhi';
 import Encore from './Encore';
 import Lingyang from './Lingyang';
 import Yangyang from './Yangyang';
+import Youhu from './Youhu';
+import Lumi from './Lumi';
+import Chixia from './Chixia';
+import Dangjin from './Dangjin';
+import Taoqi from './Taoqi';
+import Yuanwu from './Yuanwu';
+import Aalto from './Aalto';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Rover_Spectro,
@@ -54,6 +61,13 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Zani,
   Ciaccona,
   Rover_Aero,
+  Youhu,
+  Lumi,
+  Chixia,
+  Dangjin,
+  Taoqi,
+  Yuanwu,
+  Aalto,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(

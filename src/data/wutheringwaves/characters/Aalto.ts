@@ -1,3 +1,8 @@
+/**
+ * 참고 외부 사이트
+ * https://game8.co/games/Wuthering-Waves/archives/454214
+ */
+
 import {
   getCharacterProfileImageURL,
   getCharacterImageURL,
@@ -7,15 +12,15 @@ import {
 
 const skills: Wutheringwaves.CharacterSkill[] = [
   {
-    id: 'Carlotta-skill-3',
+    id: 'Aalto-skill-1',
     name: '기본 공격',
     type: '기본공격',
-    max: 8,
-    min: 6,
+    max: 6,
+    min: 1,
     priority: 4,
   },
   {
-    id: 'Carlotta-skill-2',
+    id: 'Aalto-skill-2',
     name: '공명 스킬',
     type: '공명스킬',
     max: 10,
@@ -23,7 +28,7 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 2,
   },
   {
-    id: 'Carlotta-skill-1',
+    id: 'Aalto-skill-3',
     name: '공명 회로',
     type: '공명회로',
     max: 10,
@@ -31,15 +36,15 @@ const skills: Wutheringwaves.CharacterSkill[] = [
     priority: 1,
   },
   {
-    id: 'Carlotta-skill-4',
+    id: 'Aalto-skill-4',
     name: '공명 해방',
     type: '공명해방',
-    max: 10,
-    min: 8,
+    max: 8,
+    min: 6,
     priority: 3,
   },
   {
-    id: 'Carlotta-skill-5',
+    id: 'Aalto-skill-5',
     name: '변주 스킬',
     type: '변주스킬',
     max: 6,
@@ -71,8 +76,8 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Carlotta-stat-3',
     type: '종결',
     fields: {
-      공격력: '2400+',
-      '공명 효율': '140',
+      공격력: '2400',
+      '공명 효율': '130',
       '크리/크피': '80/270',
     },
   },
@@ -80,11 +85,11 @@ const stats: Wutheringwaves.CharacterStat[] = [
 
 const echoSets: Wutheringwaves.EchoSet[] = [
   {
-    id: 'PhantomSentryConstruct',
-    main: '이성(異性) 무장',
-    mainURL: getEchoImageURL('PhantomSentryConstruct'),
-    sonataEffect: 'FrostyResolve',
-    descriptions: ['부옵션 크리티컬 및 공명 스킬 피해 추천'],
+    id: 'ImpermanenceHeron',
+    main: '음험한 백로',
+    mainURL: getEchoImageURL('ImpermanenceHeron'),
+    sonataEffect: 'MoonlitClouds',
+    descriptions: ['떠오르는 구름', '크리티컬 관련 및 기류 피해 보너스', '공격력 및 공명 효율'],
     score: 5,
   },
 ];
@@ -107,17 +112,17 @@ const weapons: Wutheringwaves.Weapon[] = [
     subStat: '크리티컬 24.3%',
   },
   {
-    id: 'Thunderbolt',
-    name: '뇌전',
-    imageURL: getWeaponImageURL('Thunderbolt'),
-    priority: 3,
-    mainStat: '공격력 387',
-    subStat: '공격력 36.4%',
-  },
-  {
     id: 'UndyingFlame',
     name: '불멸의 성화',
     imageURL: getWeaponImageURL('UndyingFlame'),
+    priority: 3,
+    mainStat: '공격력 412',
+    subStat: '공격력 30.3%',
+  },
+  {
+    id: 'Novaburst',
+    name: '천공의 순간',
+    imageURL: getWeaponImageURL('Novaburst'),
     priority: 4,
     mainStat: '공격력 412',
     subStat: '공격력 30.3%',
@@ -126,28 +131,22 @@ const weapons: Wutheringwaves.Weapon[] = [
 
 const teams: Wutheringwaves.Team[] = [
   {
-    id: 'Carlotta-team-1',
-    name: '카를로타, 절지, 파수인',
-    characters: 'Carlotta, Zhezhi, Shorekeeper',
-    descriptions: [
-      '[카를로타] E - E',
-      '[절지] R - 평x3',
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[절지] Ex4 - Q',
-      '[카를로타] E - E - 낙공 - 강공 - Rx5 - E - E',
-    ],
+    id: 'Aalto-team-1',
+    name: '기염, 알토, 파수인',
+    characters: 'Jiyan, Aalto, Shorekeeper',
+    descriptions: [],
     score: 5,
   },
 ];
 
-const Carlotta: Wutheringwaves.Character = {
-  id: 'Carlotta',
-  name: '카를로타',
-  attribute: 'Glacio',
+const Aalto: Wutheringwaves.Character = {
+  id: 'Aalto',
+  name: '알토',
+  attribute: 'Aero',
   weaponType: '권총',
-  rarity: 5,
-  imageURL: getCharacterImageURL('Carlotta'),
-  profileImageURL: getCharacterProfileImageURL('Carlotta'),
+  rarity: 4,
+  imageURL: getCharacterImageURL('Aalto'),
+  profileImageURL: getCharacterProfileImageURL('Aalto'),
   skills,
   stats,
   echoSets,
@@ -155,4 +154,4 @@ const Carlotta: Wutheringwaves.Character = {
   teams,
 };
 
-export default Carlotta;
+export default Aalto;
