@@ -23,6 +23,7 @@ import Mortefi from './Mortefi';
 import Calcharo from './Calcharo';
 import Baizhi from './Baizhi';
 import Encore from './Encore';
+import Lingyang from './Lingyang';
 
 export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Cantarella,
@@ -50,6 +51,7 @@ export const WUTHERINGWAVES_CHARACTER_BY_ID = {
   Calcharo,
   Baizhi,
   Encore,
+  Lingyang,
 } as const;
 
 export const WUTHERINGWAVES_CHARACTERS: Wutheringwaves.Character[] = Object.values(
