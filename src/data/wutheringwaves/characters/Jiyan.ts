@@ -88,7 +88,7 @@ const echoSets: Wutheringwaves.EchoSet[] = [
     id: 'FeilianBeringal',
     main: '폭주의 고릴라',
     mainURL: getEchoImageURL('FeilianBeringal'),
-    sonataEffect: 'GustsOfWelkin',
+    sonataEffect: 'SierraGale',
     descriptions: ['크리티컬 관련 및 공명 해방 피해 증가', '부옵션 공명 효율 최소 120 추천'],
     score: 5,
   },
