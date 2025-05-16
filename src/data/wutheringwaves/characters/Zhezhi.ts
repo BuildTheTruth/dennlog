@@ -58,7 +58,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Zhezhi-stat-1',
     type: '기본',
     fields: {
-      공격력: '1600~1700',
+      공격력: '1800~2000',
       '공명 효율': '120',
       '크리/크피': '60/230',
     },
@@ -67,7 +67,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Zhezhi-stat-2',
     type: '준종결',
     fields: {
-      공격력: '1700~1800',
+      공격력: '2000~2200',
       '공명 효율': '120',
       '크리/크피': '70/250',
     },
@@ -76,7 +76,7 @@ const stats: Wutheringwaves.CharacterStat[] = [
     id: 'Zhezhi-stat-3',
     type: '종결',
     fields: {
-      공격력: '1800~2000',
+      공격력: '2200~2400',
       '공명 효율': '130',
       '크리/크피': '80/280',
     },
