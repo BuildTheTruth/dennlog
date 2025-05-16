@@ -37,10 +37,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'Varesa-stat-basic',
     type: '기본',
     fields: {
-      시계: '공%',
-      성배: '번원피',
-      왕관: '치확/치피',
-      공격력: '1800~2000',
+      공격력: '2000',
       원충: '120',
       '치확/치피': '70/150',
     },
@@ -49,10 +46,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'Varesa-stat-normal',
     type: '준종결',
     fields: {
-      시계: '공%',
-      성배: '번원피',
-      왕관: '치확/치피',
-      공격력: '2000~2200',
+      공격력: '2200',
       원충: '130',
       '치확/치피': '80/170',
     },
@@ -61,10 +55,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'Varesa-stat-final',
     type: '종결',
     fields: {
-      시계: '공%',
-      성배: '번원피',
-      왕관: '치확/치피',
-      공격력: '2200~2400',
+      공격력: '2400',
       원충: '140',
       '치확/치피': '90/190',
     },
@@ -77,14 +68,19 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '긴 밤의 맹세 4세트',
     score: 5,
     imageURL: getArtifactImageURL('LongNightOath/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력',
+      '[성배] 번개 원소 피해 보너스',
+      '[왕관] 치명타 확률 / 치명타 피해',
+      '[부옵션] 치명타, 공격력, 원소 충전 효율',
+    ],
   },
   {
     id: 'ObsidianCodex',
     name: '흑요석 4세트',
     score: 4,
     imageURL: getArtifactImageURL('ObsidianCodex/sands'),
-    descriptions: [],
+    descriptions: ['옵션은 위와 동일', '오버 치확되지 않도록 주의'],
   },
 ];
 

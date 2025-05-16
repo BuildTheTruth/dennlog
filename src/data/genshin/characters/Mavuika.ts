@@ -37,10 +37,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-basic',
     type: '기본',
     fields: {
-      공격력: '2000~2200',
-      원마: '120~150',
-      성배: '불원피/공%',
-      시계: '공%',
+      공격력: '2200',
+      원마: '120',
       '치확/치피': '80/200',
     },
   },
@@ -48,10 +46,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '2200~2400',
-      원마: '150~200',
-      성배: '불원피',
-      시계: '공%',
+      공격력: '2400',
+      원마: '150',
       '치확/치피': '85/230',
     },
   },
@@ -59,10 +55,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-final',
     type: '종결',
     fields: {
-      공격력: '2400~2600',
-      원마: '200+',
-      성배: '불원피',
-      시계: '공%',
+      공격력: '2600',
+      원마: '200',
       '치확/치피': '90/260',
     },
   },
@@ -74,7 +68,13 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '흑요석 4세트',
     score: 5,
     imageURL: getArtifactImageURL('ObsidianCodex/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력 / 원소 마스터리',
+      '[성배] 불 원소 피해 보너스',
+      '[왕관] 치명타 피해',
+      '[부옵션] 치명타, 공격력, 원소 마스터리',
+      '원마 120~300까지 효율이 높음',
+    ],
   },
 ];
 

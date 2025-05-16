@@ -34,36 +34,27 @@ const stats: Genshin.CharacterStat[] = [
     id: 'RaidenShogun-stat-basic',
     type: '기본',
     fields: {
-      시계: '원충',
-      성배: '번원피',
-      왕관: '치확/치피',
       원충: '250',
-      공격력: '1600~1800',
-      '치확/치피': '55/110',
+      공격력: '1800',
+      '치확/치피': '60/120',
     },
   },
   {
     id: 'RaidenShogun-stat-normal',
     type: '준종결',
     fields: {
-      시계: '원충/공%',
-      성배: '번원피',
-      왕관: '치확/치피',
       원충: '260',
-      공격력: '1800~2000',
-      '치확/치피': '60/120',
+      공격력: '2000',
+      '치확/치피': '70/140',
     },
   },
   {
     id: 'RaidenShogun-stat-final',
     type: '종결',
     fields: {
-      시계: '원충/공%',
-      성배: '번원피',
-      왕관: '치확/치피',
       원충: '270',
-      공격력: '2100~2300',
-      '치확/치피': '70/140',
+      공격력: '2200',
+      '치확/치피': '80/160',
     },
   },
 ];
@@ -74,7 +65,12 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '절연 4세트',
     score: 5,
     imageURL: getArtifactImageURL('EmblemOfSeveredFate/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력 / 원소 충전 효율',
+      '[성배] 번개 원소 피해 보너스',
+      '[왕관] 치명타 확률 / 치명타 피해',
+      '[부옵션] 치명타, 공격력, 원소 충전 효율',
+    ],
   },
 ];
 

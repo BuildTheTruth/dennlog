@@ -37,7 +37,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'ifa-stat-basic',
     type: '기본',
     fields: {
-      공격력: '1600~1800',
+      공격력: '1800',
       '치확/치피': '70/150',
     },
   },
@@ -45,7 +45,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'ifa-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '1800~2000',
+      공격력: '2000',
       '치확/치피': '80/170',
     },
   },
@@ -53,7 +53,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'ifa-stat-final',
     type: '종결',
     fields: {
-      공격력: '2000~2200',
+      공격력: '2200',
       '치확/치피': '90/190',
     },
   },

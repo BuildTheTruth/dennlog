@@ -39,10 +39,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-basic',
     type: '기본',
     fields: {
-      공격력: '1800~2000',
+      공격력: '2000',
       원충: '140',
-      성배: '공%',
-      시계: '원충/공%',
       '치확/치피': '60/140',
     },
   },
@@ -50,10 +48,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '2000~2200',
+      공격력: '2200',
       원충: '160',
-      성배: '공%',
-      시계: '원충/공%',
       '치확/치피': '70/170',
     },
   },
@@ -61,10 +57,8 @@ const stats: Genshin.CharacterStat[] = [
     id: 'escoffier-stat-final',
     type: '종결',
     fields: {
-      공격력: '2200~2400',
+      공격력: '2400',
       원충: '180',
-      성배: '공%',
-      시계: '원충/공%',
       '치확/치피': '80/200',
     },
   },
@@ -76,7 +70,13 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '황금 극단 4세트',
     score: 5,
     imageURL: getArtifactImageURL('GoldenTroupe/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력 / 원소 충전 효율',
+      '[성배] 얼음 원소 피해 보너스',
+      '[왕관] 치명타 확률 / 치명타 피해',
+      '[부옵션] 치명타, 공격력, 원소 충전 효율',
+      '얼음 캐릭터 수에 따라 원충 조절',
+    ],
   },
 ];
 

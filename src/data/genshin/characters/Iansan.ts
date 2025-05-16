@@ -37,10 +37,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-basic',
     type: '기본',
     fields: {
-      시계: '원충/공%',
-      성배: '공%',
-      왕관: '공%',
-      공격력: '2500~2700',
+      공격력: '2600',
       원충: '160',
     },
   },
@@ -48,10 +45,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-normal',
     type: '준종결',
     fields: {
-      시계: '원충/공%',
-      성배: '공%',
-      왕관: '공%',
-      공격력: '2700~2900',
+      공격력: '2800',
       원충: '180',
     },
   },
@@ -59,10 +53,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-final',
     type: '종결',
     fields: {
-      시계: '원충/공%',
-      성배: '공%',
-      왕관: '공%',
-      공격력: '3000+',
+      공격력: '3000',
       원충: '200',
     },
   },
@@ -74,7 +65,13 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '잿더미 4세트',
     score: 5,
     imageURL: getArtifactImageURL('ScrollOfTheHeroOfCinderCity/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력 / 원소 충전 효율',
+      '[성배] 공격력',
+      '[왕관] 공격력',
+      '[부옵션] 공격력, 원소 충전 효율',
+      '5돌 이상은 공격력 3000이상',
+    ],
   },
 ];
 
