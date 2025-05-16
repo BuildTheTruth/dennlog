@@ -1,4 +1,4 @@
-import WutheringwavesCharacterProfile from '@/components/WutheringwavesCharacterProfile';
+import CharacterProfile from '@/components/CharacterProfile';
 import { WUTHERINGWAVES_CHARACTERS } from '@/data/wutheringwaves/characters';
 import Link from 'next/link';
 
@@ -13,7 +13,7 @@ const WutheringwavesCharactersPage = () => {
             key={character.id}
             href={`/games/wutheringwaves/characters/${character.id}`}
           >
-            <WutheringwavesCharacterProfile id={character.id} />
+            <CharacterProfile id={character.id} />
             <div className="text-black dark:text-white text-lg font-bold">{character.name}</div>
           </Link>
         ))}

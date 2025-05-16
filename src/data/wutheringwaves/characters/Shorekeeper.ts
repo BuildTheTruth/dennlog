@@ -126,24 +126,14 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Shorekeeper-team-1',
     name: '카멜리아, 산화, 파수인',
     characters: 'Camellya, Sanhua, Shorekeeper',
-    descriptions: [
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[산화] E - R - 강공 - Q',
-      '[카멜리아] R - E - 평꾹 - E(일순의 꽃) - E - 평꾹',
-    ],
+    descriptions: [],
     score: 5,
   },
   {
     id: 'Shorekeeper-team-2',
     name: '카를로타, 절지, 파수인',
     characters: 'Carlotta, Zhezhi, Shorekeeper',
-    descriptions: [
-      '[카를로타] E - E',
-      '[절지] R - 평x3',
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[절지] Ex4 - Q',
-      '[카를로타] E - E - 낙공 - 강공 - Rx5 - E - E',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];

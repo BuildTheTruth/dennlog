@@ -134,26 +134,14 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Jinhsi-team-1',
     name: '금희, 칸타렐라, 벨리나',
     characters: 'Jinhsi, Cantarella, Verina',
-    descriptions: [
-      '[칸타렐라] E',
-      '[벨리나] E - Q - R - 점평x2',
-      '[금희] E - 평x4 - Q - E',
-      '[칸타렐라] E - Q - R - 강공 - E - 평x3 - E',
-      '[금희] R - E - 평x3 - E - 평 - E',
-    ],
+    descriptions: [],
     score: 5,
   },
   {
     id: 'Jinhsi-team-2',
     name: '금희, 절지, 벨리나',
     characters: 'Jinhsi, Zhezhi, Verina',
-    descriptions: [
-      '[절지] R - 평x3',
-      '[벨리나] E - Q - R - 점평x2',
-      '[금희] R - E - 평x4 - Q - E',
-      '[절지] E - 평 - Ex3 - Q',
-      '[금희] E - 평x4 - E ',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];

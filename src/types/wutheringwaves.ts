@@ -59,7 +59,7 @@ namespace Wutheringwaves {
     name: string;
     characters: string;
     descriptions: string[];
-    score: number; // 0 ~ 10
+    score: number;
   }
 
   export interface Breakthrough {

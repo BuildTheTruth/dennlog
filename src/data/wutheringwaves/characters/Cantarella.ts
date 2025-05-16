@@ -129,13 +129,7 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Camellya-team-1',
     name: '금희, 칸타렐라, 벨리나',
     characters: 'Jinhsi, Cantarella, Verina',
-    descriptions: [
-      '[칸타렐라] E',
-      '[벨리나] E - Q - R - 강공 - 공중 평타',
-      '[금희] E - 평x4 - Q - E',
-      '[칸타렐라] E - Q - R - 강공 - E - 평x3 - E',
-      '[금희] R - E - 평x3 - E - 평 - E',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];

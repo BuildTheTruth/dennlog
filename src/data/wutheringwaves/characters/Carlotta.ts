@@ -129,13 +129,7 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Carlotta-team-1',
     name: '카를로타, 절지, 파수인',
     characters: 'Carlotta, Zhezhi, Shorekeeper',
-    descriptions: [
-      '[카를로타] E - E',
-      '[절지] R - 평x3',
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[절지] Ex4 - Q',
-      '[카를로타] E - E - 낙공 - 강공 - Rx5 - E - E',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];

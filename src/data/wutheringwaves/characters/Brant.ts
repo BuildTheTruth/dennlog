@@ -131,12 +131,7 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Brant-team-1',
     name: '장리, 브렌트, 파수인',
     characters: 'Changli, Brant, Shorekeeper',
-    descriptions: [
-      '[장리] R - 강공 - Q',
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[브렌트] R - 평x4 - E - Q',
-      '[장리] 낙공 - 평x3 - E - 평 - E - 평 - 강공 - R - 강공',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];

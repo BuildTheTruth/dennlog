@@ -9,7 +9,7 @@ interface Props {
   id: string;
 }
 
-const WutheringwavesCharacterProfile = ({ id }: Props) => {
+const CharacterProfile = ({ id }: Props) => {
   const character = WUTHERINGWAVES_CHARACTER_BY_ID[id as WutheringwavesCharacterID];
 
   if (!character) {
@@ -31,4 +31,4 @@ const WutheringwavesCharacterProfile = ({ id }: Props) => {
   );
 };
 
-export default WutheringwavesCharacterProfile;
+export default CharacterProfile;

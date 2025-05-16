@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import WutheringwavesCharacterProfile from '@/components/WutheringwavesCharacterProfile';
+import CharacterProfile from '@/components/CharacterProfile';
 import {
   WUTHERINGWAVES_CHARACTER_BY_ID,
   WutheringwavesCharacterID,
@@ -211,21 +211,18 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                     href={`/games/wutheringwaves/characters/${id}`}
                     className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
                   >
-                    <WutheringwavesCharacterProfile id={id} />
+                    <CharacterProfile id={id} />
                   </Link>
                 ))}
             </div>
             {team.descriptions.length > 0 && (
-              <>
-                <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
-                <div className="flex flex-col gap-2 text-sm md:text-base">
-                  {team.descriptions.map((desc, index) => (
-                    <div key={index} className="text-center md:text-left">
-                      {index + 1}. {desc}
-                    </div>
-                  ))}
-                </div>
-              </>
+              <div className="flex flex-col gap-2 text-sm md:text-base">
+                {team.descriptions.map((desc, index) => (
+                  <div key={index} className="text-center md:text-left">
+                    {desc}
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         ))}

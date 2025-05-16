@@ -142,26 +142,14 @@ const teams: Wutheringwaves.Team[] = [
     id: 'Camellya-team-1',
     name: '카를로타, 절지, 파수인',
     characters: 'Carlotta, Zhezhi, Shorekeeper',
-    descriptions: [
-      '[카를로타] E - E',
-      '[절지] R - 평x3',
-      '[파수인] E - 평x4 - 강공 - (협주까지 반복) - Q - R',
-      '[절지] Ex4 - Q',
-      '[카를로타] E - E - 낙공 - 강공 - Rx5 - E - E',
-    ],
+    descriptions: [],
     score: 5,
   },
   {
     id: 'Zhezhi-team-2',
     name: '금희, 절지, 벨리나',
     characters: 'Jinhsi, Zhezhi, Verina',
-    descriptions: [
-      '[절지] R - 평x3',
-      '[벨리나] E - Q - R - 점평x2',
-      '[금희] R - E - 평x4 - Q - E',
-      '[절지] E - 평 - Ex3 - Q',
-      '[금희] E - 평x4 - E ',
-    ],
+    descriptions: [],
     score: 5,
   },
 ];
