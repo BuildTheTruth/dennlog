@@ -209,7 +209,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
                   <Link
                     key={id}
                     href={`/games/wutheringwaves/characters/${id}`}
-                    className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden"
+                    className="bg-gray-100 border border-gray-300 rounded-md overflow-hidden hover:bg-gray-300 transition-colors duration-200"
                   >
                     <CharacterProfile id={id} />
                   </Link>
