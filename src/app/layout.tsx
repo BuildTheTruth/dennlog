@@ -42,12 +42,21 @@ export const metadata: Metadata = {
     title: 'DennLog',
     description: '개발 및 게임 공략법 공유 블로그',
     siteName: 'DennLog',
+    images: [
+      {
+        url: '/logo.png',
+        width: 500,
+        height: 500,
+        alt: 'DennLog',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DennLog',
     description: '개발 및 게임 공략법 공유 블로그',
     creator: '@dennlog',
+    images: ['/logo.png'],
   },
   alternates: {
     canonical: 'https://dennlog.vercel.app',
