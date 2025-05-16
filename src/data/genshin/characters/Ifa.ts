@@ -38,9 +38,6 @@ const stats: Genshin.CharacterStat[] = [
     type: '기본',
     fields: {
       공격력: '1600~1800',
-      왕관: '치확/치피',
-      성배: '바원피',
-      시계: '공%',
       '치확/치피': '70/150',
     },
   },
@@ -49,9 +46,6 @@ const stats: Genshin.CharacterStat[] = [
     type: '준종결',
     fields: {
       공격력: '1800~2000',
-      왕관: '치확/치피',
-      성배: '바원피',
-      시계: '공%',
       '치확/치피': '80/170',
     },
   },
@@ -60,9 +54,6 @@ const stats: Genshin.CharacterStat[] = [
     type: '종결',
     fields: {
       공격력: '2000~2200',
-      왕관: '치확/치피',
-      성배: '바원피',
-      시계: '공%',
       '치확/치피': '90/190',
     },
   },
@@ -74,7 +65,13 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '흑요석 4세트',
     score: 5,
     imageURL: getArtifactImageURL('ObsidianCodex/sands'),
-    descriptions: [],
+    descriptions: [
+      '[시계] 공격력',
+      '[성배] 바람 원소 피해 보너스',
+      '[왕관] 치명타 확률 / 치명타 피해',
+      '[부옵션] 치명타, 공격력, 원소 충전 효율',
+      '오버 치확되지 않도록 주의',
+    ],
   },
 ];
 

@@ -139,20 +139,20 @@ const GenshinCharacterPage = ({ params }: Props) => {
                   ))}
                 </span>
               </div>
-              <div className="flex flex-wrap justify-center">
-                <figure className="bg-gray-100 border m-2 border-gray-300 rounded-md overflow-hidden">
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="bg-gray-100 border m-2 border-gray-300 rounded-md">
                   <Image
                     src={artifactSet.imageURL}
                     alt={artifactSet.name}
                     width={100}
                     height={100}
                   />
-                </figure>
-                <div className="flex flex-col gap-2">
-                  {artifactSet.descriptions.map((desc, index) => (
-                    <div key={index}>{desc}</div>
-                  ))}
-                </div>
+                </span>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-2">
+                {artifactSet.descriptions.map((desc, index) => (
+                  <div key={index}>{desc}</div>
+                ))}
               </div>
             </div>
           ))}
