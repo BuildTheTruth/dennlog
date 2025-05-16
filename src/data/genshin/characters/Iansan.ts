@@ -73,7 +73,8 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'ScrollOfTheHeroOfCinderCity',
     name: '잿더미 4세트',
     score: 5,
-    imageURLs: [getArtifactImageURL('ScrollOfTheHeroOfCinderCity/sands')],
+    imageURL: getArtifactImageURL('ScrollOfTheHeroOfCinderCity/sands'),
+    descriptions: [],
   },
 ];
 

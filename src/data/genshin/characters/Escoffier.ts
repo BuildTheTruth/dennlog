@@ -75,7 +75,8 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'GoldenTroupe',
     name: '황금 극단 4세트',
     score: 5,
-    imageURLs: [getArtifactImageURL('GoldenTroupe/sands')],
+    imageURL: getArtifactImageURL('GoldenTroupe/sands'),
+    descriptions: [],
   },
 ];
 

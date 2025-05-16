@@ -76,13 +76,15 @@ const artifactSets: Genshin.ArtifactSet[] = [
     id: 'LongNightOath',
     name: '긴 밤의 맹세 4세트',
     score: 5,
-    imageURLs: [getArtifactImageURL('LongNightOath/sands')],
+    imageURL: getArtifactImageURL('LongNightOath/sands'),
+    descriptions: [],
   },
   {
     id: 'ObsidianCodex',
     name: '흑요석 4세트',
     score: 4,
-    imageURLs: [getArtifactImageURL('ObsidianCodex/sands')],
+    imageURL: getArtifactImageURL('ObsidianCodex/sands'),
+    descriptions: [],
   },
 ];
 

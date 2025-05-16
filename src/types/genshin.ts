@@ -23,7 +23,8 @@ namespace Genshin {
     id: string;
     name: string;
     score: number;
-    imageURLs: string[];
+    imageURL: string;
+    descriptions: string[];
   }
 
   export interface Weapon {
