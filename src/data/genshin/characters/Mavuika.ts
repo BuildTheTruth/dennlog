@@ -37,7 +37,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-basic',
     type: '기본',
     fields: {
-      공격력: '2200',
+      공격력: '2000',
       원마: '120',
       '치확/치피': '80/200',
     },
@@ -46,7 +46,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-normal',
     type: '준종결',
     fields: {
-      공격력: '2400',
+      공격력: '2200',
       원마: '150',
       '치확/치피': '85/230',
     },
@@ -55,7 +55,7 @@ const stats: Genshin.CharacterStat[] = [
     id: 'mavuika-stat-final',
     type: '종결',
     fields: {
-      공격력: '2600',
+      공격력: '2400',
       원마: '200',
       '치확/치피': '90/260',
     },
