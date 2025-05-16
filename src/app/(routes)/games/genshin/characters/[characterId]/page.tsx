@@ -177,7 +177,7 @@ const GenshinCharacterPage = ({ params }: Props) => {
           {character.name} 파티 조합
         </Typography>
         {character.teams.map(team => (
-          <div key={team.id} className="flex flex-col items-center gap-2 my-6 md:my-8 w-full">
+          <div key={team.id} className="flex flex-col items-center gap-2 my-4 md:my-6 w-full">
             <span className="text-base md:text-lg font-bold text-center">{team.name}</span>
             <div className="flex items-center gap-2 text-sm md:text-base">
               추천도:
@@ -206,16 +206,13 @@ const GenshinCharacterPage = ({ params }: Props) => {
                 ))}
             </div>
             {team.descriptions.length > 0 && (
-              <>
-                <div className="text-gray-500 text-sm md:text-base mt-2">파티 사이클</div>
-                <div className="flex flex-col gap-2 text-sm md:text-base">
-                  {team.descriptions.map((desc, index) => (
-                    <div key={index} className="text-center md:text-left">
-                      {index + 1}. {desc}
-                    </div>
-                  ))}
-                </div>
-              </>
+              <div className="flex flex-col gap-2 text-sm md:text-base my-2">
+                {team.descriptions.map((desc, index) => (
+                  <div key={index} className="text-center md:text-left">
+                    {desc}
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         ))}

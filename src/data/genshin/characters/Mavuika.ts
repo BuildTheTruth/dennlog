@@ -126,14 +126,14 @@ const teams: Genshin.Team[] = [
     id: 'mavuika-team-first',
     name: '마실시베 융해 파티',
     characters: 'Mavuika, Xilonen, Citlali, Bennett',
-    descriptions: ['마키바 E', '실로닌 (Q)E 평평', '베넷 EQ', '시틀라리 EQ 평', '마비카 Q 강공'],
+    descriptions: [],
     score: 5,
   },
   {
     id: 'mavuika-team-second',
     name: '키에베마 연소 파티',
     characters: 'Kinich, Emilie, Bennett, Mavuika',
-    descriptions: ['에밀리 E(Q)', '마키바 EQ', '베넷 EQ', '키니치 E(Q) 평평x4'],
+    descriptions: [],
     score: 4,
   },
 ];

@@ -120,21 +120,14 @@ const teams: Genshin.Team[] = [
     id: 'Varesa-team-first',
     name: '바푸얀한',
     characters: 'Varesa, Furina, Iansan, Xianyun',
-    descriptions: ['바레사 E', '푸리나 EQ', '얀사 EQ', '한운 EQ', '바레사 E평평x2 Q 반복'],
+    descriptions: [],
     score: 5,
   },
   {
     id: 'Varesa-team-second',
     name: '바마얀슈',
     characters: 'Varesa, Mavuika, Iansan, Chevreuse',
-    descriptions: [
-      '마비카 E',
-      '얀사 Q',
-      '슈브르즈 E',
-      '얀사 E',
-      '바레사 Q E평평x2 Q 반복',
-      '마비카 Q',
-    ],
+    descriptions: [],
     score: 4,
   },
 ];
