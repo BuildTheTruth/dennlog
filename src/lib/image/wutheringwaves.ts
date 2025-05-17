@@ -21,3 +21,11 @@ export const getWeaponImageURL = (id: string) =>
 
 export const getAttributeImageURL = (id: string) =>
   getImageURL(`${PATH}/attributes/${id}.webp`, { format: 'webp', width: 32, height: 32 });
+
+export const getMaterialImageURL = (id: string) =>
+  getImageURL(`${PATH}/materials/${id}.webp`, {
+    format: 'webp',
+    width: 100,
+    height: 100,
+    resize: 'cover',
+  });

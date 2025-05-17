@@ -8,6 +8,7 @@ import {
   getCharacterImageURL,
   getEchoImageURL,
   getWeaponImageURL,
+  getMaterialImageURL,
 } from '@/lib/image/wutheringwaves';
 
 const skills: Wutheringwaves.CharacterSkill[] = [
@@ -143,6 +144,34 @@ const teams: Wutheringwaves.Team[] = [
   },
 ];
 
+const materials: Wutheringwaves.Material[] = [
+  {
+    id: 'BlazingBone',
+    name: '화염의 용뼈',
+    imageURL: getMaterialImageURL('BlazingBone'),
+  },
+  {
+    id: 'GoldenFleece',
+    name: '황금 양모',
+    imageURL: getMaterialImageURL('GoldenFleece'),
+  },
+  {
+    id: 'Residuum',
+    name: '침식 선형 구조물',
+    imageURL: getMaterialImageURL('Residuum'),
+  },
+  {
+    id: 'WhenIrisesBloom',
+    name: '붓꽃이 만발하던 날',
+    imageURL: getMaterialImageURL('WhenIrisesBloom'),
+  },
+  {
+    id: 'FlawlessPhlohiston',
+    name: '결정화 연소',
+    imageURL: getMaterialImageURL('FlawlessPhlohiston'),
+  },
+];
+
 const Ciaccona: Wutheringwaves.Character = {
   id: 'Ciaccona',
   name: '샤콘',
@@ -156,6 +185,7 @@ const Ciaccona: Wutheringwaves.Character = {
   echoSets,
   weapons,
   teams,
+  materials,
 };
 
 export default Ciaccona;

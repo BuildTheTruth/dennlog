@@ -47,6 +47,34 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
         </figure>
       </div>
 
+      {character.materials && (
+        <div className="flex flex-col gap-4 w-full max-w-full md:max-w-[720px]">
+          <Typography
+            variant="h3"
+            className="text-center py-2 px-4 bg-gradient-to-r from-green-500 to-lime-500 text-white rounded-lg w-full text-lg md:text-xl"
+          >
+            {character.name} 육성 재료
+          </Typography>
+          <div className="flex flex-wrap justify-center items-center">
+            {character.materials.map(material => (
+              <div key={material.id} className="flex flex-col items-center">
+                <figure className="relative aspect-square md:w-[100px] w-[60px]">
+                  <Image
+                    src={material.imageURL}
+                    alt={material.name}
+                    className="object-cover"
+                    fill
+                  />
+                </figure>
+              </div>
+            ))}
+          </div>
+          <div className="text-sm text-center">
+            {character.materials.map(({ name }) => name).join(' / ')}
+          </div>
+        </div>
+      )}
+
       <div className="flex flex-col gap-2 w-full max-w-full md:max-w-[720px]">
         <Typography
           variant="h3"

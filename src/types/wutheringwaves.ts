@@ -68,6 +68,12 @@ namespace Wutheringwaves {
     description: string;
   }
 
+  export interface Material {
+    id: string;
+    name: string;
+    imageURL: string;
+  }
+
   export interface Character {
     id: string;
     name: string;
@@ -83,5 +89,6 @@ namespace Wutheringwaves {
     weapons: Weapon[]; // 추천 무기
     teams: Team[]; // 추천 팀
     // breakthroughs: Breakthrough[]; // 추천 돌파
+    materials?: Material[]; // 육성 재료
   }
 }

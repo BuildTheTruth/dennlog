@@ -11,6 +11,7 @@ interface Props {
 
 const DESCRIPTIONS = [
   '육성법',
+  '육성 재료',
   '스킬 순서',
   '추천 무기',
   '추천 에코',
