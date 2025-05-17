@@ -6,6 +6,7 @@ import RaidenShogun from './RaidenShogun';
 import Varesa from './Varesa';
 import Ororon from './Ororon';
 import Layla from './Layla';
+import Navia from './Navia';
 
 export const GENSHIN_CHARACTER_BY_ID = {
   Mavuika,
@@ -16,6 +17,7 @@ export const GENSHIN_CHARACTER_BY_ID = {
   Escoffier,
   Ororon,
   Layla,
+  Navia,
 } as const;
 
 export const GENSHIN_CHARACTERS: Genshin.Character[] = Object.values(GENSHIN_CHARACTER_BY_ID);
