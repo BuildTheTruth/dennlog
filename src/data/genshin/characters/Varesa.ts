@@ -80,7 +80,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '흑요석 4세트',
     score: 4,
     imageURL: getArtifactImageURL('ObsidianCodex/sands'),
-    descriptions: ['옵션은 위와 동일', '오버 치확되지 않도록 주의'],
+    descriptions: ['오버 치확되지 않도록 주의'],
   },
 ];
 

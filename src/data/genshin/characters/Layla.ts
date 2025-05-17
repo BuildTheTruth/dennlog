@@ -78,7 +78,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '왕실 4세트',
     score: 4,
     imageURL: getArtifactImageURL('NoblesseOblige/sands'),
-    descriptions: ['옵션은 위와 동일', '다른 파티원이 천암을 착용한 경우 추천'],
+    descriptions: ['다른 파티원이 천암을 착용한 경우 추천'],
   },
 ];
 

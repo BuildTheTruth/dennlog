@@ -80,7 +80,7 @@ const artifactSets: Genshin.ArtifactSet[] = [
     name: '그림자 4세트',
     score: 4,
     imageURL: getArtifactImageURL('MarechausseeHunter/sands'),
-    descriptions: ['옵션은 위와 동일', '푸리나와 조합 시 사용 가능', '오버 치확되지 않도록 주의'],
+    descriptions: ['푸리나와 조합 시 사용 가능', '오버 치확되지 않도록 주의'],
   },
 ];
 
@@ -107,8 +107,8 @@ const weapons: Genshin.Weapon[] = [
     name: '늑대의 말로',
     imageURL: getWeaponImageURL('WolfGravestone'),
     priority: 3,
-    mainStat: '기초 공격력 542',
-    subStat: '',
+    mainStat: '기초 공격력 608',
+    subStat: '공격력 49.6%',
   },
   {
     id: 'SerpentSpine',
