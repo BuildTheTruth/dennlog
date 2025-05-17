@@ -69,7 +69,7 @@ const WutheringwavesCharacterPage = ({ params }: Props) => {
               </div>
             ))}
           </div>
-          <div className="text-sm text-center">
+          <div className="text-sm md:text-base text-center">
             {character.materials.map(({ name }) => name).join(' / ')}
           </div>
         </div>

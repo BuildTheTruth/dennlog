@@ -157,7 +157,7 @@ const materials: Wutheringwaves.Material[] = [
   },
   {
     id: 'Residuum',
-    name: '침식 선형 구조물',
+    name: '주파수 침식 선형 구조물',
     imageURL: getMaterialImageURL('Residuum'),
   },
   {

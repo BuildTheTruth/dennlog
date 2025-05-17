@@ -8,6 +8,7 @@ import {
   getCharacterImageURL,
   getEchoImageURL,
   getWeaponImageURL,
+  getMaterialImageURL,
 } from '@/lib/image/wutheringwaves';
 
 const skills: Wutheringwaves.CharacterSkill[] = [
@@ -142,6 +143,34 @@ const teams: Wutheringwaves.Team[] = [
   },
 ];
 
+const materials: Wutheringwaves.Material[] = [
+  {
+    id: 'PlatinumCore',
+    name: '백금 기계의 심장',
+    imageURL: getMaterialImageURL('PlatinumCore'),
+  },
+  {
+    id: 'SwordAcorus',
+    name: '검창포꽃',
+    imageURL: getMaterialImageURL('SwordAcorus'),
+  },
+  {
+    id: 'PolygonCore',
+    name: '주파수 취합 성핵',
+    imageURL: getMaterialImageURL('PolygonCore'),
+  },
+  {
+    id: 'TheNetherworldStare',
+    name: '저편 세계의 눈빛',
+    imageURL: getMaterialImageURL('TheNetherworldStare'),
+  },
+  {
+    id: 'CadenceBlossom',
+    name: '음률',
+    imageURL: getMaterialImageURL('CadenceBlossom'),
+  },
+];
+
 const Zani: Wutheringwaves.Character = {
   id: 'Zani',
   name: '젠니',
@@ -155,6 +184,7 @@ const Zani: Wutheringwaves.Character = {
   echoSets,
   weapons,
   teams,
+  materials,
 };
 
 export default Zani;
